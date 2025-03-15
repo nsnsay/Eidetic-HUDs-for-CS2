@@ -18,8 +18,9 @@ How to use this application?
 
 1. Download.
 2. Put the Config into you CS2 config folder.
-3. Start the AppsJust use it, (Maybe some Chinese localization here, I will clear it at next version.)
-4. If you using it at commerical stream, Please enable the watermark, thank you!
+3. Start the Apps and use it, (Maybe some Chinese localization here, I will clear it at next version.)
+4. Start the bolt radars!
+5. If you using it at commerical stream, Please enable the watermark, thank you!
 
 ---
 
