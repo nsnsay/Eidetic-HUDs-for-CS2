@@ -35,3 +35,15 @@ And my English pretty bad ):
 Code quality too
 
 ---
+
+## FAQ
+
+Q: Why i can't see the radars at the window?
+
+A: IDK why, but it's works at OBS Capture!
+
+Q: ibjoiijaoijAoin325324n545
+
+A: Go discord or Issues ask me!
+
+---
