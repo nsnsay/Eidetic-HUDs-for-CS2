@@ -1,0 +1,53 @@
+{
+	"private": true,
+	"license": "ISC",
+	"type": "module",
+	"main": "src/server/index.js",
+	"scripts": {
+		"start": "node .",
+		"watch": "nodemon .",
+		"build": "./build/build.sh",
+		"postinstall": "yarn licenses generate-disclaimer > assets/licenses.txt"
+	},
+	"pkg": {
+		"assets": "AJL.ico"
+	},
+	"dependencies": {
+		"@fontsource/noto-sans": "^5.1.1",
+		"@fontsource/quantico": "^5.1.1",
+		"koa": "^2.15.3",
+		"koa-bodyparser": "^4.4.1",
+		"koa-compress": "^5.1.1",
+		"koa-router": "^13.0.1",
+		"koa-send": "^5.0.1",
+		"lodash-es": "^4.17.21",
+		"normalize.css": "^8.0.1",
+		"resolve-path": "^1.4.0",
+		"vue": "^3.5.13",
+		"vue3-sfc-loader": "^0.9.5",
+		"ws": "^8.18.0"
+	},
+	"devDependencies": {
+		"@yao-pkg/pkg": "^6.2.0",
+		"electron": "^34.1.0",
+		"electron-packager": "^17.1.2",
+		"esbuild": "^0.24.2",
+		"nodemon": "^3.1.9"
+	},
+	"nodemonConfig": {
+		"ignore": [
+			"src/themes/userspace/**"
+		],
+		"events": {
+			"start": "cls || clear"
+		}
+	},
+	"name": "drweissbrot-cs-hud-overlay-dev",
+	"version": "1.0.0",
+	"description": "A Free and Customizable Spectator HUD for Your Counter-Strike 2 (and CS:GO) Streams.",
+	"directories": {
+		"doc": "docs"
+	},
+	"keywords": [],
+	"author": ""
+}

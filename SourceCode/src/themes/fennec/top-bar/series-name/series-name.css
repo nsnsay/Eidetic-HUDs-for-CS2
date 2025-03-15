@@ -1,0 +1,53 @@
+.series-name {
+	font-family: var(--fyt); /* 默认字体堆叠 */
+	grid-area: series-name;
+
+	display: grid;
+	grid-template-columns: 7fr 8fr 7fr;
+	grid-template-areas: 'left center right';
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	color: var(--white-90);
+	border-radius: 0px; /* 添加圆角 */
+    text-align: center;
+	background-image: url('/hud/sidebars/sidebar-bg.png'); /* 设置图片背景 */
+	opacity: 100%;
+	background-size: cover; /* 使背景图片覆盖整个元素 */
+	background-position: bottom; /* 将背景图片居中 */
+	background-repeat: no-repeat; /* 防止背景图片重复 */
+}
+
+.left,
+.center,
+.right {
+	padding: 0.475rem;
+
+	color: var(--white);
+	font-size: 1.45rem;
+
+	font-weight: bold; /* 文字加粗 */
+}
+
+
+.left {
+	grid-area: left;
+}
+
+
+.left .inner 
+
+.center {
+	grid-area: center;
+	font-weight: 700;
+	letter-spacing: 3rem !important;
+	color: var(white);
+	font-size: 1.3rem;
+
+	text-shadow: 0 0 10px var(rgb(255, 255, 255));
+}
+
+.right {
+	grid-area: right;
+}
+

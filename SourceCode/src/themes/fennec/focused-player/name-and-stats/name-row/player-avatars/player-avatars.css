@@ -1,0 +1,49 @@
+.kda-wrapper {
+    display: flex;
+    position: absolute; /* 使用绝对定位 */
+    bottom: 0px;
+    left: 100%; /* 水平居中 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    z-index: 10; /* 确保它在 name-row 上方 */
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 8px; /* 圆角 */
+
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* 添加文字阴影 */
+
+    font-size: 17px; /* 字体大小 */
+}
+
+.kda-wrapper.--ct {
+    border-right: 3px solid rgb(5, 167, 226, 0.85); /* 添加描边效果 */
+    box-shadow: 0 0 2px rgb(5, 167, 226, 0.85);
+}
+
+.kda-wrapper.--t {
+    border-right: 3px solid rgba(226, 123, 5, 0.85);
+    box-shadow: 0 0 2px rgb(226, 123, 5, 0.85);
+}
+
+
+.kills {
+	grid-area: kills;
+
+	display: flex;
+	align-items: center;
+
+	padding: 0.5rem;
+	font-size: 1.5rem;
+}
+
+.value {
+    margin-right: 1.5rem;
+}
+
+img {
+	width: 20px; /* 根据需要调整图像大小 */
+    padding-right: 0.3rem;
+}
+
+.d img {
+    width: 15px;
+}

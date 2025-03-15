@@ -1,0 +1,8 @@
+.name-and-stats {
+	display: grid;
+	border-radius: 10px; /* 添加圆角 */
+	grid-template-columns: max-content 1fr max-content;
+	grid-template-rows: 1fr 0fr;
+	grid-template-areas:
+		'name-row';
+}

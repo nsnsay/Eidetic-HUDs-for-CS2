@@ -1,0 +1,130 @@
+.name-row {
+    display: grid;
+    position: fixed;
+    color: #fff; /* 字体颜色 */
+    padding: 5px 10px; /* 内边距 */
+    bottom: var(--viewport-margin-bottom1);
+    left: calc((100% - var(--focused-player-width)) / 2);
+    right: calc((100% - var(--focused-player-width)) / 2);
+
+    font-size: 17px; /* 字体大小 */
+	background-image: url('/hud/img/icons/bg4.svg'); /* 设置图片背景 */
+	opacity: 100%;
+	background-size: cover; /* 使背景图片覆盖整个元素 */
+	background-position: center; /* 将背景图片居中 */
+	background-repeat: no-repeat; /* 防止背景图片重复 */
+
+    border-radius: 10px;
+
+    grid-template-columns: auto auto auto auto auto auto; /* 修正列定义 */
+    grid-template-areas:
+        "armor health player-name bod grenades ammo"
+     
+}
+
+.grenades {
+	display: flex;
+	align-items: center;
+	padding-right: 0.5rem;
+}
+
+.grenades {
+	margin: 0 0.75rem;
+}
+
+.armor {
+    grid-area: armor;
+    display: flex;
+}
+
+.grenades {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 0.5rem;
+}
+
+.grenades .grenade {
+	margin: 0 0.75rem;
+}
+
+
+img {
+    height: 15px;
+}
+
+.roundkills {
+	grid-area: round-kills;
+	display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.player-name {
+    grid-area: player-name;
+    display: flex; /* 确保使用 flex 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中（如果需要） */
+    text-align: center; /* 确保文本内容也居中 */
+    min-width: fit-content;
+    font-size: 17px;
+
+
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.health {
+    grid-area: health;
+    height: 1rem;
+}
+
+.ammo {
+    grid-area: ammo;
+    justify-content: end;
+    text-align: end;
+    display: flex;
+    letter-spacing: 0ch;
+    FONT-SIZE: 16px;
+}
+
+.beidan {
+    font-size: 13px;
+    text-align: start;
+}
+
+.noammo {
+    font-size: 15px;
+    text-align: start;
+}
+
+.ammo img {
+    width: 20px;
+}
+.name-row.--ct {
+    border-top: 4px solid rgb(5, 167, 226, 0.85); /* 添加描边效果 */
+    box-shadow: 0 0 15px rgb(5, 167, 226, 0.85);
+}
+
+.name-row.--t {
+    border-top: 5px solid rgba(226, 123, 5, 0.85);
+    box-shadow: 0 0 15px rgb(226, 123, 5, 0.85);
+}
+
+.bod {
+	grid-area: bod;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+bod img {
+	height: 3rem;
+	transition: opacity var(--fade-fast-duration) ease;
+}
+
+bod img.bomb:not(.--active) {
+	opacity: 0.5;
+}

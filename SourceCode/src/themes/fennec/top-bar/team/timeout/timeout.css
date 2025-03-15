@@ -1,0 +1,48 @@
+.timeout-wrapper {
+	max-height: calc(2 * var(--top-bar-row-height));
+	position: relative;
+	top: 7.5px;
+}
+
+.timeout {
+	height: calc(2 * var(--top-bar-row-height));
+}
+
+.timeout .inner {
+	flex-direction: column;
+	justify-content: space-evenly;
+	border-radius: 0px;
+	background-image: url('/hud/img/icons/bg4.svg'); /* 设置图片背景 */
+	opacity: 100%;
+	background-size: cover; /* 使背景图片覆盖整个元素 */
+	background-position: center; /* 将背景图片居中 */
+	background-repeat: repeat; /* 防止背景图片重复 */
+}
+
+.timeout .label {
+	font-size: 2.25rem;
+	font-weight: 700;
+}
+
+.timeout .remaining {
+	font-size: 1.75rem;
+}
+
+.timeout .progress-bar-background {
+	margin-top: 0.5rem;
+	width: 85%;
+}
+
+.timeout.--left .inner {
+	padding: 0.5rem 1rem 0.5rem 2.5rem;
+	border-radius: 15px;
+
+	border-top: 5px solid rgba(38, 22, 216, 0.85);
+}
+
+.timeout.--right .inner {
+	padding: 0.5rem 2.5rem 0.5rem 1rem;
+	border-radius: 15px;
+
+	border-top: 5px solid rgba(143, 50, 99, 0.85);
+}

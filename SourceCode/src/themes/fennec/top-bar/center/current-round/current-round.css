@@ -1,0 +1,21 @@
+.current-round {
+	grid-area: current-round;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	padding: 0.25rem;
+	background-image: url('/hud/sidebars/sidebar-bg.png'); /* 设置图片背景 */
+	opacity: 100%;
+	background-size: center; /* 使背景图片覆盖整个元素 */
+	background-position: top; /* 将背景图片居中 */
+	background-repeat: no-repeat; /* 防止背景图片重复 */
+	
+}
+
+.current-round.--warmup {
+	font-size: 1.5rem;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}

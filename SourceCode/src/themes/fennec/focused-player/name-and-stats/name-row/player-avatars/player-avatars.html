@@ -1,0 +1,26 @@
+<div :class="['kda-wrapper', colorClass, positionClass]" v-if="player">
+    <div class="kda">
+        <div class="kills">
+            <span :class="['k', colorClass]">
+            <img src="/hud/img/icons/crosshair.svg" alt="" />
+            </span>
+            <span :class="['value', { '--good': player.hasGoodKdRatio }]">
+            {{ player.kills }}
+            </span>
+
+            <span :class="['d', colorClass]">
+            <img src="/hud/img/icons/kill.png" alt="" />
+            </span>
+            <span :class="['value', { '--good': player.hasGoodKdRatio }]">
+            {{ player.deaths }}
+            </span>    
+
+            <span :class="['a', colorClass]">
+            <img src="/hud/img/icons/assist.png" alt="" />
+            </span>
+            <span :class="['value', { '--good': player.hasGoodKdRatio }]">
+            {{ player.assists }}
+            </span>
+        </div>
+    </div>
+</div>

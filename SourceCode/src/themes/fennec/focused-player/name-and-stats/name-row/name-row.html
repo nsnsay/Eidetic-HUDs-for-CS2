@@ -1,0 +1,39 @@
+<div :class="['name-row', colorClass]" v-if="player">
+  <playerAvatars />
+  <div v-if="player.hasArmor || player.hasHelmet" class="armor">
+      <img v-if="player.hasHelmet" src="/hud/img/icons/armor-helmet.svg" alt="Helmet">
+      <img v-else src="/hud/img/icons/armor.svg" alt="Armor">
+      &nbsp;{{ player.health || 0 }}<!-- 防止 player.health 未定义 -->
+  </div>
+  <div :class="['armor', colorClass]" v-else>
+    &nbsp; {{ player.health || 0 }} &nbsp; <!-- 防止 player.health 未定义 -->
+  </div>
+  <div :class="['player-name', colorClass]">
+   {{ player.name || 'Unknown Player' }} <!-- 防止 player.name 未定义 -->
+  </div>
+  <div class="bod">
+      <img v-if="player.hasDefuser" src="/hud/img/weapons/defuser.svg" alt="" class="defuser">
+      <img v-else-if="player.hasBomb" src="/hud/img/weapons/c4.svg" alt="" :class="['bomb', { '--active': isBombActive }]">
+      <div v-else class="bod">&nbsp; &nbsp;</div>
+    </div>
+  <div :class="['grenade']" v-if="grenade">
+    <div v-for="grenade of grenades" :key="grenade.key" class="grenade">
+      <img :src="grenade.iconUrl" alt="" :class="{ '--active': grenade.isActive }">
+    </div>
+  </div>
+  <div :class="['grenade']" v-else>
+    &nbsp; &nbsp; &nbsp; &nbsp;
+  </div>   
+  <div :class="['ammo']" v-if="weapon">
+    <img src="/hud/img/icons/bullets.png" alt="">
+    {{ getAmmoClip() }}/
+    <span :class="['beidan']" v-if="weapon">
+      {{ getAmmoReserve() }}
+    </span>
+  </div>
+  <!-- 如果 weapon 为 null，显示默认值 -->
+  <div :class="['ammo']" v-else>
+    <img src="/hud/img/icons/bullets.png" alt="">
+    <span :class="['noammo']">&nbsp;&nbsp;-/-&nbsp;</span>
+  </div>
+</div>

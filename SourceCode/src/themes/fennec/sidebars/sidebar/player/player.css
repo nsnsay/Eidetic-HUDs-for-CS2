@@ -1,0 +1,127 @@
+ @keyframes shrink {
+	from {
+	}
+	to {
+		clip-path: inset(0 18% 0 0); /* 削减左侧 50% */
+		transition: clip-path 0s; /* 添加过渡效果 */
+	}
+  }
+
+  @keyframes shrink-right {
+	from {
+	}
+	to {
+		clip-path: inset(0 0 0 18%); /* 削减左侧 50% */
+		transition: clip-path 0s; /* 添加过渡效果 */
+	}
+  }
+  
+.player-wrapper {
+	display: grid;
+}
+
+.player-wrapper.--left {
+	grid-template-columns: var(--sidebar-player-width) var(--sidebar-player-focused-player-highlight-width) var(--sidebar-player-additional-stats-width);
+	grid-template-areas: 'player focused-player-highlight additional-stats';
+}
+
+.player-wrapper.--right {
+	grid-template-columns: var(--sidebar-player-additional-stats-width) var(--sidebar-player-focused-player-highlight-width) var(--sidebar-player-width);
+	grid-template-areas: 'additional-stats focused-player-highlight player';
+}
+
+.player {
+	grid-area: player;
+	display: grid;
+	position: relative; /* 设置相对定位，以便伪元素可以相对于它定位 */
+	filter: var(--filter-drop-shadow);
+	font-size: 1.7rem;
+	isolation: isolate;
+	overflow: hidden; /* 防止伪元素内容溢出 */
+	z-index: 1; /* 确保内容在伪元素上方 */
+	border-radius: 5px;
+
+	max-height: 68px;
+
+	background: linear-gradient(to top, #7b7b7b34, #272727);
+  }
+
+.player.--focused.--left {
+
+	background: linear-gradient(to top, #f2c03534, #272727);
+}
+
+.player.--focused.--right {
+
+	background: linear-gradient(to top, #f2c03534, #272727);
+}
+
+.player.--focused.dead {
+	border-top: 0rem;	
+	border-bottom: 0rem;
+	border-right: 0rem;		
+	border-left: 0rem;	
+}
+
+.player.dead {
+	border-top: 0rem;	
+	border-bottom: 0rem;
+	border-right: 0rem;		
+	border-left: 0rem;	
+}
+
+.player.dead.--left  {
+	transition: all 2s;
+	background: linear-gradient(to right, #272727, #27272700);
+	box-shadow: 0 0 0px rgba(247, 0, 0, 0.9);
+}
+
+.player.dead.--right {
+	transition: all 2s;
+	background: linear-gradient(to right, #7b7b7b00, #272727);
+	box-shadow: 0 0 0px rgba(201, 4, 86, 0.9);
+}
+
+.player.low {
+	box-shadow: 0 0 11px rgba(201, 4, 86, 0.9);
+}
+
+.player.--left {
+	grid-template-columns:
+		var(--sidebar-start-and-end-width)
+		var(--sidebar-health-width)
+		var(--sidebar-observer-slot-width)
+		var(--sidebar-money-width)
+		var(--sidebar-kills-width)
+		var(--sidebar-deaths-width)
+		var(--sidebar-taser-width)
+		var(--sidebar-grenades-half-width)
+		var(--sidebar-round-kills-width)
+		var(--sidebar-primary-and-secondary-width)
+		var(--sidebar-start-and-end-width);
+	grid-template-areas:
+		'start    equipment    observer-slot        money    kills    deaths    taser    round-kills    grenades       grenades    end'
+		'start    health       name                  name     name     name      name     primary       primary        secondary      end';
+	}
+
+.player.--right {
+	grid-template-columns:
+		var(--sidebar-start-and-end-width)
+		var(--sidebar-primary-and-secondary-width)
+		var(--sidebar-round-kills-width)
+		var(--sidebar-grenades-half-width)
+		var(--sidebar-taser-width)
+		var(--sidebar-kills-width)
+		var(--sidebar-deaths-width)
+		var(--sidebar-money-width)
+		var(--sidebar-observer-slot-width)
+		var(--sidebar-health-width)
+		var(--sidebar-start-and-end-width);
+	grid-template-areas:
+		'start    grenades    grenades     round-kills    taser    kills    deaths    money    observer-slot        equipment    end'
+		'start    secondary     primary     primary        name     name     name      name     name    health       end';
+	}
+
+.player-wrapper:not(:last-child) {
+	margin-bottom: var(--sidebar-vertical-spacing);
+}

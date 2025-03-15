@@ -1,0 +1,86 @@
+{
+	"options": {
+		"preferences.isCsgo": {
+			"type": "boolean",
+			"section": "Preferences",
+			"label": "CS:GO兼容模式"
+		},
+
+		"preferences.bestOf": {
+			"section": "Preferences",
+			"label": "Best of 模式"
+		},
+
+		"preferences.minimumGoodKdRatio": {
+			"type": "number",
+			"section": "Preferences",
+			"label": "K/D除以多少显示为绿色？",
+			"fallback": "1.001"
+		},
+
+		"preferences.maximumBadKdRatio": {
+			"type": "number",
+			"section": "Preferences",
+			"label": "K/D除以多少显示为红色？？",
+			"fallback": "0.999"
+		},
+
+		"cvars.mp_maxrounds": {
+			"type": "number",
+			"fallback": 24,
+			"section": "Cvars",
+			"label": "值 mp_maxrounds, 最大可以游玩的局数"
+		},
+
+		"cvars.mp_overtime_maxrounds": {
+			"type": "number",
+			"fallback": 6,
+			"section": "Cvars",
+			"label": "值 mp_overtime_maxrounds | 最大可以游玩的加时赛"
+		},
+
+		"teams.teamNameOverrides": {
+			"type": "text",
+			"section": "Teams",
+			"label": "队伍名字覆盖,例：‘Steam64ID 队伍名’"
+		},
+
+		"teams.playerNameOverrides": {
+			"type": "text",
+			"section": "Teams",
+			"label": "玩家名字覆盖,例：‘Steam64ID 玩家名’"
+		},
+
+		"teams.hiddenPlayers": {
+			"type": "text",
+			"section": "Teams",
+			"label": "填写SteamID即可隐藏目标玩家"
+		},
+
+		"series.hideTotalScores": {
+			"type": "boolean",
+			"section": "Displays",
+			"label": "开启/关闭 顶板显示的【大比分】"
+		},
+		"series.hideSidebars": {
+			"type": "boolean",
+			"section": "Displays",
+			"label": "开启侧边栏"
+		},
+		"series.hideRadars": {
+			"type": "boolean",
+			"section": "Displays",
+			"label": "开启雷达"
+		},
+		"series.hidemapName": {
+			"type": "boolean",
+			"section": "Displays",
+			"label": "开启地图"
+		},
+		"series.DisplayWatermaker": {
+			"type": "boolean",
+			"section": "Displays",
+			"label": "Display the Watermark, If stream is commercial please set it enable!!!"
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.sidebar {
+    position: absolute;
+
+	bottom: 20px;
+
+    width: var(--sidebar-width);
+    transition: bottom 1.5s ease;
+}
+
+.sidebar.--left {
+    transition: left 1.5s ease;
+	left: 30px;
+}
+
+.sidebar.--right {
+	transition: right 1.5s ease;
+	right: 30px;
+}
+
+img.overlay {
+	display: block;
+	width: var(--sidebar-player-width);
+	border-radius: 50px; /* 添加圆角 */
+}
+
+img.overlay.--left {
+	margin-bottom: var(--sidebar-left-overlay-vertical-spacing);
+	border-radius: 150px; /* 添加圆角 */
+}
+
+img.overlay.--right {
+	margin-left: auto;
+	margin-bottom: var(--sidebar-right-overlay-vertical-spacing);
+	border-radius: 50px; /* 添加圆角 */
+}

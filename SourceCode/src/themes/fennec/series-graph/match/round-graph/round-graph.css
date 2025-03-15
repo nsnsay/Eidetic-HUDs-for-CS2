@@ -1,0 +1,10 @@
+.round-graph {
+	display: flex;
+
+	background: linear-gradient(to right, #1414147c, #38383e70);
+	text-align: center;
+}
+
+.round-graph:not(.--active) {
+	opacity: 0;
+  }

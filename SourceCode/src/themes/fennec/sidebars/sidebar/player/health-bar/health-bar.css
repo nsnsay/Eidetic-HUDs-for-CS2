@@ -1,0 +1,56 @@
+.health-bar-background {
+	grid-area: 2/start/1/end;
+
+	display: grid;
+	z-index: -1;
+}
+
+.damage-taken,
+.health {
+	grid-area: 1/1;
+	height: 95%;
+	
+}
+
+.health {
+	z-index: 1;
+}
+
+.damage-taken.--left,
+.health.--left {
+	transform-origin: left;
+	height: 95%;
+}
+
+.damage-taken.--right,
+.health.--right {
+	transform-origin: right;
+	height: 95%;
+}
+
+
+
+.health.--ct {
+	background: linear-gradient(to right, #010143, rgba(6, 112, 232, 0.8));
+}
+
+.health.--t {
+	background: linear-gradient(to left, #070722, var(--terrorists-fill-80));
+}
+
+.damage-taken {
+	background: linear-gradient(to right, #dd0265, rgba(232, 6, 32, 0.8));
+
+	transition: transform var(--fade-default-duration) ease;
+}
+
+
+.damage-value {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 12px;
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+	transition: opacity 0.5s ease;
+}

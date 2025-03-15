@@ -1,0 +1,11 @@
+<div v-if="$opts[`series.hideSidebars`]" :class="['sidebar', positionClass]">
+    
+	<TeamGrenades :team="team" :position="position" />
+	<TeamEquipment :team="team" :position="position" />
+	<Player
+		v-for="player of team.players"
+		:key="player.steam64Id"
+		:player="player"
+		:position="position"
+	/>
+</div>

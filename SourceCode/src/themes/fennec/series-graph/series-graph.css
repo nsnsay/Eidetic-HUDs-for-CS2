@@ -1,0 +1,43 @@
+@keyframes slideIn {
+	from {
+	transform: translateY(-100%); /* 从顶部完全隐藏 */
+	  opacity: 0; /* 初始透明度为0 */
+	}
+	to {
+	  transform: translateY(0); /* 滑动到原位置 */
+	  opacity: 1; /* 最终透明度为1 */
+	}
+  }
+
+@keyframes slidei {
+	from {
+	  opacity: 1; /* 初始透明度为0 */
+	}
+	to {
+	  opacity: 0; /* 最终透明度为1 */
+	}
+}
+
+.series-graph-wrapper {
+	font-family: var(--fallback-font-family); /* 默认字体堆叠 */
+	position: absolute;
+	right: 30rem;
+    top: 18rem;
+	filter: var(--filter-drop-shadow);
+	overflow: hidden;
+	width: 1200px;
+  }
+  
+  .series-graph {
+	display: flex;
+	align-items: flex-end;
+	transition: transform 1.5s ease-in-out;
+  }
+  
+  .series-graph:not(.--active) {
+	animation: slidei 1s ease-out forwards;
+  }
+  
+  .series-graph.--active {
+	animation: slideIn 2s ease-out forwards;
+  }

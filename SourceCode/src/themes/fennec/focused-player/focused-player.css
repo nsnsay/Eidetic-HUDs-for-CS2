@@ -1,0 +1,20 @@
+.focused-player {
+	position: fixed;
+	bottom: var(--viewport-margin-bottom1);
+	left: calc((100% - var(--focused-player-width)) / 2);
+	right: calc((100% - var(--focused-player-width)) / 2);
+	display: grid;
+	grid-template-columns: 16fr 35fr 16fr;
+	filter: var(--filter-drop-shadow);
+	border-radius: 10px; /* 添加圆角 */
+}
+
+.focused-player.--has-overlay-bottom {
+	bottom: var(--focused-player-margin-bottom-with-overlay-bottom);
+}
+
+img.overlay-bottom {
+	grid-area: 2/2;
+	width: calc(50% - var(--focused-player-overlay-bottom-horizontal-spacing) * 2);
+	margin: 0 var(--focused-player-overlay-bottom-horizontal-spacing);
+}

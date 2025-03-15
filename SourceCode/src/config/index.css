@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'ziti2'; /* 主字体 */
+    src: url("./fyt.ttf") format("truetype");
+	font-weight: bold;
+}
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-image: url('./wm.svg'); /* 设置图片背景 */
+	background-size: auto; /* 使背景图片覆盖整个元素 */
+	background-repeat: repeat; /* 防止背景图片重复 */
+
+	color: #ffffff;
+	font-family: 'ziti2'; /* 默认字体堆叠 */
+	line-height: 1.25;
+}

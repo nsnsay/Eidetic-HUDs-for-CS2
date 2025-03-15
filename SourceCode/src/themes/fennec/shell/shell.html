@@ -1,0 +1,18 @@
+<SvgFilters />
+
+<div v-if="$opts['series.DisplayWatermaker']" class="watermaker">
+	<div class="text3">
+	&nbsp; &nbsp; Powered by Github/nsnsay &nbsp; &nbsp;
+	</div>
+</div>
+
+
+<template v-if="$map.name">
+	<TopBar />
+	<PlayersAlive />
+	<FocusedPlayer />
+	<Radars />
+	<Sidebars />
+</template>
+
+<Corners v-else />
