@@ -6,44 +6,47 @@
 
 .map-wins.--left {
 	grid-area: map-wins-left;
-	padding-left: 0.5rem;
-
-	clip-path: polygon(-1% -1%, 101% -1%, 101% 101%, 0.85rem 101%);
-	flex-direction: row-reverse;
 }
 
 .map-wins.--right {
 	grid-area: map-wins-right;
-	padding-right: 0.5rem;
-
-	clip-path: polygon(-1% -1%, 101% 0, calc(101% - 0.85rem) 101%, -1% 101%);
 }
 
 .map-wins .pip {
-	width: 0.7rem;
+	width: 1.8rem;
+	height: 0.75rem;
 	aspect-ratio: 1;
-	border: 0.2rem solid;
+	margin: 0.3rem;
+
+	border-radius: 15px;
+}
+
+.map-wins .pip--one {
+	width: 3rem;
+	height: 0.75rem;
+	aspect-ratio: 1;
 	margin: 0.3rem;
 }
 
+.map-wins .pip--three {
+	width: 1.2rem;
+	height: 0.6rem;
+	aspect-ratio: 1;
+	margin: 0.2rem;
+}
+
 .map-wins.--ct .pip {
-	border-color: #46464695;
-	background-color: #464646b5;
+	background-color: #a1a1a1;
 }
 
 .map-wins.--ct .pip.--filled {
-	background-color: #c8c8c8;
-	border-color: #c8c8c8;
-	box-shadow: 0 0 3px #c8c8c8;
+	background-color: #07f7ff;
 }
 
 .map-wins.--t .pip {
-	border-color: #46464695;
-	background-color: #464646b5;
+	background-color: #a1a1a1;
 }
 
 .map-wins.--t .pip.--filled {
-	background-color: #c8c8c8;
-	border-color: #c8c8c8;
-	box-shadow: 0 0 3px #c8c8c8;
+	background-color: #e46f10;
 }

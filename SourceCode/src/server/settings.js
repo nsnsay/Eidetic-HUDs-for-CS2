@@ -91,3 +91,29 @@ export const getThemeTree = async (firstTheme = 'userspace') => {
 
 	return themeTree
 }
+
+export const updatePlayerNameOverrides = async (steamID, newName) => {
+  const settings = await readJson(userspaceSettingsPath);
+
+  let playerNameOverrides = settings.options['teams.playerNameOverrides']?.value || '';
+  const lines = playerNameOverrides.split('\n').filter(line => line.trim() !== '');
+
+  // 移除旧的条目
+  const newLines = lines.filter(line => {
+    const segments = line.split(/\s+/);
+    return segments[0] !== steamID;
+  });
+
+  // 添加新的条目
+  newLines.push(`${steamID} ${newName}`);
+
+  // 更新设置
+  settings.options['teams.playerNameOverrides'] = {
+    value: newLines.join('\n'),
+  };
+
+  // 保存设置
+  await writeJson(userspaceSettingsPath, settings);
+
+  return settings;
+};

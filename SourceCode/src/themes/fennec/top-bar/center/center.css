@@ -1,18 +1,13 @@
 .center {
 	grid-area: center;
-	border-radius: 10px; /* 添加圆角 */
 	display: grid;
-	grid-template-columns: 1fr 3fr 1fr;
-	grid-template-rows: 2fr 1fr 1fr;
+	grid-template-columns: 0.8fr 1.5fr 0.8fr;
+	grid-template-rows: 5fr;
 	grid-template-areas:
-		'score-left current-round score-right'
-		'map-wins-left ... map-wins-right'
-		'match-point-rounds match-point-rounds match-point-rounds';
-}
+	'score-left current-round score-right';
+	background: linear-gradient(to right, #2424249f, #2424249f);
 
-.center.--is-multiple-map-series {
-	grid-template-areas:
-		'score-left current-round score-right'
-		'map-wins-left ... map-wins-right'
-		'match-point-rounds match-point-rounds match-point-rounds';
+	height: 68px;
+
+	border-radius: 8px;
 }

@@ -5,18 +5,14 @@
 	right: calc((100% - var(--top-bar-width)) / 2);
 
 	display: grid;
-	grid-template-columns: 20.2fr 12.2fr 20.2fr;
+	grid-template-columns: 20.2fr 14.2fr 20.2fr;
+	grid-template-rows: 5fr;
 	grid-template-areas:
-		'series-name series-name series-name'
 		'team-left center team-right';
 	align-items: start;
 
 	filter: var(--filter-drop-shadow);
 	text-align: center;
 
-	column-gap: 0 !important;
+	column-gap: 5px !important;
 }
-
-.team-left, .center, .team-right {
-	margin: 0; /* 确保没有外边距 */
-  }

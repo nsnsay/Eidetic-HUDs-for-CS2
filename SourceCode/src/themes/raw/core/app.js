@@ -3,7 +3,6 @@ import { bomb, bombsites, grenades, gsiState, map, misc, options, players, radar
 import { connectToWebsocket } from '/hud/core/websocket.js'
 import { loadModule } from '/dependencies/vue3-sfc-loader.js'
 import { sfcLoaderOptions } from '/dependencies/vue3-sfc-loader-options.js'
-
 connectToWebsocket()
 
 const app = Vue.createApp(
@@ -22,5 +21,6 @@ app.config.globalProperties.$radars = radars
 app.config.globalProperties.$round = round
 app.config.globalProperties.$rounds = rounds
 app.config.globalProperties.$teams = teams
+
 
 app.mount('#app')

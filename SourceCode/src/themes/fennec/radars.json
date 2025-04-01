@@ -49,15 +49,15 @@
 
 	"de_ancient": {
 		"radarImageTransparentBackgrond": true,
-		"pos_x": -2953,
-		"pos_y": 2164,
-		"scale": 5
+		"pos_x": -2590,
+		"pos_y": 1850,
+		"scale": 4.26
 	},
 
 	"de_anubis": {
 		"radarImageTransparentBackgrond": true,
 		"pos_x": -2796,
-		"pos_y": 3328,
+		"pos_y": 3350,
 		"scale": 5.22
 	},
 
@@ -70,9 +70,8 @@
 
 	"de_dust2": {
 		"radarImageTransparentBackgrond": true,
-		"radarImageUrl": "/hud/img/radars/simpleradar/de_dust2.webp",
 
-		"pos_x": -2476,
+		"pos_x": -2530,
 		"pos_y": 3239,
 		"scale": 4.4
 	},
@@ -86,28 +85,26 @@
 
 	"de_inferno": {
 		"radarImageTransparentBackgrond": true,
-		"radarImageUrl": "/hud/img/radars/simpleradar/de_inferno.png",
-		"pos_x": -2087,
-		"pos_y": 3870,
-		"scale": 4.9
+		"pos_x": -2090,
+		"pos_y": 3850,
+		"scale": 4.91
+
 	},
 
 	"de_mirage": {
 		"radarImageTransparentBackgrond": true,
-		"radarImageUrl": "/hud/img/radars/simpleradar/de_mirage.webp",
 
-		"pos_x": -3230,
-		"pos_y": 1713,
-		"scale": 5
+		"pos_x": -3245,
+		"pos_y": 1750,
+		"scale": 5.02
 	},
 
 	"de_nuke": {
 		"radarImageTransparentBackgrond": true,
-		"radarImageUrl": "/hud/img/radars/simpleradar/de_nuke.webp",
 
-		"pos_x": -3453,
-		"pos_y": 2887,
-		"scale": 7,
+		"pos_x": -3290,
+		"pos_y": 1150,
+		"scale": 6.98,
 
 		"verticalsections": {
 			"default": {
@@ -116,8 +113,8 @@
 			},
 
 			"lower": {
-				"AltitudeMax": -495,
-				"AltitudeMin": -10000
+				"AltitudeMax": 0,
+				"AltitudeMin": -46
 			}
 		}
 	},
@@ -154,11 +151,10 @@
 
 	"de_train": {
 		"radarImageTransparentBackgrond": true,
-		"radarImageUrl": "/hud/img/radars/ingame/de_train_lower.png",
 
-		"pos_x": -2308,
-		"pos_y": 2078,
-		"scale": 4.082077,
+		"pos_x": -2760,
+		"pos_y": 2450	,
+		"scale": 4.74,
 
 		"verticalsections": {
 			"upper": {

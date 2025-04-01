@@ -3,6 +3,7 @@
     src: url("./fyt.ttf") format("truetype");
 	font-weight: bold;
 }
+
 *,
 *::after,
 *::before {
@@ -11,11 +12,13 @@
 }
 
 html {
-	background-image: url('./wm.svg'); /* 设置图片背景 */
-	background-size: auto; /* 使背景图片覆盖整个元素 */
-	background-repeat: repeat; /* 防止背景图片重复 */
-
 	color: #ffffff;
-	font-family: 'ziti2'; /* 默认字体堆叠 */
-	line-height: 1.25;
+	font-family: 'ziti2', sans-serif; /* 默认字体堆叠 */
+	background: black;
+	line-height: 1.6;
+}
+
+body {
+	min-height: 100vh;
+	padding: 20px;
 }

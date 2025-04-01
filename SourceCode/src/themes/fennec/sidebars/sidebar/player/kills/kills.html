@@ -3,6 +3,6 @@
 		<div :class="['label', colorClass]">
 		<img src="/hud/img/icons/crosshair.svg" alt="" />
 		</div>
-		<Digits digits="1" :value="player.kills" />&nbsp;
+		{{ player.kills.toString().length === 1 ? player.assists + '&nbsp;' : player.kills }}
 	</div>
 </Transition>

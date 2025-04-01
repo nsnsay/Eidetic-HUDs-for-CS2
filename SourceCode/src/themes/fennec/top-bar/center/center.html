@@ -1,11 +1,8 @@
-<div :class="['center', { '--is-multiple-map-series': isMultipleMapSeries }]">
+<div :class="['center', { '--is-multiple-map-series': isMultipleMapSeries }, { 'pipon': $opts[`series.hideTotalScores`] }]">
 	<Score :team="$teams[0]" position="left" />
-	<MapWins :team="$teams[0]" position="left" />
 
 	<CurrentRound />
 	<CurrentMap />
-	<MatchPointRounds />
 
 	<Score :team="$teams[1]" position="right" />
-	<MapWins :team="$teams[1]" position="right" />
 </div>

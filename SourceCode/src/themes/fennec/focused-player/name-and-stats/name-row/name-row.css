@@ -2,24 +2,21 @@
     display: grid;
     position: fixed;
     color: #fff; /* 字体颜色 */
-    padding: 5px 10px; /* 内边距 */
-    bottom: var(--viewport-margin-bottom1);
+    padding: 6px 11px; /* 内边距 */
     left: calc((100% - var(--focused-player-width)) / 2);
     right: calc((100% - var(--focused-player-width)) / 2);
 
-    font-size: 17px; /* 字体大小 */
-	background-image: url('/hud/img/icons/bg4.svg'); /* 设置图片背景 */
-	opacity: 100%;
-	background-size: cover; /* 使背景图片覆盖整个元素 */
-	background-position: center; /* 将背景图片居中 */
-	background-repeat: no-repeat; /* 防止背景图片重复 */
+    height: 17px;
 
+    font-size: 17px; /* 字体大小 */
+    background: rgba(26, 28, 49, 0.4);
     border-radius: 10px;
 
-    grid-template-columns: auto auto auto auto auto auto; /* 修正列定义 */
+    grid-template-columns: 50px 200px 50px; /* 修正列定义 */
     grid-template-areas:
-        "armor health player-name bod grenades ammo"
+        "armor player-name ammo";
      
+    white-space: nowrap;
 }
 
 .grenades {
@@ -71,6 +68,7 @@ img {
     min-width: fit-content;
     font-size: 17px;
 
+    font-weight: 900;
 
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
@@ -82,16 +80,17 @@ img {
 
 .ammo {
     grid-area: ammo;
-    justify-content: end;
-    text-align: end;
+    justify-content: center;
+    text-align: center;
     display: flex;
     letter-spacing: 0ch;
-    FONT-SIZE: 16px;
+    font-size: 16px;
 }
 
 .beidan {
     font-size: 13px;
     text-align: start;
+    color: #bababa;
 }
 
 .noammo {
@@ -102,14 +101,13 @@ img {
 .ammo img {
     width: 20px;
 }
+
 .name-row.--ct {
     border-top: 4px solid rgb(5, 167, 226, 0.85); /* 添加描边效果 */
-    box-shadow: 0 0 15px rgb(5, 167, 226, 0.85);
 }
 
 .name-row.--t {
-    border-top: 5px solid rgba(226, 123, 5, 0.85);
-    box-shadow: 0 0 15px rgb(226, 123, 5, 0.85);
+    border-top: 4px solid var(--terrorists-fill-80);
 }
 
 .bod {
@@ -127,4 +125,16 @@ bod img {
 
 bod img.bomb:not(.--active) {
 	opacity: 0.5;
+}
+
+
+/* 添加震动动画 */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.shake {
+    animation: shake 0.5s;
 }

@@ -3,10 +3,12 @@ import Corners from '/hud/corners/corners.vue'
 import FocusedPlayer from '/hud/focused-player/focused-player.vue'
 import PlayersAlive from '/hud/players-alive/players-alive.vue'
 import Radars from '/hud/radars/radars.vue'
-import SeriesGraph from '/hud/series-graph/series-graph.vue'
+import RoundGraph from '/hud/round-graph/round-graph.vue'
 import Sidebars from '/hud/sidebars/sidebars.vue'
 import SvgFilters from '/hud/svg-filters/svg-filters.vue'
 import TopBar from '/hud/top-bar/top-bar.vue'
+import Radar from '/hud/radar/radar.vue'
+import SeriesGraph from '/hud/series-graph/series-graph.vue'
 
 export default {
 	components: {
@@ -14,10 +16,12 @@ export default {
 		FocusedPlayer,
 		PlayersAlive,
 		Radars,
-		SeriesGraph,
+		RoundGraph,
 		Sidebars,
 		SvgFilters,
 		TopBar,
+		Radar,
+		SeriesGraph
 	},
 
 	mounted() {

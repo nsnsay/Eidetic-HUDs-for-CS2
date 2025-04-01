@@ -4,63 +4,63 @@ import { additionalState, gsiState } from './state.js'
 import { getSettings } from './settings.js'
 
 export class Websocket {
-	constructor(server) {
-		this.websocket = new WebSocketServer({ server })
+  constructor(server) {
+    this.websocket = new WebSocketServer({ server })
 
-		this.websocket.on('connection', (client) => {
-			this.sendState(client)
-		})
+    this.websocket.on('connection', (client) => {
+      this.sendState(client)
+    })
 
-		this.bombsitesCache = {}
-		this.optionsCache = {}
-		this.radarsCache = {}
+    this.bombsitesCache = {}
+    this.optionsCache = {}
+    this.radarsCache = {}
 
-		this.updateCaches()
-	}
+    this.updateCaches()
+  }
 
-	async updateCaches() {
-		const { bombsites, radars, settings } = await getSettings()
+  async updateCaches() {
+    const { bombsites, radars, settings } = await getSettings()
 
-		this.bombsitesCache = bombsites
-		this.optionsCache = Object.fromEntries(Object.entries(settings.options).map(([key, { fallback, value }]) => [key, value ?? fallback]))
-		this.radarsCache = radars
+    this.bombsitesCache = bombsites
+    this.optionsCache = Object.fromEntries(Object.entries(settings.options).map(([key, { fallback, value }]) => [key, value ?? fallback]))
+    this.radarsCache = radars
 
-		this.broadcastState()
-	}
+    this.broadcastState()
+  }
 
-	getState() {
-		return {
-			additionalState,
-			gsiState,
+  getState() {
+    return {
+      additionalState,
+      gsiState,
 
-			bombsites: this.bombsitesCache,
-			options: this.optionsCache,
-			radars: this.radarsCache,
-			unixTimestamp: +new Date(),
-		}
-	}
+      bombsites: this.bombsitesCache,
+      options: this.optionsCache,
+      radars: this.radarsCache,
+      unixTimestamp: +new Date(),
+    }
+  }
 
-	broadcastToWebsockets(event, body) {
-		const message = body !== undefined
-			? JSON.stringify({ event, body })
-			: JSON.stringify({ event })
+  broadcastToWebsockets(event, body) {
+    const message = body !== undefined
+      ? JSON.stringify({ event, body })
+      : JSON.stringify({ event })
 
-		for (const client of this.websocket.clients) {
-			if (client.readyState !== WebSocket.OPEN) continue
-			client.send(message)
-		}
-	}
+    for (const client of this.websocket.clients) {
+      if (client.readyState !== WebSocket.OPEN) continue
+      client.send(message)
+    }
+  }
 
-	sendState(client) {
-		client.send(JSON.stringify({ event: 'state', body: this.getState() }))
-	}
+  sendState(client) {
+    client.send(JSON.stringify({ event: 'state', body: this.getState() }))
+  }
 
-	broadcastState() {
-		const state = this.getState()
-		this.broadcastToWebsockets('state', state)
-	}
+  broadcastState() {
+    const state = this.getState()
+    this.broadcastToWebsockets('state', state)
+  }
 
-	broadcastRefresh() {
-		this.broadcastToWebsockets('refresh', {})
-	}
+  broadcastRefresh() {
+    this.broadcastToWebsockets('refresh', {})
+  }
 }

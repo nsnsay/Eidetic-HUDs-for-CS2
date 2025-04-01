@@ -30,7 +30,7 @@ export default {
 			const left = this.leftTeamAlive;
 			const right = this.rightTeamAlive;
 			if (left === 1 || right === 1) {
-				return 'Clutch Situation';
+				return 'Clutch Versus';
 			} else {
 				return 'Players Alive';
 			}

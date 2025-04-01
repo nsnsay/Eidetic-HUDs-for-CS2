@@ -1,13 +1,11 @@
-.team {
-	transform-origin: top;
-}
-
 .team.--left {
 	grid-area: team-left;
-	transform: skewX(0deg) translateX(-1.65rem);
+	position: relative;
+	top: 5px; /* 向下偏移 5 像素 */
 }
 
 .team.--right {
 	grid-area: team-right;
-	transform: skewX(0deg) translateX(1.65rem);
+	position: relative;
+	top: 5px; /* 向下偏移 5 像素 */
 }

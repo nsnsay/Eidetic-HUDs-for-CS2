@@ -1,37 +1,55 @@
 .name-wrapper {
-	font-size: 2.5rem;
-	max-height: var(--top-bar-row-height);
-
+	font-size: 2rem;
+	height: 56px;
 }
 
 .name {
-	height: var(--top-bar-row-height);
+	height: 56px;
 }
 
 .name.--ct {
-	background: linear-gradient(to right, #010143, var(--counter-terrorists-fill-90));
-	border-radius: 15px 0px 15px 15px; /* 添加圆角 */
+	background: #2424249f;
+	border-radius: 8px 0px 0px 8px; /* 添加圆角 */
+	border-right: 7px solid var(--counter-terrorists-fill-100);
+    text-shadow: var(--counter-terrorists-fill-80) 5px 0 10px;
 }
 
 .name.--t {
-	background: linear-gradient(to left, #070722, var(--terrorists-fill-90));
-	border-radius: 0px 15px 15px 15px; /* 添加圆角 */
+	background: #2424249f;
+	border-radius: 0px 8px 8px 0px; /* 添加圆角 */
+	border-left: 7px solid var(--terrorists-fill-100);
+	text-shadow: var(--terrorists-fill-80) 5px 0 10px;
 }
 
 img.logo {
 	display: block;
 	max-height: calc(100% - var(--top-bar-team-logo-vertical-spacing) * 2);
+
+	opacity: 0.97;
 }
 
 img.logo.--left {
-	padding-right: var(--top-bar-team-logo-horizontal-spacing);
+	order: 1;
+	position: relative;
+
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+
+	right: 5px;
+
+	padding-right: 15px;
 }
 
 img.logo.--right {
-	order: 1;
-	padding-left: var(--top-bar-team-logo-horizontal-spacing);
-}
+	position: relative;
 
-ajllogo img{
-	height: 10px;
+	left: 5px;
+
+	align-items: center;
+	justify-content: center;
+
+	align-self: center;
+
+	padding-left: 15px;
 }

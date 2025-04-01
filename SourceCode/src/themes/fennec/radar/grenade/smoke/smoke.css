@@ -1,0 +1,28 @@
+.smoke {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-30%, -30%);
+
+	z-index: inherit;
+}
+
+.smoke-image {
+    width: 35px;
+    height: 35px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transition: opacity var(--fade-fast-duration) ease;
+}
+
+.smoke.--ct .smoke-image {
+    filter: hue-rotate(180deg); /* 调整颜色以匹配 CT 颜色 */
+}
+
+.smoke.--t .smoke-image {
+    filter: hue-rotate(0deg); /* 保持 T 的颜色 */
+}
+
+.smoke:not(.--default-level) .smoke-image {
+    opacity: 0.75;
+}

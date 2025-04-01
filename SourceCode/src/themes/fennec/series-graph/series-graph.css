@@ -1,43 +1,121 @@
-@keyframes slideIn {
-	from {
-	transform: translateY(-100%); /* 从顶部完全隐藏 */
-	  opacity: 0; /* 初始透明度为0 */
-	}
-	to {
-	  transform: translateY(0); /* 滑动到原位置 */
-	  opacity: 1; /* 最终透明度为1 */
-	}
-  }
-
-@keyframes slidei {
-	from {
-	  opacity: 1; /* 初始透明度为0 */
-	}
-	to {
-	  opacity: 0; /* 最终透明度为1 */
-	}
+.series-graph-wrapper {
+	position: absolute;
+	left: 83.6rem;
+	top: 9.35rem;
+	filter: var(--filter-drop-shadow);
 }
 
-.series-graph-wrapper {
-	font-family: var(--fallback-font-family); /* 默认字体堆叠 */
-	position: absolute;
-	right: 30rem;
-    top: 18rem;
-	filter: var(--filter-drop-shadow);
-	overflow: hidden;
-	width: 1200px;
-  }
-  
-  .series-graph {
+.series-graph {
 	display: flex;
 	align-items: flex-end;
-	transition: transform 1.5s ease-in-out;
-  }
-  
-  .series-graph:not(.--active) {
-	animation: slidei 1s ease-out forwards;
-  }
-  
-  .series-graph.--active {
-	animation: slideIn 2s ease-out forwards;
-  }
+	transition: transform var(--fade-slow-duration) ease;
+}
+
+/* 新添加的样式 */
+.map-names-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 246px;
+}
+
+.map-names-background {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 0.4rem 0.8rem;
+	border-radius: 4px;
+	overflow: visible;
+}
+
+.map-item {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.map-info {
+	display: flex;
+	align-items: center;
+	gap: 0.3rem;
+	padding-right: 0.4rem;
+}
+
+.logo {
+	height: 20px;
+	width: 20px;
+}
+
+.map-info span {
+	font-size: 1.25rem;
+	color: white;
+}
+
+.decider-logo-placeholder {
+	width: 10px;
+	height: 15px;
+	align-items: center;
+	justify-content: center;
+}
+
+/* 根据地图数量调整显示 */
+.map-names-background {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 0.4rem 0.8rem;
+	border-radius: 4px;
+	overflow: visible;
+	flex-wrap: wrap; /* 允许换行 */
+}
+
+.map-item {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	margin: 0 0.2rem; /* 添加左右间距 */
+}
+
+/* 当地图数量为5时 */
+.map-names-background[data-map-count="5"] {
+	justify-content: flex-start;
+}
+
+.map-names-background[data-map-count="5"] .map-item:nth-child(1),
+.map-names-background[data-map-count="5"] .map-item:nth-child(2),
+.map-names-background[data-map-count="5"] .map-item:nth-child(3) {
+	margin-bottom: 0.5rem; /* 为前两行添加底部间距 */
+}
+
+.map-names-background[data-map-count="5"] .map-item:nth-child(4) {
+	margin-top: 0.5rem; /* 为map4添加顶部间距 */
+	margin-left: 0.5rem; /* 为map4添加左侧间距 */
+}
+
+.map-names-background[data-map-count="5"] .map-item:nth-child(5) {
+	margin-top: 0.5rem; /* 为map5添加顶部间距 */
+	margin-left: 0.5rem; /* 为map5添加左侧间距 */
+}
+
+/* 当地图数量为4时 */
+.map-names-background[data-map-count="4"] {
+	justify-content: flex-start;
+}
+
+.map-names-background[data-map-count="4"] .map-item:nth-child(1),
+.map-names-background[data-map-count="4"] .map-item:nth-child(2),
+.map-names-background[data-map-count="4"] .map-item:nth-child(3) {
+	margin-bottom: 0.5rem; /* 为前三行添加底部间距 */
+}
+
+.map-names-background[data-map-count="4"] .map-item:nth-child(4) {
+	margin-top: 0.5rem; /* 为map4添加顶部间距 */
+	margin-left: 0.5rem; /* 为map4添加左侧间距 */
+	justify-content: center; /* 让map4居中显示 */
+}
+
+.map-info .current-map {
+	color: rgb(6, 178, 6); /* 设置文字颜色为绿色 */
+}

@@ -5,251 +5,214 @@
 			"type": "number",
 			"fallback": 1.92,
 			"section": "Cvars",
-			"label": "别改"
+			"label": "Round time"
 		},
 		"cvars.mp_team_timeout_max": {
 			"type": "number",
 			"fallback": 4,
 			"section": "Cvars",
-			"label": "在加时赛每个队可拥有的暂停"
+			"label": "Timeout Max"
 		},
 		"cvars.mp_team_timeout_time": {
 			"type": "number",
 			"fallback": 30,
 			"section": "Cvars",
-			"label": "别改"
+			"label": "Timeout time"
 		},
 		"cvars.mp_freezetime": {
 			"type": "number",
 			"fallback": 20,
 			"section": "Cvars",
-			"label": "别改"
-		},
-		"preferences.playersAlive.showDuringFreezetime": {
-			"type": "boolean",
-			"section": "Preferences",
-			"label": "别改"
-		},
-		"preferences.sidebar.teamGrenades.hideDuringRound": {
-			"type": "boolean",
-			"section": "Preferences",
-			"label": "别改"
+			"label": "Freezetime Time"
 		},
 		"preferences.sidebar.teamGrenades.activeIntoRoundSec": {
 			"type": "number",
 			"fallback": 5,
 			"section": "Preferences",
-			"label": "别改"
+			"label": "Active seconds when game start"
 		},
 		"preferences.sidebar.teamEquipment.activeIntoRoundSec": {
 			"type": "number",
 			"fallback": 5,
 			"section": "Preferences",
-			"label": "别改"
-		},
-		"preferences.seriesGraph.showMapForOnlyMatch": {
-			"type": "boolean",
-			"section": "Preferences",
-			"label": "别改"
+			"label": "Active seconds when game start"
 		},
 		"preferences.topBar.clock.tenSecondsRedInFreezetime": {
 			"type": "boolean",
 			"section": "Preferences",
-			"label": "别改"
+			"label": "Top-bar time clock when freeze time left 10s shows Red"
 		},
 		"preferences.topBar.clock.tenSecondsRedInTacticalTimeout": {
 			"type": "boolean",
 			"section": "Preferences",
-			"label": "别改"
+			"label": "Top-bar time clock tac-pause freeze time left 10s shows Red"
 		},
 		"preferences.topBar.clock.tenSecondsRedInRoundRestartDelay": {
 			"type": "boolean",
 			"section": "Preferences",
-			"label": "别改"
-		},
-		"preferences.topBar.matchPointRounds.showDuringRound": {
-			"type": "boolean",
-			"section": "Preferences",
-			"label": "别改"
-		},
-		"preferences.topBar.team.roundWinnerPanel.showIntoFreezetimeSec": {
-			"type": "number",
-			"fallback": 0,
-			"section": "Preferences",
-			"label": "别改"
-		},
-		"preferences.focusedPlayer.maximumRedHealthPoints": {
-			"type": "number",
-			"section": "Preferences",
-			"label": "别改"
+			"label": "Top-bar time clock when restart time left 10s shows Red"
 		},
 		"cvars.cash_team_loser_bonus": {
 			"type": "number",
 			"fallback": 1400,
 			"section": "Cvars",
-			"label": "改了你就全家是那个赫赫"
+			"label": "Loser bonus"
 		},
 		"cvars.cash_team_loser_bonus_consecutive_rounds": {
 			"type": "number",
 			"fallback": 500,
 			"section": "Cvars",
-			"label": "改了你就全家是那个赫赫"
+			"label": "Loser Bonus"
 		},
 		"cvars.mp_c4timer": {
 			"type": "number",
 			"fallback": 40,
 			"section": "Cvars",
-			"label": "改了你就全家是那个赫赫"
+			"label": "C4 Timer"
 		},
 		"series.name.left": {
 			"type": "string",
 			"section": "Title",
-			"label": "系列名字 | 左",
+			"label": "Series Name | Left",
 			"value": ""
 		},
 		"series.name.center": {
 			"type": "string",
 			"section": "Title",
-			"label": "系列名字 | 中",
+			"label": "Series Name | Center",
 			"value": ""
 		},
 		"series.name.right": {
 			"type": "string",
 			"section": "Title",
-			"label": "系列名字 | 右",
+			"label": "Series Name | Right",
 			"value": ""
 		},
 		"series.maps.1.name": {
 			"type": "string",
 			"section": "Series: Map 1",
-			"label": "图一地图名，需要添加前缀 `de_`"
+			"label": "Map 1 Name"
 		},
 		"series.maps.1.pickTeam": {
 			"type": "string",
 			"section": "Series: Map 1",
-			"label": "选择图一的队伍"
+			"label": "Who choose the map?"
 		},
 		"series.maps.1.isDecider": {
 			"type": "boolean",
 			"section": "Series: Map 1",
-			"label": "如果图一是最后选图剩下的，请勾选"
+			"label": "If map 1 is decider, Turn on."
 		},
 		"series.maps.1.pickTeamScore": {
 			"type": "number",
 			"section": "Series: Map 1",
-			"label": "选了这图的队伍拿了几分？ | #结束后填写"
+			"label": "Map pick team score | #Write after the map"
 		},
 		"series.maps.1.enemyTeamScore": {
 			"type": "number",
 			"section": "Series: Map 1",
-			"label": "选了这图的队伍的对面拿了几分？ | #结束后填写"
+			"label": "Map pick team's enemy team score | #Write after the map"
 		},
 		"series.maps.2.name": {
 			"type": "string",
 			"section": "Series: Map 2",
-		    "label": "图二地图名，需要添加前缀 `de_`"
+		    "label": "Map 2 Name"
 		},
 		"series.maps.2.pickTeam": {
 			"type": "string",
 			"section": "Series: Map 2",
-			"label": "选择图二的队伍"
+			"label": "Who choose the map?"
 		},
 		"series.maps.2.isDecider": {
 			"type": "boolean",
 			"section": "Series: Map 2",
-			"label": "如果图二是最后选图剩下的，请勾选"
+			"label": "If map 2 is decider, Turn on."
 		},
 		"series.maps.2.pickTeamScore": {
 			"type": "number",
 			"section": "Series: Map 2",
-			"label": "选了这图的队伍拿了几分？ | #结束后填写"
+			"label": "Map pick team score | #Write after the map"
 		},
 		"series.maps.2.enemyTeamScore": {
 			"type": "number",
 			"section": "Series: Map 2",
-			"label": "选了这图的队伍的对面拿了几分？ | #结束后填写"
+			"label": "Map pick team's enemy team score | #Write after the map"
 		},
 		"series.maps.3.name": {
 			"type": "string",
 			"section": "Series: Map 3",
-		    "label": "图三地图名，需要添加前缀 `de_`"
+		    "label": "Map 3 Name"
 		},
 		"series.maps.3.pickTeam": {
 			"type": "string",
 			"section": "Series: Map 3",
-			"label": "选择图三的队伍"
+			"label": "Who choose the map?"
 		},
 		"series.maps.3.isDecider": {
 			"type": "boolean",
 			"section": "Series: Map 3",
-			"label": "如果图三是最后选图剩下的，请勾选",
+			"label": "If map 3 is decider, Turn on.",
 			"value": true
 		},
 		"series.maps.3.pickTeamScore": {
 			"type": "number",
 			"section": "Series: Map 3",
-			"label": "选了这图的队伍拿了几分？ | #结束后填写"
+			"label": "Map pick team score | #Write after the map"
 		},
 		"series.maps.3.enemyTeamScore": {
 			"type": "number",
 			"section": "Series: Map 3",
-			"label": "选了这图的队伍的对面拿了几分？ | #结束后填写"
+			"label": "Map pick team's enemy team score | #Write after the map"
 		},
 		"series.maps.4.name": {
 			"type": "string",
 			"section": "Series: Map 4",
-		    "label": "图四地图名，需要添加前缀 `de_`"
+		    "label": "Map 4 Name"
 		},
 		"series.maps.4.pickTeam": {
 			"type": "string",
 			"section": "Series: Map 4",
-			"label": "选择图四的队伍"
+			"label": "Who choose the map?"
 		},
 		"series.maps.4.isDecider": {
 			"type": "boolean",
 			"section": "Series: Map 4",
-			"label": "如果图四是最后选图剩下的，请勾选"
+			"label": "If map 4 is decider, Turn on."
 		},
 		"series.maps.4.pickTeamScore": {
 			"type": "number",
 			"section": "Series: Map 4",
-			"label": "选了这图的队伍拿了几分？ | #结束后填写"
+			"label": "Map pick team score | #Write after the map"
 		},
 		"series.maps.4.enemyTeamScore": {
 			"type": "number",
 			"section": "Series: Map 4",
-			"label": "选了这图的队伍的对面拿了几分？ | #结束后填写"
+			"label": "Map pick team's enemy team score | #Write after the map"
 		},
 		"series.maps.5.name": {
 			"type": "string",
 			"section": "Series: Map 5",
-		    "label": "图五地图名，需要添加前缀 `de_`"
+		    "label": "Map 5 Name"
 		},
 		"series.maps.5.pickTeam": {
 			"type": "string",
 			"section": "Series: Map 5",
-			"label": "选择图五的队伍"
+			"label": "Who choose the map?"
 		},
 		"series.maps.5.isDecider": {
 			"type": "boolean",
 			"section": "Series: Map 5",
-			"label": "如果图五是最后选图剩下的，请勾选"
+			"label": "If map 5 is decider, Turn on."
 		},
 		"series.maps.5.pickTeamScore": {
 			"type": "number",
 			"section": "Series: Map 5",
-			"label": "选了这图的队伍拿了几分？ | #结束后填写"
+			"label": "Map pick team score | #Write after the map"
 		},
 		"series.maps.5.enemyTeamScore": {
 			"type": "number",
 			"section": "Series: Map 5",
-			"label": "选了这图的队伍的对面拿了几分？ | #结束后填写"
-		},
-		"css.base-scale-factor": {
-			"type": "text",
-			"section": "样式修改",
-			"label": "Base size that everything is sized relative to; e.g. `10px`",
-			"value": "9px"
+			"label": "Map pick team's enemy team score | #Write after the map"
 		},
 		"teams.teamNameOverrides": {},
 		"teams.hiddenPlayers": {}

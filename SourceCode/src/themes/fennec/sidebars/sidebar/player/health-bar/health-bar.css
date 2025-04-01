@@ -1,56 +1,64 @@
 .health-bar-background {
-	grid-area: 2/start/1/end;
+	grid-area: 1/newhealth/5/newmoney;
 
 	display: grid;
 	z-index: -1;
+
+	border-radius: 8px !important;
+}
+
+.health .health-bar-background .damage-taken .health {
+	border-radius: 8px !important;
 }
 
 .damage-taken,
 .health {
 	grid-area: 1/1;
 	height: 95%;
-	
+	border-radius: 8px !important;
 }
 
 .health {
 	z-index: 1;
+
+	border-radius: 8px !important;
 }
 
-.damage-taken.--left,
+.damage-taken,
+.health {
+	transform-origin: bottom;
+	height: 100%;
+	border-radius: 8px !important;
+}
+
+
+
 .health.--left {
-	transform-origin: left;
-	height: 95%;
+	background: linear-gradient(to top, var(--counter-terrorists-fill-80), rgba(0, 145, 255, 0.8));
+	border-radius: 8px !important;
 }
 
-.damage-taken.--right,
 .health.--right {
-	transform-origin: right;
-	height: 95%;
-}
-
-
-
-.health.--ct {
-	background: linear-gradient(to right, #010143, rgba(6, 112, 232, 0.8));
-}
-
-.health.--t {
-	background: linear-gradient(to left, #070722, var(--terrorists-fill-80));
+	background: linear-gradient(to top, var(--terrorists-fill-80), rgba(255, 0, 115, 0.8));
+	border-radius: 8px !important;
 }
 
 .damage-taken {
-	background: linear-gradient(to right, #dd0265, rgba(232, 6, 32, 0.8));
-
+	background: rgba(255, 200, 0, 0.45);
 	transition: transform var(--fade-default-duration) ease;
+	border-radius: 8px !important;
 }
 
 
 .damage-value {
-	position: absolute;
-	top: 50%;
+    position: absolute; /* 将round-kills设置为绝对定位 */
+    bottom: 5px; /* 调整top值，使round-kills位于newname上方 */
+    left: 15%; /* 水平居中 */
 	transform: translateY(-50%);
 	font-size: 12px;
 	color: white;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 	transition: opacity 0.5s ease;
+
+	border-radius: 8px !important;
 }

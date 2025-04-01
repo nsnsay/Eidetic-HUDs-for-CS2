@@ -11,8 +11,17 @@
 	max-height: 0;
 }
 
+.team-equipment-wrapper.--left {
+	position: absolute;
+	bottom: 32rem;
+	left: 56rem;
+	
+}
+
 .team-equipment-wrapper.--right {
-	margin-left: auto;
+	position: absolute;
+	bottom: 32rem;
+	right: 56rem;
 }
 
 .team-equipment {
@@ -40,6 +49,9 @@
 	background-position: bottom; /* 将背景图片居中 */
 	background-repeat: no-repeat; /* 防止背景图片重复 */
 	border-radius: 3px; /* 添加圆角 */
+
+	border-right: 5px solid var(--counter-terrorists-fill-80);
+	border-left: 5px solid var(--counter-terrorists-fill-80);
 }
 
 .team-equipment.--t {
@@ -49,6 +61,9 @@
 	background-position: bottom; /* 将背景图片居中 */
 	background-repeat: no-repeat; /* 防止背景图片重复 */
 	border-radius: 3px; /* 添加圆角 */
+
+	border-left: 5px solid var(--terrorists-fill-80);
+	border-right: 5px solid var(--terrorists-fill-80);
 }
 
 .team-equipment.--right {
@@ -89,6 +104,8 @@
 	aspect-ratio: 1;
 	border: 0.2rem solid var(--white);
 	margin: 0.3rem;
+
+	border-radius: 3px;
 }
 
 .loss-bonus .pips .pip.--filled {

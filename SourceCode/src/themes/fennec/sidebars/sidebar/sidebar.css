@@ -1,35 +1,18 @@
 .sidebar {
     position: absolute;
-
-	bottom: 20px;
-
-    width: var(--sidebar-width);
+    bottom: 5px;
     transition: bottom 1.5s ease;
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: row; /* 横向排列 */
+    gap: 9px; /* 玩家元素之间的间距 */
 }
 
 .sidebar.--left {
     transition: left 1.5s ease;
-	left: 30px;
+    left: 25px;
 }
 
 .sidebar.--right {
-	transition: right 1.5s ease;
-	right: 30px;
-}
-
-img.overlay {
-	display: block;
-	width: var(--sidebar-player-width);
-	border-radius: 50px; /* 添加圆角 */
-}
-
-img.overlay.--left {
-	margin-bottom: var(--sidebar-left-overlay-vertical-spacing);
-	border-radius: 150px; /* 添加圆角 */
-}
-
-img.overlay.--right {
-	margin-left: auto;
-	margin-bottom: var(--sidebar-right-overlay-vertical-spacing);
-	border-radius: 50px; /* 添加圆角 */
+    transition: right 1.5s ease;
+    right: 25px;
 }

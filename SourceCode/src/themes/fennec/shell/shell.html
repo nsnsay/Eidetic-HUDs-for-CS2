@@ -9,10 +9,12 @@
 
 <template v-if="$map.name">
 	<TopBar />
-	<PlayersAlive />
 	<FocusedPlayer />
 	<Radars />
+	<Radar />
 	<Sidebars />
+	<SeriesGraph />
+	<RoundGraph />
 </template>
 
 <Corners v-else />

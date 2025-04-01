@@ -3,8 +3,6 @@
 	bottom: var(--viewport-margin-bottom1);
 	left: calc((100% - var(--focused-player-width)) / 2);
 	right: calc((100% - var(--focused-player-width)) / 2);
-	display: grid;
-	grid-template-columns: 16fr 35fr 16fr;
 	filter: var(--filter-drop-shadow);
 	border-radius: 10px; /* 添加圆角 */
 }

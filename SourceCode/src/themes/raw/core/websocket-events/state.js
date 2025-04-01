@@ -2,7 +2,6 @@ import { additionalState, bombsites, gsiState, options, radars } from '/hud/core
 import { parseGsiState } from '/hud/core/parse-gsi-state.js'
 
 export const handleState = (body) => {
-	console.debug(body)
 
 	Object.assign(additionalState, body.additionalState, { unixTimestamp: body.unixTimestamp })
 	Object.assign(bombsites, body.bombsites)

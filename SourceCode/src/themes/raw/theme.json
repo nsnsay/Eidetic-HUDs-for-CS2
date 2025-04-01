@@ -3,25 +3,20 @@
 		"preferences.isCsgo": {
 			"type": "boolean",
 			"section": "Preferences",
-			"label": "CS:GO兼容模式"
-		},
-
-		"preferences.bestOf": {
-			"section": "Preferences",
-			"label": "Best of 模式"
+			"label": "CS:GO"
 		},
 
 		"preferences.minimumGoodKdRatio": {
 			"type": "number",
 			"section": "Preferences",
-			"label": "K/D除以多少显示为绿色？",
+			"label": "K/D good",
 			"fallback": "1.001"
 		},
 
 		"preferences.maximumBadKdRatio": {
 			"type": "number",
 			"section": "Preferences",
-			"label": "K/D除以多少显示为红色？？",
+			"label": "K/D bad",
 			"fallback": "0.999"
 		},
 
@@ -29,20 +24,20 @@
 			"type": "number",
 			"fallback": 24,
 			"section": "Cvars",
-			"label": "值 mp_maxrounds, 最大可以游玩的局数"
+			"label": "The game max-rounds"
 		},
 
 		"cvars.mp_overtime_maxrounds": {
 			"type": "number",
 			"fallback": 6,
 			"section": "Cvars",
-			"label": "值 mp_overtime_maxrounds | 最大可以游玩的加时赛"
+			"label": "Overtime max-rounds"
 		},
 
 		"teams.teamNameOverrides": {
 			"type": "text",
 			"section": "Teams",
-			"label": "队伍名字覆盖,例：‘Steam64ID 队伍名’"
+			"label": "Team Name Overrides, Just provide SteamID and Team-name, like '765656565656563 Goki3'"
 		},
 
 		"teams.playerNameOverrides": {
@@ -54,33 +49,28 @@
 		"teams.hiddenPlayers": {
 			"type": "text",
 			"section": "Teams",
-			"label": "填写SteamID即可隐藏目标玩家"
+			"label": "Team Name Overrides, Just provide SteamID"
 		},
 
 		"series.hideTotalScores": {
 			"type": "boolean",
 			"section": "Displays",
-			"label": "开启/关闭 顶板显示的【大比分】"
+			"label": "Total Scores"
 		},
 		"series.hideSidebars": {
 			"type": "boolean",
 			"section": "Displays",
-			"label": "开启侧边栏"
+			"label": "Sidebars"
 		},
 		"series.hideRadars": {
 			"type": "boolean",
 			"section": "Displays",
-			"label": "开启雷达"
+			"label": "Radars"
 		},
 		"series.hidemapName": {
 			"type": "boolean",
 			"section": "Displays",
-			"label": "开启地图"
-		},
-		"series.DisplayWatermaker": {
-			"type": "boolean",
-			"section": "Displays",
-			"label": "Display the Watermark, If stream is commercial please set it enable!!!"
+			"label": "Map Name"
 		}
 	}
 }

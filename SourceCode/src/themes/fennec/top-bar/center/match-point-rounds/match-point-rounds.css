@@ -1,6 +1,7 @@
 .match-point-rounds-overflow-container {
 	grid-area: match-point-rounds;
-	overflow: hidden
+	overflow: hidden;
+	display: none;
 }
 
 .match-point-rounds {
@@ -22,4 +23,6 @@
 
 .match-point-rounds:not(.--active) {
 	transform: translateY(-100%);
+
+	display: none;
 }

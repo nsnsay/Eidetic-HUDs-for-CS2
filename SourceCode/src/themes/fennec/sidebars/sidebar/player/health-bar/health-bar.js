@@ -40,7 +40,7 @@ export default {
 
 			this.damageTakenTimeout = setTimeout(() => {
 				this.healthBeforeDamageTaken = this.player.health
-			}, 2500)
+			}, 1200)
 		},
 	},
 }

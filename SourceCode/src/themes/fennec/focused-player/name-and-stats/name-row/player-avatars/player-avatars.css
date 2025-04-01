@@ -1,49 +1,73 @@
 .kda-wrapper {
-    display: flex;
-    position: absolute; /* 使用绝对定位 */
-    bottom: 0px;
-    left: 100%; /* 水平居中 */
-    justify-content: center; /* 水平居中 */
-    align-items: center; /* 垂直居中 */
-    z-index: 10; /* 确保它在 name-row 上方 */
-    background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 8px; /* 圆角 */
+    display: grid;
+    grid-template-columns: 35px 35px repeat(3, 1fr) 65px 60px; /* 为 rk 列分配更大的宽度 */
+    grid-template-areas: "bod rk kills deaths assists . grenades";
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
 
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* 添加文字阴影 */
+    z-index: -1;
 
-    font-size: 17px; /* 字体大小 */
+    position: absolute;
+    top: 35px;
+
+    width: 350px;
+    padding: 2px 2px; /* 内边距 */
+
+    border-radius: 5px;
+
+    background: rgba(0, 0, 0, 0.2);
 }
 
-.kda-wrapper.--ct {
-    border-right: 3px solid rgb(5, 167, 226, 0.85); /* 添加描边效果 */
-    box-shadow: 0 0 2px rgb(5, 167, 226, 0.85);
-}
-
-.kda-wrapper.--t {
-    border-right: 3px solid rgba(226, 123, 5, 0.85);
-    box-shadow: 0 0 2px rgb(226, 123, 5, 0.85);
-}
-
-
-.kills {
-	grid-area: kills;
-
-	display: flex;
-	align-items: center;
-
-	padding: 0.5rem;
-	font-size: 1.5rem;
-}
-
-.value {
-    margin-right: 1.5rem;
+.rk, .kills, .deaths, .assists {
+    display: flex; /* 确保子元素使用弹性布局 */
+    align-items: center; /* 图标与文字对齐 */
 }
 
 img {
-	width: 20px; /* 根据需要调整图像大小 */
+    width: 20px; /* 根据需要调整图像大小 */
     padding-right: 0.3rem;
 }
 
-.d img {
+.deaths img {
     width: 15px;
+}
+
+.bod {
+    grid-area: bod;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bod img {
+    height: 3rem;
+    transition: opacity var(--fade-fast-duration) ease;
+}
+
+.bod img.bomb:not(.--active) {
+    opacity: 0.5;
+}
+
+.op0 {
+    opacity: 0;
+}
+
+.grenades {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    padding-left: 15px;
+    transition: all 1s;
+}
+
+.grenades .grenade img:not(.--active) {
+    opacity: 0.5;
+}
+
+.grenades .grenade img {
+    height: 2rem;
+
+    margin-right: 2px;
 }

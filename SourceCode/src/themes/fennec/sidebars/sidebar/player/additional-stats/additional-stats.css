@@ -10,7 +10,7 @@
 	padding: 0 0.5rem;
 
 	transition: all 1s ease-in-out;
-	background-image: url(/hud/img/icons/bg3.svg);
+	background-image: url(/hud/img/icons/bg2.svg);
 	opacity: 100%;
 	background-size: cover; /* 使背景图片覆盖整个元素 */
 	background-position: center; /* 将背景图片居中 */
@@ -20,7 +20,7 @@
 
 .additional-stats.--left {
 	position: relative;
-	left: 19px;
+	left: 8px;
     border-top: 4px solid rgb(5, 167, 226, 0.85); /* 添加描边效果 */
 	box-shadow: 0 0 15px rgb(5, 167, 226, 0.85);
 }

@@ -10,10 +10,10 @@
 		'title title title'
 		'left vs right';
 
-	background-image: url('/hud/img/icons/ajl_bg1.png'); /* 设置图片背景 */
-	opacity: 95%;
+	background-image: url('/hud/img/icons/bg4.svg'); /* 设置图片背景 */
+	opacity: 100%;
 	background-size: cover; /* 使背景图片覆盖整个元素 */
-	background-position: inherit; /* 将背景图片居中 */
+	background-position: center; /* 将背景图片居中 */
 	background-repeat: no-repeat; /* 防止背景图片重复 */
 	box-shadow: var(--box-shadow);
 	font-weight: 650;

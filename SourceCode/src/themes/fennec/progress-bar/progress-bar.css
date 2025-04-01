@@ -1,11 +1,10 @@
 .progress-bar-background {
 	width: 120%;
-	height: 1rem;
+	height: 1.25rem;
 	overflow: hidden;
-	background-color: rgba(86, 86, 86, 0.548);
+	background: linear-gradient(to right, #7777779f, #7777779f);
 	border-radius: 15px;
 
-	box-shadow: 0 0 10px rgba(98, 10, 239, 0.525);
 }
 
 .progress-bar-fill {

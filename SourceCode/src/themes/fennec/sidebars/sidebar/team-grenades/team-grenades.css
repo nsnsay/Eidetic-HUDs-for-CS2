@@ -1,9 +1,7 @@
 .team-grenades-wrapper {
 	font-family: var(--fyt);
-	width: var(--sidebar-team-grenades-width);
+	width: 350px;
 	max-height: calc(2.8rem + 0.5rem);
-    position: relative;
-	bottom: 5px;
 
 	filter: var(--filter-drop-shadow);
 	overflow: hidden;
@@ -19,10 +17,18 @@
 .team-grenades-wrapper.--right {
 	margin-left: auto;
 	align-items: center;
+
+	position: absolute;
+	bottom: 23rem;
+    right: 25px;
 }
 
 .team-grenades-wrapper.--left {
     align-items: center;
+
+	position: absolute;
+	bottom: 23rem;
+    left: 25px;
 }
 
 .team-grenades {

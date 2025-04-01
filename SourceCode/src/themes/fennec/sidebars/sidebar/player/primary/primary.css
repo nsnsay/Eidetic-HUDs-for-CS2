@@ -2,7 +2,8 @@
 	grid-area: primary;
 
 	display: flex;
-	align-items: center
+	align-items: center;
+	padding-left: 5px;
 }
 
 .primary img {
@@ -14,16 +15,19 @@
 	opacity: 0.5;
 }
 
-.primary.--left {
-	justify-content: flex-end;
-	padding-right: var(--sidebar-player-weapon-padding);
+.secondary {
+	grid-area: primary;
+
+	display: flex;
+	align-items: center;
+	padding-left: 5px;
 }
 
-.primary.--right {
-	justify-content: flex-start;
-	padding-left: var(--sidebar-player-weapon-padding);
+.secondary img {
+	height: 2rem;
+	transition: opacity var(--fade-fast-duration) ease;
 }
 
-.primary.--right img {
-	transform: rotateY(180deg);
+.secondary img:not(.--active) {
+	opacity: 0.5;
 }

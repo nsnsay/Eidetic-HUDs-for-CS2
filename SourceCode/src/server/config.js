@@ -71,4 +71,21 @@ export const registerConfigRoutes = (router, websocket) => {
 		websocket.broadcastRefresh()
 		context.status = 204
 	})
+
+	router.put('/config/options/rename-player', async (context) => {
+	  const { steamID, newName } = context.request.body;
+
+	  if (!steamID || !newName) {
+		context.status = 400;
+		return;
+	  }
+
+	  try {
+		await updatePlayerNameOverrides(steamID, newName);
+		context.status = 204;
+	  } catch (error) {
+		console.error('Error updating player name overrides', error);
+		context.status = 500;
+	  }
+	})
 }

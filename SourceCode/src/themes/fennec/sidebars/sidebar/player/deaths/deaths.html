@@ -1,8 +1,8 @@
 <Transition>
 	<div v-if="! $round.isFreezetime" class="deaths">
 		<div :class="['label', colorClass]">
-		&nbsp;&nbsp;<img src="/hud/img/icons/kill.png" alt="">
+		&nbsp;<img src="/hud/img/icons/kill.png" alt="">
 		</div>
-		<Digits digits="1" :value="player.deaths" />
+		{{ player.deaths.toString().length === 1 ? player.assists + '&nbsp;' : player.deaths }}
 	</div>
 </Transition>

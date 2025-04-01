@@ -1,12 +1,16 @@
-@keyframes unrollBanner {
-    0% {
-        opacity: 0; /* 初始透明度为0 */
-        transform: translateY(-100%); /* 从顶部开始，元素完全在视图外 */
-    }
-    100% {
-        opacity: 1; /* 最终透明度为1 */
-        transform: translateY(0); /* 元素完全显示 */
-    }
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+
+		transform: scale(0.9);
+		height: 0%;
+	}
+
+	100% {
+		opacity: 1;
+		height: 140px;
+		transform: scale(1);
+	}
 }
 
 .round-winner-wrapper {
@@ -14,7 +18,7 @@
 	letter-spacing: 0.5em;
 	text-transform: uppercase;
 	font-size: 2.25rem;
-	animation: unrollBanner 0.21s ease-out forwards;
+	animation: myAnim 0.333s ease-in 0.333s 1 normal backwards;
 	max-height: var(--top-bar-row-height);
 	position: relative;
     overflow: visible;
@@ -25,42 +29,60 @@
 	letter-spacing: 0.25em;
 	text-transform: uppercase;
 	width: 100%;
-	height: 155%;
-	font-family: var(--fyt);
-    
+	height: 140px;
 	top: 5px;
-	border-top: 5px solid rgba(101, 5, 226, 0.85);
+
+	animation: myAnim 0.333s ease-in 0.333s 1 normal backwards;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 90px 30px; /* 确保每行的高度自动调整 */
+	grid-gap: 15px;
+	grid-template-areas:
+		'inner'
+		'outer'
 }
 
 .round-winner.--ct {
-	background-image: url('/hud/img/icons/bg2.svg'); /* 设置图片背景 */
-	opacity: 100%;
-	background-size: cover; /* 使背景图片覆盖整个元素 */
-	background-position: center; /* 将背景图片居中 */
-	background-repeat: repeat; /* 防止背景图片重复 */
+	background: linear-gradient(to right, #2424249f, #2424249f);
+	
 	border-radius: 15px;
+
+	color: var(--white);
 }
 
 .round-winner.--t {
-	background-image: url('/hud/img/icons/bg2.svg'); /* 设置图片背景 */
-	opacity: 100%;
-	background-size: cover; /* 使背景图片覆盖整个元素 */
-	background-position: center; /* 将背景图片居中 */
-	background-repeat: repeat; /* 防止背景图片重复 */
+	background: linear-gradient(to right, #2424249f, #2424249f);
 	border-radius: 15px;
+
+	color: var(--white);
+}
+
+.outer {
+	background: var(--counter-terrorists-fill-100);	
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	padding: 0.8rem 0.8rem;
+
+	height: 30px;
+}
+
+.outer.--t {
+	background: var(--terrorists-fill-100);	
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.inner {
+	justify-content: center;
+	align-items: center;
+	align-self: center;
 }
 
 img.logo {
-	display: block;
-	max-height: calc(100% - var(--top-bar-team-logo-vertical-spacing) * 2);
-	opacity: 0.1;
-}
-
-img.logo.--left {
-	padding-right: var(--top-bar-team-logo-horizontal-spacing);
-}
-
-img.logo.--right {
-	order: 1;
-	padding-left: var(--top-bar-team-logo-horizontal-spacing);
+	width: 80px;
+	opacity: 0.6;
 }

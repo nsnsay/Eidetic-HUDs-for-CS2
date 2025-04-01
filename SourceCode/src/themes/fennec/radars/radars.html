@@ -1,111 +1,13 @@
-<div v-if="$opts['series.hidemapName']" class="radar-name">
-    <bolt v-if="$opts[`series.hideRadars`]" />
-    <radar v-else="$opts[`series.hideRadars`]" />
-    <div v-if="$opts['series.maps.1.name']" class="m1n">
-        <img
-        :class="['logo', { '--active': logoImageLoaded }]"
-        :src="`/hud/team-logos/${$opts['series.maps.1.pickTeam']}.png`"
-        alt=""
-        @error="logoImageLoaded = false"
-        @loaded="logoImageLoaded = true"
-        @loading="logoImageLoaded = false"
-        >
-        <span v-if="$opts['series.maps.1.isDecider']" class="m1d">
-        <img src="/hud/img/icons/dead.png" alt="">
-        </span>
-        {{ $opts['series.maps.1.name'] }}
-        <span v-if="$opts['series.maps.1.pickTeamScore']" class="m1s">
-        ({{ $opts['series.maps.1.pickTeamScore'] }}:{{ $opts['series.maps.1.enemyTeamScore'] }})
-		</span>
-    </div>
-    
-    <span v-if="$opts['series.maps.2.name']">
-    <img src="/hud/img/icons/armor.png" alt="">
-    </span>
-
-    <div v-if="$opts['series.maps.2.name']" class="m2n">
-        <span v-if="$opts['series.maps.2.isDecider']" class="m2d">
-        <img src="/hud/img/icons/dead.png" alt="">
-        </span>
-        <img
-        :class="['logo', { '--active': logoImageLoaded }]"
-        :src="`/hud/team-logos/${$opts['series.maps.2.pickTeam']}.png`"
-        alt=""
-        @error="logoImageLoaded = false"
-        @loaded="logoImageLoaded = true"
-        @loading="logoImageLoaded = false"
-        >
-        {{ $opts['series.maps.2.name'] }}
-        <span v-if="$opts['series.maps.2.pickTeamScore']" class="m2s">
-        ({{ $opts['series.maps.2.pickTeamScore'] }}:{{ $opts['series.maps.2.enemyTeamScore'] }})
-        </span>
+<div class="series-name">
+    <div v-if="$opts['series.name.left']" class="left">
+        <div class="inner">
+            {{ $opts['series.name.left'] }}
+        </div>
     </div>
 
-    <span v-if="$opts['series.maps.3.name']">
-    <img src="/hud/img/icons/armor.png" alt="">
-    </span>
-
-    <div v-if="$opts['series.maps.3.name']" class="m3n">
-        <img
-        v-if="$opts['series.maps.3.pickTeam']"
-        :class="['logo', { '--active': logoImageLoaded }]"
-        :src="`/hud/team-logos/${$opts['series.maps.3.pickTeam']}.png`"
-        alt=""
-        @error="logoImageLoaded = false"
-        @loaded="logoImageLoaded = true"
-        @loading="logoImageLoaded = false"
-        >
-        <span v-if="$opts['series.maps.3.isDecider']" class="m3d">
-        <img src="/hud/img/icons/dead.png" alt="">
-        </span>
-        {{ $opts['series.maps.3.name'] }}
-        <span v-if="$opts['series.maps.3.pickTeamScore']" class="m3s">
-        ({{ $opts['series.maps.3.pickTeamScore'] }}:{{ $opts['series.maps.3.enemyTeamScore'] }})
-        </span>
+    <div v-if="$opts['series.name.right']" class="right">
+        <div class="inner">
+            {{ $opts['series.name.right'] }}
+        </div>
     </div>
-
-    <span v-if="$opts['series.maps.4.name']">
-    <img src="/hud/img/icons/armor.png" alt="">
-    </span>
-
-    <div v-if="$opts['series.maps.4.name']" class="m4n">
-        <span v-if="$opts['series.maps.4.isDecider']" class="m4d">
-        <img src="/hud/img/icons/dead.png" alt="">
-        </span>
-        <img
-        :class="['logo', { '--active': logoImageLoaded }]"
-        :src="`/hud/team-logos/${$opts['series.maps.4.pickTeam']}.png`"
-        alt=""
-        @error="logoImageLoaded = false"
-        @loaded="logoImageLoaded = true"
-        @loading="logoImageLoaded = false"
-        >
-        {{ $opts['series.maps.4.name'] }}
-        <span v-if="$opts['series.maps.4.pickTeamScore']" class="m4s">
-        ({{ $opts['series.maps.4.pickTeamScore'] }}:{{ $opts['series.maps.4.enemyTeamScore'] }})
-        </span>
-    </div>
-
-    <span v-if="$opts['series.maps.5.name']">
-    <img src="/hud/img/icons/armor.png" alt="">
-    </span>
-
-    <div v-if="$opts['series.maps.5.name']" class="m5n">
-        <span v-if="$opts['series.maps.5.isDecider']" class="m5d">
-        <img src="/hud/img/icons/dead.png" alt="">
-        </span>
-        <img
-        :class="['logo', { '--active': logoImageLoaded }]"
-        :src="`/hud/team-logos/${$opts['series.maps.5.pickTeam']}.png`"
-        alt=""
-        @error="logoImageLoaded = false"
-        @loaded="logoImageLoaded = true"
-        @loading="logoImageLoaded = false"
-        >
-        {{ $opts['series.maps.5.name'] }}
-        <span v-if="$opts['series.maps.5.pickTeamScore']" class="m5s">
-        ({{ $opts['series.maps.5.pickTeamScore'] }}:{{ $opts['series.maps.5.enemyTeamScore'] }})
-        </span>
-    </div>
-
 </div>
