@@ -1,0 +1,46 @@
+.health-bar-background {
+	grid-area: 1/newhealth;
+
+	display: grid;
+	z-index: -1;
+}
+
+
+.damage-taken,
+.health {
+	grid-area: 1/1;
+	height: 95%;
+}
+
+.health {
+	z-index: 1;
+}
+
+.damage-taken,
+.health {
+	transform-origin: left;
+	height: 100%;
+}
+
+
+
+.health.--left {
+	background: rgba(0, 145, 255, 0.8);
+}
+
+.health.--right {
+	background: rgba(255, 0, 115, 0.8);
+
+	transform-origin: right;
+}
+
+.damage-taken {
+	background: rgba(255, 200, 0, 0.45);
+	transition: transform var(--fade-default-duration) ease;
+}
+
+.damage-taken.--right {
+	background: rgba(255, 200, 0, 0.45);
+	transition: transform var(--fade-default-duration) ease;
+	transform-origin: right;
+}

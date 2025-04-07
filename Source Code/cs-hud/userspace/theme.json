@@ -1,0 +1,62 @@
+{
+	"parent": "fennec",
+	"options": {
+		"preferences.isCsgo": {
+			"value": false
+		},
+		"series.hideTotalScores": {
+			"value": true
+		},
+		"series.ShowOtherStyles": {
+			"value": false
+		},
+		"series.hideSidebars": {
+			"value": true
+		},
+		"series.hideRadars": {
+			"value": true
+		},
+		"series.hidemapName": {
+			"value": true
+		},
+		"series.name.left": {
+			"value": ""
+		},
+		"series.name.right": {
+			"value": ""
+		},
+		"series.maps.1.name": {
+			"value": "123"
+		},
+		"series.maps.1.pickTeam": {
+			"value": "123"
+		},
+		"series.maps.1.isDecider": {
+			"value": false
+		},
+		"series.maps.1.pickTeamScore": {
+			"value": 123
+		},
+		"series.maps.1.enemyTeamScore": {
+			"value": 123
+		},
+		"series.maps.2.name": {
+			"value": "123"
+		},
+		"series.maps.2.pickTeam": {
+			"value": "123"
+		},
+		"series.maps.2.isDecider": {
+			"value": true
+		},
+		"series.maps.2.pickTeamScore": {
+			"value": 123
+		},
+		"series.maps.2.enemyTeamScore": {
+			"value": 123
+		},
+		"series.maps.3.isDecider": {
+			"value": true
+		}
+	}
+}

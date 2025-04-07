@@ -1,0 +1,5 @@
+.name-and-stats {
+	display: grid;
+	grid-template-areas:
+		'name-row';
+}

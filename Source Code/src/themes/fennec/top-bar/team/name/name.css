@@ -1,0 +1,53 @@
+.name-wrapper {
+	font-size: 2rem;
+	height: 52px;
+}
+
+.name {
+	height: 52px;
+}
+
+.name.--ct {
+	background: #2424249f;
+	border-radius: 8px 0px 0px 8px; /* 添加圆角 */
+	border-right: 7px solid var(--counter-terrorists-fill-100);
+}
+
+.name.--t {
+	background: #2424249f;
+	border-radius: 0px 8px 8px 0px; /* 添加圆角 */
+	border-left: 7px solid var(--terrorists-fill-100);
+}
+
+img.logo {
+	display: block;
+	max-height: calc(100% - var(--top-bar-team-logo-vertical-spacing) * 2);
+
+	opacity: 0.97;
+}
+
+img.logo.--left {
+	order: 1;
+	position: relative;
+
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+
+	right: 5px;
+
+	padding-right: 15px;
+}
+
+img.logo.--right {
+	position: relative;
+
+	left: 5px;
+
+	align-items: center;
+	justify-content: center;
+
+	align-self: center;
+
+	padding-left: 15px;
+}

@@ -1,0 +1,1085 @@
+
+
+.input-group {
+	margin-bottom: 2.5rem;
+	padding: 0 1rem;
+
+	display: grid;
+	grid-template-areas: 'key' 'input';
+	grid-gap: 0.5rem;
+}
+
+@media (min-width: 600px) {
+	.input-group {
+		grid-template-columns: repeat(2, minmax(0, 48rem));
+		grid-template-rows: max-content auto;
+		grid-template-areas: 'key input';
+		grid-gap: 0 1rem;
+		align-items: center;
+	}
+}
+
+.input-group label {
+	grid-area: key;
+	display: block;
+	align-self: center;
+    word-wrap: break-word;
+}
+
+@media (min-width: 600px) {
+	.input-group label {
+		text-align: right;
+	}
+}
+
+.input-group > input,
+.input-group > textarea,
+.input-group .input {
+	grid-area: input;
+}
+
+
+.input-group .input {
+	display: flex;
+	align-items: center;
+}
+
+.input-group .input button.reset {
+	margin-left: 2rem;
+	background: none;
+	border: none;
+	color: inherit;
+	cursor: pointer;
+	font-family: inherit;
+}
+
+.input-group .input button.reset:not(:active):not(:hover) {
+	text-decoration: underline;
+}
+
+label {
+	color: rgb(3, 217, 255);
+}
+
+
+
+input[type='number'],
+input[type='text'],
+textarea {
+	width: 100%;
+	padding: 0.4rem 1rem;
+
+	background: rgba(255, 255, 255, 0.05);
+	border: 2px solid #aeaeae;
+	border-radius: 15px;
+	color: #dedede;
+	font: inherit;
+}
+
+input[type='number']::placeholder,
+input[type='text']::placeholder,
+textarea::placeholder {
+	color: #939393;
+}
+
+/* 自定义 checkbox 样式 */
+input[type='checkbox'] {
+  /* 隐藏原生的 checkbox */
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #aeaeae;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+input[type='checkbox']:checked {
+  background-color: #4CAF50; /* 绿色背景 */
+  border-color: #4CAF50;
+}
+
+input[type='checkbox']:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input[type='checkbox']:hover {
+  border-color: #4CAF50;
+}
+
+input[type='checkbox']:active {
+  transform: scale(0.95);
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+  input[type='checkbox'] {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* 隐藏输入框的增减按钮 */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox 浏览器 */
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+textarea {
+	height: 8rem;
+	resize: vertical;
+}
+
+/* 新增样式：玩家项 */
+.player-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.player-item input {
+	margin-right: 0.5rem;
+	padding: 0.25rem 0.5rem;
+	width: auto;
+}
+
+.player-item button {
+	margin-left: 0.25rem;
+	padding: 0.25rem 0.5rem;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 1rem;
+  }
+  
+  th,
+  td {
+  	padding: 0.75rem;
+  	text-align: left;
+  	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  th {
+  	background: rgba(255, 255, 255, 0.05);
+  	color: rgba(255, 255, 255, 0.8);
+  	cursor: pointer;
+  }
+
+  tr:hover {
+  	background: rgba(255, 255, 255, 0.05);
+  }
+
+  .dialog {
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	background: rgba(0, 0, 0, 0.5);
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	z-index: 1000;
+  }
+
+  .dialog-content {
+  	background: #2c3e50;
+  	padding: 20px;
+  	border-radius: 5px;
+  	width: 300px;
+  	max-width: 90%;
+  }
+
+  .dialog-content h3 {
+  	margin-top: 0;
+  	color: white;
+  }
+
+  .dialog-content input {
+  	width: 80%;
+  	padding: 10px;
+  	margin: 10px 0;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  }
+
+  .dialog-buttons {
+  	display: flex;
+  	justify-content: flex-end;
+  	gap: 10px;
+  	margin-top: 10px;
+  }
+
+  .dialog-buttons button {
+  	padding: 8px 16px;
+  	border: none;
+  	border-radius: 4px;
+  	cursor: pointer;
+  }
+
+  .dialog-buttons button:first-child {
+  	background: #e74c3c;
+  	color: white;
+  }
+
+  .dialog-buttons button:last-child {
+  	background: #2ecc71;
+  	color: white;
+  }
+
+  /* 修改名称按钮样式 */
+  .player-name-rename-btn {
+  	background: none;
+  	border: 1px solid #4CAF50;
+  	/* 绿色边框 */
+  	color: #4CAF50;
+  	/* 绿色文字 */
+  	padding: 0.3rem 0.6rem;
+  	border-radius: 4px;
+  	cursor: pointer;
+  	font-size: 0.8rem;
+  	transition: all 0.3s ease;
+	margin-right: 1rem; /* 增加右侧的间距 */
+  }
+
+  .player-name-rename-btn:hover {
+  	background: #4CAF50;
+  	color: white;
+  	transform: scale(1.05);
+  }
+
+  .player-name-rename-btn:active {
+  	transform: scale(0.95);
+  }
+
+  .playerInfo {
+	position: absolute;
+	bottom: 1rem;
+ }
+
+.hide-player-btn {
+	gap: 0.5px;
+  	background: none;
+  	border: 1px solid #e74c3c; /* 红色边框 */
+  	color: #e74c3c; /* 红色文字 */
+ 	padding: 0.3rem 0.6rem;
+ 	border-radius: 4px;
+  	cursor: pointer;
+  	font-size: 0.8rem;
+  	transition: all 0.3s ease;
+}
+
+.hide-player-btn:hover {
+  	background: #e74c3c;
+ 	color: white;
+ 	transform: scale(1.05);
+}
+
+.hide-player-btn:active {
+ 	 transform: scale(0.95);
+}
+
+.unhide-player-btn {
+	background: none;
+	border: 1px solid #2ecc71;
+	/* 绿色边框 */
+	color: #2ecc71;
+	/* 绿色文字 */
+	padding: 0.3rem 0.6rem;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 0.8rem;
+	transition: all 0.3s ease;
+}
+
+.unhide-player-btn:hover {
+	background: #2ecc71;
+	color: white;
+	transform: scale(1.05);
+}
+
+.unhide-player-btn:active {
+	transform: scale(0.95);
+}
+
+.upload-avatar-btn {
+	background: none;
+	border: 1px solid #3498db;
+	/* 蓝色边框 */
+	color: #3498db;
+	/* 蓝色文字 */
+	padding: 0.3rem 0.6rem;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 0.8rem;
+	transition: all 0.3s ease;
+}
+
+.upload-avatar-btn:hover {
+	background: #3498db;
+	color: white;
+	transform: scale(1.05);
+}
+
+.upload-avatar-btn:active {
+	transform: scale(0.95);
+}
+
+.buttons {
+	position: absolute; /* 修改为 fixed */
+	top: 0; /* 固定在顶部 */
+	left: -20rem; /* 靠左显示 */
+	width: 90%; /* 宽度为100% */
+	z-index: 1; /* 确保在最顶层 */
+	padding: 1rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.buttons a,
+.buttons button {
+	margin: 0.5rem;
+	padding: 0.5rem 1rem;
+	display: block;
+
+	background: none;
+	border: 1px solid;
+	color: inherit;
+	cursor: pointer;
+	font: inherit;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 15px;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease,
+		transform 0.3s ease;
+}
+
+.buttons a:active,
+.buttons button:active {
+	transform: scale(0.95);
+}
+
+.buttons a {
+	border: 2px solid #ee7c93;
+}
+
+.buttons a:hover {
+	background: #aeaeae;
+	color: #212121;
+}
+
+.buttons button.save {
+	border: 2px solid #1fb617;
+}
+
+.buttons button.save:hover {
+	background: green;
+	color: #fff;
+}
+
+.buttons button.force-hud-refresh {
+	border: 2px solid #0e4e6c;
+}
+
+.buttons button.force-hud-refresh:hover {
+	background: yellow;
+	color: #212121;
+}
+
+@media (max-width: 599px) {
+	.buttons {
+		padding: 1rem;
+	}
+}
+
+section {
+	position: absolute;
+	top: 3rem;
+	right: 2rem;
+
+	transform: scale(0.95);
+	margin-bottom: 6rem;
+	background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
+	border-radius: 1rem;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+	padding: 2rem;
+
+
+    width: 650px;
+}
+
+section:first-of-type {
+	margin-top: 2rem;
+}
+
+@media (max-width: 1299px) {
+	section:first-of-type {
+		margin-top: 8rem;
+	}
+}
+
+section header {
+	margin: 0 1rem 2rem;
+}
+
+@media (min-width: 600px) {
+	section header {
+		margin-left: 4rem;
+	}
+}
+
+section header p {
+	max-width: 48rem;
+	margin-top: 0.5rem;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+/* 下拉菜单样式 */
+.section-navigation {
+	position: relative;
+	top: 60px;
+	margin: 1rem 0;
+	padding: 0.5rem 1rem;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	width: 31rem;
+}
+
+.navigation-tabs {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+}
+
+.tab-item {
+	padding: 0.5rem 1rem;
+	border: none;
+	background: rgba(255, 255, 255, 0.1);
+	color: inherit;
+	cursor: pointer;
+	font: inherit;
+	border-radius: 0.25rem;
+
+	width: max-content;
+    white-space: nowrap;
+	height: 45px;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tab-item:hover {
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tab-item.active {
+	background: rgba(255, 255, 255, 0.3);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sectionpage {
+	top: 10rem;
+	left: 0rem;
+}
+
+.section-Teams {
+	background-color: rgba(0, 255, 0, 0.2);
+	color: #00ff00;
+}
+
+.section-Theme {
+	background-color: rgba(0, 0, 255, 0.2);
+	color: #0000ff;
+}
+
+.section-Displays {
+	background-color: rgba(255, 255, 0, 0.2);
+	color: #ffff00;
+}
+
+.section-undefined {
+	display: none;
+}
+
+.section-Map1,
+.section-Map2,
+.section-Map3,
+.section-Map4,
+.section-Map5 {
+	display: none;
+}
+
+.sectionpage-Prefs,
+.sectionpage-Cvars {
+    max-height: 739px; /* 设置固定高度 */
+    overflow: auto; /* 添加滚动条 */
+    display: block; /* 确保内容在固定区域内显示 */
+}
+
+.section-Theme {
+    display: none;
+}
+
+.playerInfoWrapper {
+    position: absolute;
+    top: 5rem;
+    left: 45rem;
+}
+
+/* 美化 select 框样式 */
+select {
+    width: 100%;
+    padding: 0.4rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #aeaeae;
+    border-radius: 15px;
+    color: #dedede;
+    font: inherit;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  select option {
+    background: rgba(0, 0, 0, 1);
+    color: #dedede;
+  }
+  
+  select option:checked {
+    background: #4CAF50;
+    color: white;
+  }
+  
+  select::after {
+    content: '▼';
+    font-size: 12px;
+    color: #aeaeae;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  select:hover {
+    border-color: #4CAF50;
+  }
+
+/* 美化滚动条 */
+::-webkit-scrollbar {
+    width: 10px; /* 滚动条的宽度 */
+    height: 10px; /* 滚动条的高度 */
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05); /* 滚动条轨道的背景色 */
+    border-radius: 10px; /* 滚动条轨道的圆角 */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(144, 144, 144, 0.5); /* 滚动条滑块的背景色 */
+    border-radius: 10px; /* 滚动条滑块的圆角 */
+    border: 2px solid rgba(255, 255, 255, 0.1); /* 滚动条滑块的边框 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(144, 144, 144, 0.8); /* 滚动条滑块悬停时的背景色 */
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: rgba(144, 144, 144, 1); /* 滚动条滑块按下时的背景色 */
+}
+
+::-webkit-scrollbar-corner {
+    background: rgba(255, 255, 255, 0.05); /* 滚动条角落的背景色 */
+}
+
+/* Firefox 滚动条样式 */
+html {
+    scrollbar-width: thin; /* 滚动条宽度 */
+    scrollbar-color: rgba(144, 144, 144, 0.5) rgba(255, 255, 255, 0.05); /* 滚动条滑块和轨道的颜色 */
+}
+
+        /* 你的样式代码 */
+        .title-bar {
+            display: flex;
+            justify-content: flex-end;
+            height: 30px;
+            -webkit-app-region: drag;
+        }
+        .title-bar button {
+            width: 50px;
+            height: 30px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            -webkit-app-region: no-drag;
+            transition: all 0.3s ease;
+        }
+        .minimize-btn {
+            background-color: #f1f1f1;
+        }
+        .maximize-btn {
+            background-color: #f1f1f1;
+        }
+        .close-btn {
+            background-color: #f1f1f1;
+        }
+        .close-btn:hover {
+            background-color: #ff5f5f;
+        }
+        .maximize-btn:hover {
+            background-color: #4CAF50;
+        }
+        .minimize-btn:hover {
+            background-color: #2196F3;
+        }
+
+/* 地图编辑弹窗样式 */
+.dialog {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.dialog-content {
+	background: #2c3e50;
+	padding: 20px;
+	border-radius: 5px;
+	width: 80%;
+	max-width: 800px;
+}
+
+.dialog-content h3 {
+	margin-top: 0;
+	color: white;
+}
+
+.dialog-content table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 1rem;
+}
+
+.dialog-content th,
+.dialog-content td {
+	padding: 0.75rem;
+	text-align: left;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dialog-content th {
+	background: rgba(255, 255, 255, 0.05);
+	color: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+}
+
+.dialog-content tr:hover {
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.dialog-buttons {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+.dialog-buttons button {
+	padding: 8px 16px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.dialog-buttons button:first-child {
+	background: #e74c3c;
+	color: white;
+}
+
+.dialog-buttons button:last-child {
+	background: #2ecc71;
+	color: white;
+}
+
+.team-panel {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-members table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.team-members th,
+.team-members td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-members th {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.8);
+}.team-panel {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-members table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.team-members th,
+.team-members td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-members th {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* 队伍编辑弹窗样式 */
+.dialog-content h3 {
+  margin-top: 0;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #aeaeae;
+  border-radius: 5px;
+  color: #dedede;
+}
+
+/* 地图编辑按钮样式 */
+.buttons .edit-maps {
+	position: relative;
+	right: 18rem;
+	top: 5.5rem;
+
+	background: none;
+	border: 1px solid #3498db;
+	color: #3498db;
+	padding: 0.5rem 1rem;
+	border-radius: 0px;
+	cursor: pointer;
+	font: inherit;
+	text-align: center;
+	text-decoration: none;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease,
+		transform 0.3s ease;
+}
+
+.edit-maps:hover {
+	background: #3498db;
+	color: white;
+	transform: scale(1.05);
+}
+
+.edit-maps:active {
+	transform: scale(0.95);
+}
+
+/* 地图编辑弹窗内的按钮样式 */
+/* 美化选择框 */
+select {
+  width: 100%;
+  padding: 0.4rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #aeaeae;
+  border-radius: 15px;
+  color: #dedede;
+  font: inherit;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: #4CAF50;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+select::after {
+  content: '▼';
+  font-size: 12px;
+  color: #aeaeae;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+select:hover {
+  border-color: #4CAF50;
+}
+
+/* 美化弹窗 */
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog-content {
+  background: #2c3e50;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dialog-content h3 {
+  margin-top: 0;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dialog-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.dialog-content th {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  padding: 10px;
+  text-align: left;
+}
+
+.dialog-content td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dialog-content tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dialog-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dialog-buttons button:first-child {
+  background: #e74c3c;
+  color: white;
+}
+
+.dialog-buttons button:last-child {
+  background: #2ecc71;
+  color: white;
+}
+
+.map-name-select {
+  width: 300px;
+  padding: 0.4rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #aeaeae;
+  border-radius: 15px;
+  color: #dedede;
+  font: inherit;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.pick-team-input {
+  width: 150px;
+  padding: 0.4rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #aeaeae;
+  border-radius: 15px;
+  color: #dedede;
+  font: inherit;
+}
+
+.score-input {
+  width: 80px;
+  padding: 0.4rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #aeaeae;
+  border-radius: 15px;
+  color: #dedede;
+  font: inherit;
+}
+
+/* 美化按钮 */
+.decider-btn, .remove-btn, .add-map-btn, .cancel-btn, .save-btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin-right: 5px;
+}
+
+.decider-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.decider-btn:hover {
+  background-color: #2980b9;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+.add-map-btn {
+  background-color: #2ecc71;
+  color: white;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+}
+
+.add-map-btn:hover {
+  background-color: #27ae60;
+}
+
+.cancel-btn {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #7f8c8d;
+}
+
+.save-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #27ae60;
+}
+
+/* 美化“Reset to Defaults”按钮 */
+.reset-btn {
+  background-color: #f39c12;
+  color: white;
+}
+
+.reset-btn:hover {
+  background-color: #d35400;
+}

@@ -1,0 +1,2885 @@
+{
+  "event": "state",
+  "body": {
+      "additionalState": {
+          "lastKnownBombPlantedCountdown": {},
+          "lastKnownMapName": "de_anubis",
+          "lastKnownPlayerObserverSlot": {
+              "76561198812513923": 5,
+              "76561198410750263": 6,
+              "76561198360407641": 0,
+              "76561198355197522": 1,
+              "76561198048266764": 2,
+              "76561198083485506": 7,
+              "76561198364937038": 3,
+              "76561198108796479": 4,
+              "76561198044118796": 8,
+              "76561197967432889": 9
+          },
+          "moneyAtStartOfRound": {
+              "76561198812513923": 6050,
+              "76561198410750263": 7050,
+              "76561198360407641": 4450,
+              "76561198355197522": 4450,
+              "76561198048266764": 4400,
+              "76561198083485506": 5050,
+              "76561198364937038": 4700,
+              "76561198108796479": 4700,
+              "76561198044118796": 4600,
+              "76561197967432889": 8150
+          },
+          "roundDamages": {
+              "76561198812513923": {
+                  "1": 100,
+                  "2": 0,
+                  "3": 192,
+                  "4": 13,
+                  "5": 76,
+                  "6": 0,
+                  "7": 26,
+                  "8": 0,
+                  "9": 114,
+                  "10": 74,
+                  "11": 99,
+                  "12": 3,
+                  "13": 0,
+                  "14": 159,
+                  "15": 169,
+                  "16": 122,
+                  "17": 0
+              },
+              "76561198410750263": {
+                  "1": 92,
+                  "2": 88,
+                  "3": 198,
+                  "4": 100,
+                  "5": 84,
+                  "6": 0,
+                  "7": 66,
+                  "8": 35,
+                  "9": 0,
+                  "10": 200,
+                  "11": 22,
+                  "12": 30,
+                  "13": 0,
+                  "14": 0,
+                  "15": 0,
+                  "16": 0,
+                  "17": 0
+              },
+              "76561198360407641": {
+                  "1": 163,
+                  "2": 58,
+                  "3": 47,
+                  "4": 27,
+                  "5": 0,
+                  "6": 0,
+                  "7": 76,
+                  "8": 52,
+                  "9": 87,
+                  "10": 126,
+                  "11": 0,
+                  "12": 0,
+                  "13": 0,
+                  "14": 38,
+                  "15": 48,
+                  "16": 108,
+                  "17": 0
+              },
+              "76561198355197522": {
+                  "1": 101,
+                  "2": 110,
+                  "3": 66,
+                  "4": 29,
+                  "5": 0,
+                  "6": 98,
+                  "7": 116,
+                  "8": 0,
+                  "9": 27,
+                  "10": 247,
+                  "11": 300,
+                  "12": 9,
+                  "13": 0,
+                  "14": 108,
+                  "15": 0,
+                  "16": 53,
+                  "17": 0
+              },
+              "76561198048266764": {
+                  "1": 0,
+                  "2": 0,
+                  "3": 26,
+                  "4": 13,
+                  "5": 33,
+                  "6": 0,
+                  "7": 100,
+                  "8": 26,
+                  "9": 60,
+                  "10": 0,
+                  "11": 85,
+                  "12": 200,
+                  "13": 0,
+                  "14": 143,
+                  "15": 69,
+                  "16": 0,
+                  "17": 0
+              },
+              "76561198083485506": {
+                  "1": 0,
+                  "2": 16,
+                  "3": 0,
+                  "4": 36,
+                  "5": 97,
+                  "6": 0,
+                  "7": 129,
+                  "8": 68,
+                  "9": 0,
+                  "10": 19,
+                  "11": 11,
+                  "12": 57,
+                  "13": 0,
+                  "14": 110,
+                  "15": 0,
+                  "16": 0,
+                  "17": 0
+              },
+              "76561198364937038": {
+                  "1": 236,
+                  "2": 84,
+                  "3": 92,
+                  "4": 0,
+                  "5": 38,
+                  "6": 127,
+                  "7": 0,
+                  "8": 276,
+                  "9": 0,
+                  "10": 100,
+                  "11": 43,
+                  "12": 88,
+                  "13": 0,
+                  "14": 50,
+                  "15": 100,
+                  "16": 15,
+                  "17": 0
+              },
+              "76561198108796479": {
+                  "1": 0,
+                  "2": 18,
+                  "3": 101,
+                  "4": 158,
+                  "5": 62,
+                  "6": 73,
+                  "7": 108,
+                  "8": 48,
+                  "9": 0,
+                  "10": 27,
+                  "11": 72,
+                  "12": 188,
+                  "13": 0,
+                  "14": 31,
+                  "15": 46,
+                  "16": 30,
+                  "17": 0
+              },
+              "76561198044118796": {
+                  "1": 100,
+                  "2": 62,
+                  "3": 13,
+                  "4": 199,
+                  "5": 196,
+                  "6": 0,
+                  "7": 64,
+                  "8": 132,
+                  "9": 386,
+                  "10": 26,
+                  "11": 51,
+                  "12": 32,
+                  "13": 0,
+                  "14": 31,
+                  "15": 200,
+                  "16": 100,
+                  "17": 0
+              },
+              "76561197967432889": {
+                  "1": 23,
+                  "2": 65,
+                  "3": 89,
+                  "4": 152,
+                  "5": 47,
+                  "6": 146,
+                  "7": 119,
+                  "8": 0,
+                  "9": 0,
+                  "10": 81,
+                  "11": 0,
+                  "12": 59,
+                  "13": 0,
+                  "14": 100,
+                  "15": 131,
+                  "16": 278,
+                  "17": 0
+              }
+          }
+      },
+      "gsiState": {
+          "player": null,
+          "grenades": {
+              "276": {
+                  "owner": "76561198410750263",
+                  "position": "-421.219, -945.219, 936.375",
+                  "velocity": "-58.953, 297.954, 486.299",
+                  "lifetime": "16.989",
+                  "type": "smoke",
+                  "effecttime": "0.000"
+              }
+          },
+          "allplayers": {
+              "76561198812513923": {
+                  "name": "Wicadia",
+                  "observer_slot": 5,
+                  "team": "T",
+                  "match_stats": {
+                      "kills": 12,
+                      "assists": 2,
+                      "deaths": 11,
+                      "mvps": 0,
+                      "score": 27
+                  },
+                  "position": "-1013.233, -862.354, 112.016",
+                  "forward": "-0.011, 0.972, -0.233",
+                  "state": {
+                      "health": 100,
+                      "armor": 100,
+                      "helmet": true,
+                      "flashed": 0,
+                      "smoked": 0,
+                      "burning": 0,
+                      "money": 3850,
+                      "round_kills": 0,
+                      "round_killhs": 0,
+                      "round_totaldmg": 0,
+                      "equip_value": 5300
+                  },
+                  "weapons": {
+                      "weapon_0": {
+                          "name": "weapon_knife_m9_bayonet",
+                          "paintkit": "aa_fade",
+                          "type": "Knife",
+                          "state": "holstered"
+                      },
+                      "weapon_1": {
+                          "name": "weapon_glock",
+                          "paintkit": "cu_glock-liquescent",
+                          "type": "Pistol",
+                          "ammo_clip": 20,
+                          "ammo_clip_max": 20,
+                          "ammo_reserve": 120,
+                          "state": "holstered"
+                      },
+                      "weapon_2": {
+                          "name": "weapon_hegrenade",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "active"
+                      },
+                      "weapon_3": {
+                          "name": "weapon_molotov",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      },
+                      "weapon_4": {
+                          "name": "weapon_smokegrenade",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      },
+                      "weapon_5": {
+                          "name": "weapon_flashbang",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      },
+                      "weapon_6": {
+                          "name": "weapon_m4a1_silencer",
+                          "paintkit": "gs_m4a1s_snakebite_gold",
+                          "type": "Rifle",
+                          "ammo_clip": 20,
+                          "ammo_clip_max": 20,
+                          "ammo_reserve": 80,
+                          "state": "holstered"
+                      }
+                  }
+              },
+              "76561198410750263": {
+                  "name": "jottAAA",
+                  "observer_slot": 6,
+                  "team": "T",
+                  "match_stats": {
+                      "kills": 7,
+                      "assists": 4,
+                      "deaths": 11,
+                      "mvps": 2,
+                      "score": 22
+                  },
+                  "position": "-239.152, -1408.878, 2.031",
+                  "forward": "-0.690, -0.368, -0.623",
+                  "state": {
+                      "health": 100,
+                      "armor": 100,
+                      "helmet": true,
+                      "flashed": 0,
+                      "smoked": 0,
+                      "burning": 0,
+                      "money": 6750,
+                      "round_kills": 0,
+                      "round_killhs": 0,
+                      "round_totaldmg": 0,
+                      "equip_value": 5600
+                  },
+                  "weapons": {
+                      "weapon_0": {
+                          "name": "weapon_knife_karambit",
+                          "paintkit": "am_gamma_doppler_phase2",
+                          "type": "Knife",
+                          "state": "active"
+                      },
+                      "weapon_1": {
+                          "name": "weapon_fiveseven",
+                          "paintkit": "gs_fiveseven_hot_rod_violet",
+                          "type": "Pistol",
+                          "ammo_clip": 20,
+                          "ammo_clip_max": 20,
+                          "ammo_reserve": 100,
+                          "state": "holstered"
+                      },
+                      "weapon_2": {
+                          "name": "weapon_molotov",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      },
+                      "weapon_3": {
+                          "name": "weapon_flashbang",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      },
+                      "weapon_4": {
+                          "name": "weapon_m4a1_silencer",
+                          "paintkit": "default",
+                          "type": "Rifle",
+                          "ammo_clip": 20,
+                          "ammo_clip_max": 20,
+                          "ammo_reserve": 80,
+                          "state": "holstered"
+                      },
+                      "weapon_5": {
+                          "name": "weapon_hegrenade",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      },
+                      "weapon_6": {
+                          "name": "weapon_c4",
+                          "paintkit": "default",
+                          "type": "C4",
+                          "state": "holstered"
+                      },
+                      "weapon_7": {
+                          "name": "weapon_smokegrenade",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      }
+                  }
+              },
+              "76561198360407641": {
+                  "name": "Jee",
+                  "observer_slot": 0,
+                  "team": "CT",
+                  "match_stats": {
+                      "kills": 8,
+                      "assists": 5,
+                      "deaths": 9,
+                      "mvps": 4,
+                      "score": 40
+                  },
+                  "position": "374.185, 1311.260, -31.969",
+                  "forward": "0.982, -0.084, -0.169",
+                  "state": {
+                      "health": 100,
+                      "armor": 100,
+                      "helmet": false,
+                      "flashed": 0,
+                      "smoked": 0,
+                      "burning": 0,
+                      "money": 0,
+                      "round_kills": 0,
+                      "round_killhs": 0,
+                      "round_totaldmg": 0,
+                      "equip_value": 4650
+                  },
+                  "weapons": {
+                      "weapon_0": {
+                          "name": "weapon_knife_butterfly",
+                          "paintkit": "am_ruby_marbleized",
+                          "type": "Knife",
+                          "state": "holstered"
+                      },
+                      "weapon_1": {
+                          "name": "weapon_usp_silencer",
+                          "paintkit": "cu_usp_kill_confirmed",
+                          "type": "Pistol",
+                          "ammo_clip": 12,
+                          "ammo_clip_max": 12,
+                          "ammo_reserve": 24,
+                          "state": "holstered"
+                      },
+                      "weapon_2": {
+                          "name": "weapon_m4a1_silencer",
+                          "paintkit": "aa_fade_m4a1s",
+                          "type": "Rifle",
+                          "ammo_clip": 20,
+                          "ammo_clip_max": 20,
+                          "ammo_reserve": 80,
+                          "state": "holstered"
+                      },
+                      "weapon_3": {
+                          "name": "weapon_incgrenade",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "active"
+                      },
+                      "weapon_4": {
+                          "name": "weapon_flashbang",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 2,
+                          "state": "holstered"
+                      }
+                  }
+              },
+              "76561198355197522": {
+                  "name": "Moseyuh",
+                  "observer_slot": 1,
+                  "team": "CT",
+                  "match_stats": {
+                      "kills": 14,
+                      "assists": 4,
+                      "deaths": 9,
+                      "mvps": 2,
+                      "score": 35
+                  },
+                  "position": "446.009, 1307.097, -31.969",
+                  "forward": "0.586, 0.005, -0.811",
+                  "state": {
+                      "health": 100,
+                      "armor": 100,
+                      "helmet": false,
+                      "flashed": 0,
+                      "smoked": 0,
+                      "burning": 0,
+                      "money": 100,
+                      "round_kills": 0,
+                      "round_killhs": 0,
+                      "round_totaldmg": 0,
+                      "equip_value": 4550
+                  },
+                  "weapons": {
+                      "weapon_0": {
+                          "name": "weapon_knife_m9_bayonet",
+                          "paintkit": "am_ruby_marbleized",
+                          "type": "Knife",
+                          "state": "holstered"
+                      },
+                      "weapon_1": {
+                          "name": "weapon_usp_silencer",
+                          "paintkit": "cu_usps_noir",
+                          "type": "Pistol",
+                          "ammo_clip": 12,
+                          "ammo_clip_max": 12,
+                          "ammo_reserve": 24,
+                          "state": "holstered"
+                      },
+                      "weapon_2": {
+                          "name": "weapon_m4a1",
+                          "paintkit": "cu_m4a4_temukau",
+                          "type": "Rifle",
+                          "ammo_clip": 30,
+                          "ammo_clip_max": 30,
+                          "ammo_reserve": 90,
+                          "state": "holstered"
+                      },
+                      "weapon_3": {
+                          "name": "weapon_incgrenade",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "active"
+                      },
+                      "weapon_4": {
+                          "name": "weapon_smokegrenade",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      }
+                  }
+              },
+              "76561198048266764": {
+                  "name": "Attacker",
+                  "observer_slot": 2,
+                  "team": "CT",
+                  "match_stats": {
+                      "kills": 5,
+                      "assists": 6,
+                      "deaths": 13,
+                      "mvps": 2,
+                      "score": 18
+                  },
+                  "position": "-1189.632, 1402.457, -30.969",
+                  "forward": "0.003, -1.000, 0.018",
+                  "state": {
+                      "health": 100,
+                      "armor": 100,
+                      "helmet": true,
+                      "flashed": 0,
+                      "smoked": 0,
+                      "burning": 0,
+                      "money": 0,
+                      "round_kills": 0,
+                      "round_killhs": 0,
+                      "round_totaldmg": 0,
+                      "equip_value": 4600
+                  },
+                  "weapons": {
+                      "weapon_0": {
+                          "name": "weapon_knife_m9_bayonet",
+                          "paintkit": "am_marble_fade",
+                          "type": "Knife",
+                          "state": "holstered"
+                      },
+                      "weapon_1": {
+                          "name": "weapon_usp_silencer",
+                          "paintkit": "cu_usp_printstream",
+                          "type": "Pistol",
+                          "ammo_clip": 12,
+                          "ammo_clip_max": 12,
+                          "ammo_reserve": 24,
+                          "state": "holstered"
+                      },
+                      "weapon_2": {
+                          "name": "weapon_m4a1_silencer",
+                          "paintkit": "default",
+                          "type": "Rifle",
+                          "ammo_clip": 20,
+                          "ammo_clip_max": 20,
+                          "ammo_reserve": 80,
+                          "state": "holstered"
+                      },
+                      "weapon_3": {
+                          "name": "weapon_smokegrenade",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "active"
+                      },
+                      "weapon_4": {
+                          "name": "weapon_flashbang",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      }
+                  }
+              },
+              "76561198083485506": {
+                  "name": "woxic",
+                  "observer_slot": 7,
+                  "team": "T",
+                  "match_stats": {
+                      "kills": 8,
+                      "assists": 2,
+                      "deaths": 7,
+                      "mvps": 0,
+                      "score": 20
+                  },
+                  "position": "701.416, -720.879, -11.969",
+                  "forward": "0.221, 0.968, -0.123",
+                  "state": {
+                      "health": 100,
+                      "armor": 87,
+                      "helmet": true,
+                      "flashed": 0,
+                      "smoked": 0,
+                      "burning": 0,
+                      "money": 4550,
+                      "round_kills": 0,
+                      "round_killhs": 0,
+                      "round_totaldmg": 0,
+                      "equip_value": 6950
+                  },
+                  "weapons": {
+                      "weapon_0": {
+                          "name": "weapon_knife_karambit",
+                          "paintkit": "am_doppler_phase4",
+                          "type": "Knife",
+                          "state": "holstered"
+                      },
+                      "weapon_1": {
+                          "name": "weapon_awp",
+                          "paintkit": "cu_awp_neonoir",
+                          "type": "SniperRifle",
+                          "ammo_clip": 5,
+                          "ammo_clip_max": 5,
+                          "ammo_reserve": 30,
+                          "state": "holstered"
+                      },
+                      "weapon_2": {
+                          "name": "weapon_flashbang",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 2,
+                          "state": "holstered"
+                      },
+                      "weapon_3": {
+                          "name": "weapon_tec9",
+                          "paintkit": "default",
+                          "type": "Pistol",
+                          "ammo_clip": 18,
+                          "ammo_clip_max": 18,
+                          "ammo_reserve": 90,
+                          "state": "holstered"
+                      },
+                      "weapon_4": {
+                          "name": "weapon_hegrenade",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "active"
+                      }
+                  }
+              },
+              "76561198364937038": {
+                  "name": "JamYoung",
+                  "observer_slot": 3,
+                  "team": "CT",
+                  "match_stats": {
+                      "kills": 12,
+                      "assists": 3,
+                      "deaths": 11,
+                      "mvps": 1,
+                      "score": 28
+                  },
+                  "position": "160.023, 1356.565, -28.969",
+                  "forward": "-0.299, -0.953, -0.046",
+                  "state": {
+                      "health": 100,
+                      "armor": 100,
+                      "helmet": true,
+                      "flashed": 0,
+                      "smoked": 0,
+                      "burning": 0,
+                      "money": 0,
+                      "round_kills": 0,
+                      "round_killhs": 0,
+                      "round_totaldmg": 0,
+                      "equip_value": 4900
+                  },
+                  "weapons": {
+                      "weapon_0": {
+                          "name": "weapon_knife_butterfly",
+                          "paintkit": "am_sapphire_marbleized_b",
+                          "type": "Knife",
+                          "state": "active"
+                      },
+                      "weapon_1": {
+                          "name": "weapon_usp_silencer",
+                          "paintkit": "gs_usps_hangedman",
+                          "type": "Pistol",
+                          "ammo_clip": 12,
+                          "ammo_clip_max": 12,
+                          "ammo_reserve": 24,
+                          "state": "holstered"
+                      },
+                      "weapon_2": {
+                          "name": "weapon_m4a1",
+                          "paintkit": "gs_m4a4_chopper_ghost",
+                          "type": "Rifle",
+                          "ammo_clip": 30,
+                          "ammo_clip_max": 30,
+                          "ammo_reserve": 90,
+                          "state": "holstered"
+                      },
+                      "weapon_3": {
+                          "name": "weapon_smokegrenade",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      },
+                      "weapon_4": {
+                          "name": "weapon_hegrenade",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      },
+                      "weapon_5": {
+                          "name": "weapon_flashbang",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      }
+                  }
+              },
+              "76561198108796479": {
+                  "name": "Mercury",
+                  "observer_slot": 4,
+                  "team": "CT",
+                  "match_stats": {
+                      "kills": 10,
+                      "assists": 4,
+                      "deaths": 11,
+                      "mvps": 0,
+                      "score": 32
+                  },
+                  "position": "-1189.579, 1099.477, 0.044",
+                  "forward": "-0.017, -0.977, -0.212",
+                  "state": {
+                      "health": 100,
+                      "armor": 100,
+                      "helmet": true,
+                      "flashed": 0,
+                      "smoked": 0,
+                      "burning": 0,
+                      "money": 0,
+                      "round_kills": 0,
+                      "round_killhs": 0,
+                      "round_totaldmg": 0,
+                      "equip_value": 4900
+                  },
+                  "weapons": {
+                      "weapon_0": {
+                          "name": "weapon_knife_butterfly",
+                          "paintkit": "aa_fade",
+                          "type": "Knife",
+                          "state": "active"
+                      },
+                      "weapon_1": {
+                          "name": "weapon_usp_silencer",
+                          "paintkit": "cu_usp_cut",
+                          "type": "Pistol",
+                          "ammo_clip": 12,
+                          "ammo_clip_max": 12,
+                          "ammo_reserve": 24,
+                          "state": "holstered"
+                      },
+                      "weapon_2": {
+                          "name": "weapon_smokegrenade",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      },
+                      "weapon_3": {
+                          "name": "weapon_m4a1_silencer",
+                          "paintkit": "an_red_m4a1s",
+                          "type": "Rifle",
+                          "ammo_clip": 20,
+                          "ammo_clip_max": 20,
+                          "ammo_reserve": 80,
+                          "state": "holstered"
+                      },
+                      "weapon_4": {
+                          "name": "weapon_flashbang",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      },
+                      "weapon_5": {
+                          "name": "weapon_hegrenade",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      }
+                  }
+              },
+              "76561198044118796": {
+                  "name": "XANTARES",
+                  "observer_slot": 8,
+                  "team": "T",
+                  "match_stats": {
+                      "kills": 14,
+                      "assists": 4,
+                      "deaths": 9,
+                      "mvps": 4,
+                      "score": 34
+                  },
+                  "position": "634.900, -829.203, -11.969",
+                  "forward": "0.452, 0.881, -0.139",
+                  "state": {
+                      "health": 100,
+                      "armor": 93,
+                      "helmet": true,
+                      "flashed": 0,
+                      "smoked": 0,
+                      "burning": 0,
+                      "money": 900,
+                      "round_kills": 0,
+                      "round_killhs": 0,
+                      "round_totaldmg": 0,
+                      "equip_value": 5100
+                  },
+                  "weapons": {
+                      "weapon_0": {
+                          "name": "weapon_knife_karambit",
+                          "paintkit": "am_ruby_marbleized",
+                          "type": "Knife",
+                          "state": "active"
+                      },
+                      "weapon_1": {
+                          "name": "weapon_glock",
+                          "paintkit": "aa_fade",
+                          "type": "Pistol",
+                          "ammo_clip": 20,
+                          "ammo_clip_max": 20,
+                          "ammo_reserve": 120,
+                          "state": "holstered"
+                      },
+                      "weapon_2": {
+                          "name": "weapon_flashbang",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      },
+                      "weapon_3": {
+                          "name": "weapon_ak47",
+                          "paintkit": "cu_fireserpent_ak47_bravo",
+                          "type": "Rifle",
+                          "ammo_clip": 30,
+                          "ammo_clip_max": 30,
+                          "ammo_reserve": 90,
+                          "state": "holstered"
+                      },
+                      "weapon_4": {
+                          "name": "weapon_smokegrenade",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      },
+                      "weapon_5": {
+                          "name": "weapon_molotov",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      },
+                      "weapon_6": {
+                          "name": "weapon_hegrenade",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      }
+                  }
+              },
+              "76561197967432889": {
+                  "name": "MAJ3R",
+                  "observer_slot": 9,
+                  "team": "T",
+                  "match_stats": {
+                      "kills": 12,
+                      "assists": 6,
+                      "deaths": 11,
+                      "mvps": 1,
+                      "score": 29
+                  },
+                  "position": "607.962, -934.742, -11.969",
+                  "forward": "0.263, 0.948, -0.178",
+                  "state": {
+                      "health": 100,
+                      "armor": 42,
+                      "helmet": true,
+                      "flashed": 0,
+                      "smoked": 0,
+                      "burning": 0,
+                      "money": 6750,
+                      "round_kills": 0,
+                      "round_killhs": 0,
+                      "round_totaldmg": 0,
+                      "equip_value": 3350
+                  },
+                  "weapons": {
+                      "weapon_0": {
+                          "name": "weapon_knife_karambit",
+                          "paintkit": "am_marble_fade",
+                          "type": "Knife",
+                          "state": "holstered"
+                      },
+                      "weapon_1": {
+                          "name": "weapon_glock",
+                          "paintkit": "cu_glock-liquescent",
+                          "type": "Pistol",
+                          "ammo_clip": 20,
+                          "ammo_clip_max": 20,
+                          "ammo_reserve": 120,
+                          "state": "holstered"
+                      },
+                      "weapon_2": {
+                          "name": "weapon_hegrenade",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      },
+                      "weapon_3": {
+                          "name": "weapon_molotov",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 1,
+                          "state": "holstered"
+                      },
+                      "weapon_4": {
+                          "name": "weapon_flashbang",
+                          "paintkit": "default",
+                          "type": "Grenade",
+                          "ammo_reserve": 2,
+                          "state": "active"
+                      },
+                      "weapon_5": {
+                          "name": "weapon_mac10",
+                          "paintkit": "gs_mac10_dust_crate",
+                          "type": "Submachine Gun",
+                          "ammo_clip": 30,
+                          "ammo_clip_max": 30,
+                          "ammo_reserve": 100,
+                          "state": "holstered"
+                      }
+                  }
+              }
+          },
+          "bomb": {
+              "state": "carried",
+              "position": "-239.152, -1408.878, 2.031",
+              "player": "76561198410750263"
+          },
+          "map": {
+              "round_wins": {
+                  "1": "t_win_elimination",
+                  "2": "t_win_bomb",
+                  "3": "ct_win_elimination",
+                  "4": "ct_win_defuse",
+                  "5": "ct_win_elimination",
+                  "6": "t_win_bomb",
+                  "7": "t_win_bomb",
+                  "8": "t_win_bomb",
+                  "9": "ct_win_elimination",
+                  "10": "t_win_elimination",
+                  "11": "t_win_elimination",
+                  "12": "t_win_elimination",
+                  "13": "ct_win_elimination",
+                  "14": "t_win_bomb",
+                  "15": "t_win_elimination",
+                  "16": "t_win_elimination"
+              },
+              "mode": "competitive",
+              "name": "de_anubis",
+              "phase": "live",
+              "round": 16,
+              "team_ct": {
+                  "score": 9,
+                  "name": "TYLOO",
+                  "consecutive_round_losses": 3,
+                  "timeouts_remaining": 1,
+                  "matches_won_this_series": 1
+              },
+              "team_t": {
+                  "score": 7,
+                  "name": "Eternal Fire",
+                  "consecutive_round_losses": 0,
+                  "timeouts_remaining": 1,
+                  "matches_won_this_series": 0
+              },
+              "num_matches_to_win_series": 2
+          },
+          "phase_countdowns": {
+              "phase": "live",
+              "phase_ends_in": "109.7"
+          },
+          "round": {
+              "phase": "live"
+          }
+      },
+      "bombsites": {
+          "de_abbey": {
+              "a": {
+                  "center": [
+                      -3744,
+                      848,
+                      -60
+                  ],
+                  "minimum": [
+                      -3889,
+                      703,
+                      -89
+                  ],
+                  "maximum": [
+                      -3599,
+                      993,
+                      -31
+                  ]
+              },
+              "b": {
+                  "center": [
+                      -1356,
+                      258,
+                      -80
+                  ],
+                  "minimum": [
+                      -1557,
+                      95,
+                      -97
+                  ],
+                  "maximum": [
+                      -1155,
+                      421,
+                      -63
+                  ]
+              }
+          },
+          "de_ali": {
+              "a": {
+                  "center": [
+                      1152,
+                      512,
+                      120
+                  ],
+                  "minimum": [
+                      1023,
+                      383,
+                      79
+                  ],
+                  "maximum": [
+                      1281,
+                      641,
+                      161
+                  ]
+              },
+              "b": {
+                  "center": [
+                      -456,
+                      1728,
+                      142
+                  ],
+                  "minimum": [
+                      -625,
+                      1407,
+                      95
+                  ],
+                  "maximum": [
+                      -287,
+                      2049,
+                      189
+                  ]
+              }
+          },
+          "de_ancient": {
+              "a": {
+                  "center": [
+                      -1406,
+                      862,
+                      68
+                  ],
+                  "minimum": [
+                      -1553,
+                      747,
+                      51
+                  ],
+                  "maximum": [
+                      -1259,
+                      977,
+                      85
+                  ]
+              },
+              "b": {
+                  "center": [
+                      797,
+                      62,
+                      144
+                  ],
+                  "minimum": [
+                      668,
+                      -67,
+                      127
+                  ],
+                  "maximum": [
+                      926,
+                      191,
+                      161
+                  ]
+              }
+          },
+          "de_anubis": {
+              "a": {
+                  "center": [
+                      1238,
+                      1960,
+                      -192.5
+                  ],
+                  "minimum": [
+                      947,
+                      1679,
+                      -201
+                  ],
+                  "maximum": [
+                      1529,
+                      2241,
+                      -184
+                  ]
+              },
+              "b": {
+                  "center": [
+                      -1044,
+                      692,
+                      -4
+                  ],
+                  "minimum": [
+                      -1225,
+                      519,
+                      -33
+                  ],
+                  "maximum": [
+                      -863,
+                      865,
+                      25
+                  ]
+              }
+          },
+          "de_austria": {
+              "a": {
+                  "center": [
+                      -1224,
+                      1232,
+                      -128
+                  ],
+                  "minimum": [
+                      -1537,
+                      895,
+                      -193
+                  ],
+                  "maximum": [
+                      -911,
+                      1569,
+                      -63
+                  ]
+              },
+              "b": {
+                  "center": [
+                      1780,
+                      431,
+                      -95
+                  ],
+                  "minimum": [
+                      1559,
+                      31,
+                      -119
+                  ],
+                  "maximum": [
+                      2001,
+                      831,
+                      -71
+                  ]
+              }
+          },
+          "de_aztec": {
+              "a": {
+                  "center": [
+                      -1792,
+                      1056,
+                      -192
+                  ],
+                  "minimum": [
+                      -2049,
+                      831,
+                      -225
+                  ],
+                  "maximum": [
+                      -1535,
+                      1281,
+                      -159
+                  ]
+              },
+              "b": {
+                  "center": [
+                      -280,
+                      -1512,
+                      -192
+                  ],
+                  "minimum": [
+                      -529,
+                      -1665,
+                      -225
+                  ],
+                  "maximum": [
+                      -31,
+                      -1359,
+                      -159
+                  ]
+              }
+          },
+          "de_bank": {
+              "a": {
+                  "center": [
+                      -468,
+                      -278,
+                      16
+                  ],
+                  "minimum": [
+                      -569,
+                      -415,
+                      -26
+                  ],
+                  "maximum": [
+                      -367,
+                      -141,
+                      58
+                  ]
+              }
+          },
+          "de_biome": {
+              "a": {
+                  "center": [
+                      -322,
+                      759.96875,
+                      -528
+                  ],
+                  "minimum": [
+                      -577,
+                      431,
+                      -569
+                  ],
+                  "maximum": [
+                      -67,
+                      1089,
+                      -487
+                  ]
+              },
+              "b": {
+                  "center": [
+                      1732,
+                      436,
+                      -640
+                  ],
+                  "minimum": [
+                      1511,
+                      295,
+                      -657
+                  ],
+                  "maximum": [
+                      1953,
+                      577,
+                      -623
+                  ]
+              }
+          },
+          "de_cache": {
+              "a": {
+                  "center": [
+                      -239.5,
+                      1754.5,
+                      1703.5
+                  ],
+                  "minimum": [
+                      -433,
+                      1476,
+                      1685
+                  ],
+                  "maximum": [
+                      -46,
+                      2033,
+                      1722
+                  ]
+              },
+              "b": {
+                  "center": [
+                      -46.5,
+                      -1260,
+                      1677
+                  ],
+                  "minimum": [
+                      -311,
+                      -1469,
+                      1660
+                  ],
+                  "maximum": [
+                      218,
+                      -1051,
+                      1694
+                  ]
+              }
+          },
+          "de_canals": {
+              "a": {
+                  "center": [
+                      -1317.5,
+                      -704,
+                      192
+                  ],
+                  "minimum": [
+                      -1417,
+                      -858,
+                      63
+                  ],
+                  "maximum": [
+                      -1218,
+                      -550,
+                      321
+                  ]
+              },
+              "b": {
+                  "center": [
+                      128,
+                      -1080,
+                      304
+                  ],
+                  "minimum": [
+                      15,
+                      -1281,
+                      255
+                  ],
+                  "maximum": [
+                      241,
+                      -879,
+                      353
+                  ]
+              }
+          },
+          "de_castle": {
+              "a": {
+                  "center": [
+                      -1940,
+                      -1100,
+                      576
+                  ],
+                  "minimum": [
+                      -2025,
+                      -1313,
+                      543
+                  ],
+                  "maximum": [
+                      -1855,
+                      -887,
+                      609
+                  ]
+              },
+              "b": {
+                  "center": [
+                      1480,
+                      -528,
+                      664
+                  ],
+                  "minimum": [
+                      1343,
+                      -705,
+                      639
+                  ],
+                  "maximum": [
+                      1617,
+                      -351,
+                      689
+                  ]
+              }
+          },
+          "de_cbble": {
+              "a": {
+                  "center": [
+                      -2296,
+                      -999.96875,
+                      17
+                  ],
+                  "minimum": [
+                      -2441,
+                      -1129,
+                      -17
+                  ],
+                  "maximum": [
+                      -2151,
+                      -871,
+                      51
+                  ]
+              },
+              "b": {
+                  "center": [
+                      185,
+                      -872.46875,
+                      -56
+                  ],
+                  "minimum": [
+                      -51,
+                      -1133,
+                      -89
+                  ],
+                  "maximum": [
+                      421,
+                      -612,
+                      -23
+                  ]
+              }
+          },
+          "de_dust2": {
+              "a": {
+                  "center": [
+                      1112,
+                      2480,
+                      144
+                  ],
+                  "minimum": [
+                      975,
+                      2335,
+                      95
+                  ],
+                  "maximum": [
+                      1249,
+                      2625,
+                      193
+                  ]
+              },
+              "b": {
+                  "center": [
+                      -1536,
+                      2680,
+                      48
+                  ],
+                  "minimum": [
+                      -1729,
+                      2495,
+                      -1
+                  ],
+                  "maximum": [
+                      -1343,
+                      2865,
+                      97
+                  ]
+              }
+          },
+          "de_elysion": {
+              "a": {
+                  "center": [
+                      354,
+                      188,
+                      9626
+                  ],
+                  "minimum": [
+                      119,
+                      31,
+                      9617
+                  ],
+                  "maximum": [
+                      589,
+                      345,
+                      9635
+                  ]
+              }
+          },
+          "de_engage": {
+              "a": {
+                  "center": [
+                      704,
+                      -814.03125,
+                      2052
+                  ],
+                  "minimum": [
+                      511,
+                      -1049,
+                      2047
+                  ],
+                  "maximum": [
+                      897,
+                      -579,
+                      2057
+                  ]
+              },
+              "b": {
+                  "center": [
+                      -1616,
+                      -160,
+                      2212
+                  ],
+                  "minimum": [
+                      -1809,
+                      -321,
+                      2207
+                  ],
+                  "maximum": [
+                      -1423,
+                      1,
+                      2217
+                  ]
+              }
+          },
+          "de_guard": {
+              "a": {
+                  "center": [
+                      64,
+                      -960,
+                      -132
+                  ],
+                  "minimum": [
+                      -145,
+                      -1185,
+                      -161
+                  ],
+                  "maximum": [
+                      273,
+                      -735,
+                      -103
+                  ]
+              }
+          },
+          "de_inferno": {
+              "a": {
+                  "center": [
+                      1976,
+                      434,
+                      180
+                  ],
+                  "minimum": [
+                      1791,
+                      159,
+                      159
+                  ],
+                  "maximum": [
+                      2161,
+                      709,
+                      201
+                  ]
+              },
+              "b": {
+                  "center": [
+                      368,
+                      2776,
+                      192
+                  ],
+                  "minimum": [
+                      143,
+                      2543,
+                      159
+                  ],
+                  "maximum": [
+                      593,
+                      3009,
+                      225
+                  ]
+              }
+          },
+          "de_lake": {
+              "a": {
+                  "center": [
+                      3711,
+                      -4204.5,
+                      -52
+                  ],
+                  "minimum": [
+                      3584,
+                      -4337,
+                      -73
+                  ],
+                  "maximum": [
+                      3838,
+                      -4072,
+                      -31
+                  ]
+              }
+          },
+          "de_mirage": {
+              "a": {
+                  "center": [
+                      -440,
+                      -2168,
+                      -168
+                  ],
+                  "minimum": [
+                      -617,
+                      -2329,
+                      -181
+                  ],
+                  "maximum": [
+                      -263,
+                      -2007,
+                      -155
+                  ]
+              },
+              "b": {
+                  "center": [
+                      -2048,
+                      256,
+                      -151
+                  ],
+                  "minimum": [
+                      -2217,
+                      71,
+                      -160
+                  ],
+                  "maximum": [
+                      -1879,
+                      441,
+                      -142
+                  ]
+              }
+          },
+          "de_nuke": {
+              "a": {
+                  "center": [
+                      688.5,
+                      -719,
+                      -367.5
+                  ],
+                  "minimum": [
+                      527,
+                      -914,
+                      -416
+                  ],
+                  "maximum": [
+                      850,
+                      -524,
+                      -319
+                  ]
+              },
+              "b": {
+                  "center": [
+                      592,
+                      -1008,
+                      -748
+                  ],
+                  "minimum": [
+                      319,
+                      -1313,
+                      -769
+                  ],
+                  "maximum": [
+                      865,
+                      -703,
+                      -727
+                  ]
+              }
+          },
+          "de_overpass": {
+              "a": {
+                  "center": [
+                      -2136,
+                      662,
+                      502
+                  ],
+                  "minimum": [
+                      -2601,
+                      351,
+                      471
+                  ],
+                  "maximum": [
+                      -1671,
+                      973,
+                      533
+                  ]
+              },
+              "b": {
+                  "center": [
+                      -1104,
+                      64,
+                      104
+                  ],
+                  "minimum": [
+                      -1249,
+                      -97,
+                      79
+                  ],
+                  "maximum": [
+                      -959,
+                      225,
+                      129
+                  ]
+              }
+          },
+          "de_safehouse": {
+              "a": {
+                  "center": [
+                      1823.5,
+                      214,
+                      474
+                  ],
+                  "minimum": [
+                      1725,
+                      63,
+                      445
+                  ],
+                  "maximum": [
+                      1922,
+                      365,
+                      503
+                  ]
+              }
+          },
+          "de_santorini": {
+              "a": {
+                  "center": [
+                      1174,
+                      387,
+                      7.5
+                  ],
+                  "minimum": [
+                      1003,
+                      222,
+                      -27
+                  ],
+                  "maximum": [
+                      1345,
+                      552,
+                      42
+                  ]
+              },
+              "b": {
+                  "center": [
+                      -1561,
+                      -239.5,
+                      -58
+                  ],
+                  "minimum": [
+                      -1730,
+                      -399,
+                      -95
+                  ],
+                  "maximum": [
+                      -1392,
+                      -80,
+                      -21
+                  ]
+              }
+          },
+          "de_season": {
+              "a": {
+                  "center": [
+                      -224,
+                      217.5,
+                      28
+                  ],
+                  "minimum": [
+                      -385,
+                      50,
+                      -1
+                  ],
+                  "maximum": [
+                      -63,
+                      385,
+                      57
+                  ]
+              },
+              "b": {
+                  "center": [
+                      2792,
+                      1028.5,
+                      34
+                  ],
+                  "minimum": [
+                      2607,
+                      888,
+                      -1
+                  ],
+                  "maximum": [
+                      2977,
+                      1169,
+                      69
+                  ]
+              }
+          },
+          "de_shortdust": {
+              "a": {
+                  "center": [
+                      16,
+                      1312,
+                      52
+                  ],
+                  "minimum": [
+                      -129,
+                      1167,
+                      31
+                  ],
+                  "maximum": [
+                      161,
+                      1457,
+                      73
+                  ]
+              }
+          },
+          "de_shortnuke": {
+              "b": {
+                  "center": [
+                      592,
+                      -1008,
+                      -748
+                  ],
+                  "minimum": [
+                      319,
+                      -1313,
+                      -769
+                  ],
+                  "maximum": [
+                      865,
+                      -703,
+                      -727
+                  ]
+              }
+          },
+          "de_stmarc": {
+              "a": {
+                  "center": [
+                      -6920,
+                      6944,
+                      73
+                  ],
+                  "minimum": [
+                      -7049,
+                      6777,
+                      31
+                  ],
+                  "maximum": [
+                      -6791,
+                      7111,
+                      115
+                  ]
+              }
+          },
+          "de_sugarcane": {
+              "a": {
+                  "center": [
+                      -1815.90625,
+                      185,
+                      243.375
+                  ],
+                  "minimum": [
+                      -1991,
+                      96,
+                      201
+                  ],
+                  "maximum": [
+                      -1641,
+                      274,
+                      285
+                  ]
+              }
+          },
+          "de_thrill": {
+              "a": {
+                  "center": [
+                      776,
+                      -424,
+                      100
+                  ],
+                  "minimum": [
+                      543,
+                      -705,
+                      95
+                  ],
+                  "maximum": [
+                      1009,
+                      -143,
+                      105
+                  ]
+              },
+              "b": {
+                  "center": [
+                      -1794.5,
+                      -194,
+                      88
+                  ],
+                  "minimum": [
+                      -2022,
+                      -363,
+                      79
+                  ],
+                  "maximum": [
+                      -1567,
+                      -25,
+                      97
+                  ]
+              }
+          },
+          "de_train": {
+              "a": {
+                  "center": [
+                      567.96875,
+                      -17.5,
+                      -160.5
+                  ],
+                  "minimum": [
+                      235,
+                      -241,
+                      -217
+                  ],
+                  "maximum": [
+                      901,
+                      206,
+                      -104
+                  ]
+              },
+              "b": {
+                  "center": [
+                      52,
+                      -1279,
+                      -303
+                  ],
+                  "minimum": [
+                      -249,
+                      -1440,
+                      -364
+                  ],
+                  "maximum": [
+                      353,
+                      -1118,
+                      -242
+                  ]
+              }
+          },
+          "de_vertigo": {
+              "a": {
+                  "center": [
+                      -293.5,
+                      -621,
+                      11791.5
+                  ],
+                  "minimum": [
+                      -492,
+                      -721,
+                      11775
+                  ],
+                  "maximum": [
+                      -95,
+                      -521,
+                      11808
+                  ]
+              },
+              "b": {
+                  "center": [
+                      -2248,
+                      797.5,
+                      11758
+                  ],
+                  "minimum": [
+                      -2364,
+                      656,
+                      11743
+                  ],
+                  "maximum": [
+                      -2132,
+                      939,
+                      11773
+                  ]
+              }
+          },
+          "de_zoo": {
+              "a": {
+                  "center": [
+                      2055.96875,
+                      3684,
+                      96
+                  ],
+                  "minimum": [
+                      1807,
+                      3463,
+                      63
+                  ],
+                  "maximum": [
+                      2305,
+                      3905,
+                      129
+                  ]
+              },
+              "b": {
+                  "center": [
+                      1320,
+                      756,
+                      8
+                  ],
+                  "minimum": [
+                      911,
+                      575,
+                      -17
+                  ],
+                  "maximum": [
+                      1729,
+                      937,
+                      33
+                  ]
+              }
+          }
+      },
+      "options": {
+          "preferences.isCsgo": false,
+          "preferences.minimumGoodKdRatio": "1.001",
+          "preferences.maximumBadKdRatio": "0.999",
+          "cvars.mp_maxrounds": 24,
+          "cvars.mp_overtime_maxrounds": 6,
+          "teams.teamNameOverrides": "",
+          "teams.playerNameOverrides": "76561198360407641 Jee\n76561198355197522 Moseyuh\n76561198048266764 Attacker\n76561198364937038 JamYoung\n76561198108796479 Mercury",
+          "teams.hiddenPlayers": "76561197962433244\n76561197980936538",
+          "series.hideTotalScores": true,
+          "series.hideSidebars": true,
+          "series.hideRadars": true,
+          "series.hidemapName": true,
+          "cvars.mp_roundtime": 1.92,
+          "cvars.mp_team_timeout_max": 3,
+          "cvars.mp_team_timeout_time": 30,
+          "cvars.mp_freezetime": 20,
+          "preferences.sidebar.teamGrenades.activeIntoRoundSec": 5,
+          "preferences.sidebar.teamEquipment.activeIntoRoundSec": 5,
+          "cvars.cash_team_loser_bonus": 1400,
+          "cvars.cash_team_loser_bonus_consecutive_rounds": 500,
+          "cvars.mp_c4timer": 40,
+          "series.name.left": "EPL S21 APAC",
+          "series.name.right": "Stage 2 - Playoffs",
+          "series.maps.1.name": "Dust2",
+          "series.maps.1.pickTeam": "",
+          "series.maps.1.isDecider": true,
+          "series.maps.1.pickTeamScore": "",
+          "series.maps.1.enemyTeamScore": "",
+          "series.maps.2.name": "",
+          "series.maps.2.pickTeam": "",
+          "series.maps.2.isDecider": false,
+          "series.maps.2.pickTeamScore": "",
+          "series.maps.2.enemyTeamScore": "",
+          "series.maps.3.name": "",
+          "series.maps.3.pickTeam": "",
+          "series.maps.3.isDecider": true,
+          "series.maps.3.pickTeamScore": "",
+          "series.maps.3.enemyTeamScore": "",
+          "series.maps.4.name": "",
+          "series.maps.4.pickTeam": "",
+          "series.maps.4.isDecider": false,
+          "series.maps.4.pickTeamScore": "",
+          "series.maps.4.enemyTeamScore": "",
+          "series.maps.5.name": "",
+          "series.maps.5.pickTeam": "",
+          "series.maps.5.isDecider": false,
+          "series.maps.5.pickTeamScore": "",
+          "series.maps.5.enemyTeamScore": ""
+      },
+      "radars": {
+          "ar_baggage": {
+              "radarImageTransparentBackgrond": true,
+              "pos_x": -1316,
+              "pos_y": 1288,
+              "scale": 2.539062,
+              "verticalsections": {
+                  "default": {
+                      "AltitudeMax": 10000,
+                      "AltitudeMin": -5
+                  },
+                  "lower": {
+                      "AltitudeMax": -5,
+                      "AltitudeMin": -10000
+                  }
+              }
+          },
+          "ar_pool_day": {
+              "pos_x": -1088,
+              "pos_y": 1600,
+              "scale": 2.125
+          },
+          "ar_shoots": {
+              "radarImageTransparentBackgrond": true,
+              "pos_x": -1368,
+              "pos_y": 1952,
+              "scale": 2.6875
+          },
+          "cs_italy": {
+              "radarImageTransparentBackgrond": true,
+              "radarImageUrl": "/hud/img/radars/ingame-transparent/cs_italy.png",
+              "pos_x": -2647,
+              "pos_y": 2592,
+              "scale": 4.6
+          },
+          "cs_office": {
+              "radarImageTransparentBackgrond": true,
+              "pos_x": -1838,
+              "pos_y": 1858,
+              "scale": 4.1
+          },
+          "de_ancient": {
+              "radarImageTransparentBackgrond": true,
+              "pos_x": -2590,
+              "pos_y": 1850,
+              "scale": 4.26
+          },
+          "de_anubis": {
+              "radarImageTransparentBackgrond": true,
+              "pos_x": -2796,
+              "pos_y": 3350,
+              "scale": 5.22
+          },
+          "de_basalt": {
+              "radarImageTransparentBackgrond": true,
+              "pos_x": -2345.6,
+              "pos_y": 2391.8,
+              "scale": 4.37
+          },
+          "de_dust2": {
+              "radarImageTransparentBackgrond": true,
+              "pos_x": -2530,
+              "pos_y": 3239,
+              "scale": 4.4
+          },
+          "de_edin": {
+              "radarImageTransparentBackgrond": true,
+              "pos_x": -383.30038,
+              "pos_y": 4420.2134,
+              "scale": 4.803717
+          },
+          "de_inferno": {
+              "radarImageTransparentBackgrond": true,
+              "pos_x": -2090,
+              "pos_y": 3850,
+              "scale": 4.91
+          },
+          "de_mirage": {
+              "radarImageTransparentBackgrond": true,
+              "pos_x": -3245,
+              "pos_y": 1750,
+              "scale": 5.02
+          },
+          "de_nuke": {
+              "radarImageTransparentBackgrond": true,
+              "pos_x": -3290,
+              "pos_y": 1150,
+              "scale": 6.98,
+              "verticalsections": {
+                  "default": {
+                      "AltitudeMax": 10000,
+                      "AltitudeMin": -495
+                  },
+                  "lower": {
+                      "AltitudeMax": 0,
+                      "AltitudeMin": -46
+                  }
+              }
+          },
+          "de_overpass": {
+              "radarImageTransparentBackgrond": true,
+              "pos_x": -4831,
+              "pos_y": 1781,
+              "scale": 5.2
+          },
+          "de_palais": {
+              "pos_x": -1353.2374,
+              "pos_y": 2044.8105,
+              "scale": 2.8003397,
+              "verticalsections": {
+                  "default": {
+                      "AltitudeMin": -16384,
+                      "AltitudeMax": 47.99997
+                  },
+                  "higher1": {
+                      "AltitudeMin": 47.99997,
+                      "AltitudeMax": 214.00027
+                  },
+                  "higher2": {
+                      "AltitudeMin": 214.00027,
+                      "AltitudeMax": 16384
+                  }
+              }
+          },
+          "de_train": {
+              "radarImageTransparentBackgrond": true,
+              "pos_x": -2760,
+              "pos_y": 2450,
+              "scale": 4.74,
+              "verticalsections": {
+                  "upper": {
+                      "AltitudeMax": 20000,
+                      "AltitudeMin": -50
+                  },
+                  "default": {
+                      "AltitudeMax": -50,
+                      "AltitudeMin": -5000
+                  }
+              }
+          },
+          "de_vertigo": {
+              "radarImageTransparentBackgrond": true,
+              "pos_x": "-3168",
+              "pos_y": 1762,
+              "scale": 4,
+              "verticalsections": {
+                  "default": {
+                      "AltitudeMax": 20000,
+                      "AltitudeMin": 11700
+                  },
+                  "lower": {
+                      "AltitudeMax": 11700,
+                      "AltitudeMin": -10000
+                  }
+              }
+          },
+          "de_whistle": {
+              "radarImageTransparentBackgrond": true,
+              "radarImageUrl": "/hud/img/radars/ingame-transparent/de_whistle.png",
+              "pos_x": -1825.6,
+              "pos_y": 1104.82,
+              "scale": 2.8
+          },
+          "de_cache": {
+              "radarImageTransparentBackgrond": true,
+              "radarImageUrl": "/hud/img/radars/simpleradar/de_cache.webp",
+              "pos_x": -2000,
+              "pos_y": 3250,
+              "scale": 5.5
+          },
+          "ar_dizzy": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/ar_dizzy.webp",
+              "pos_x": -2512,
+              "pos_y": 1536,
+              "scale": 3
+          },
+          "ar_lunacy": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/ar_lunacy.webp",
+              "pos_x": -1536,
+              "pos_y": 1536,
+              "scale": 3
+          },
+          "ar_monastery": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/ar_monastery.webp",
+              "pos_x": -1687,
+              "pos_y": 1640,
+              "scale": 3
+          },
+          "chalice": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/chalice.webp",
+              "pos_x": -1501,
+              "pos_y": 1570,
+              "scale": 3
+          },
+          "coop_autumn": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/coop_autumn.webp",
+              "pos_x": -5160,
+              "pos_y": 5859,
+              "scale": 12
+          },
+          "coop_cementplant": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/coop_cementplant.webp",
+              "pos_x": -5160,
+              "pos_y": 5859,
+              "scale": 12
+          },
+          "coop_fall": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/coop_fall.webp",
+              "pos_x": -5160,
+              "pos_y": 5859,
+              "scale": 12
+          },
+          "coop_kasbah": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/coop_kasbah.webp",
+              "pos_x": -5160,
+              "pos_y": 5859,
+              "scale": 12
+          },
+          "cs_agency": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/cs_agency.webp",
+              "pos_x": -2947,
+              "pos_y": 2492,
+              "scale": 5
+          },
+          "cs_apollo": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/cs_apollo.webp",
+              "pos_x": -1998,
+              "pos_y": -1604,
+              "scale": 5.03
+          },
+          "cs_assault": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/cs_assault.webp",
+              "pos_x": 4041,
+              "pos_y": 7838,
+              "scale": 4.6
+          },
+          "cs_backalley": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/cs_backalley.webp",
+              "pos_x": -2485,
+              "pos_y": 3200,
+              "scale": 3.5
+          },
+          "cs_climb": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/cs_climb.webp",
+              "pos_x": -858.5,
+              "pos_y": 4241,
+              "scale": 4.29,
+              "verticalsections": {
+                  "default": {
+                      "AltitudeMax": 10000,
+                      "AltitudeMin": 175.957993
+                  },
+                  "layer1": {
+                      "AltitudeMax": 175.957993,
+                      "AltitudeMin": -10000
+                  }
+              }
+          },
+          "cs_cruise": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/cs_cruise.webp",
+              "pos_x": -3507,
+              "pos_y": 2498,
+              "scale": 5
+          },
+          "cs_insertion2": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/cs_insertion2.webp",
+              "pos_x": -5129,
+              "pos_y": 3136,
+              "scale": 9,
+              "verticalsections": {
+                  "default": {
+                      "AltitudeMax": 6000,
+                      "AltitudeMin": -700
+                  },
+                  "lower": {
+                      "AltitudeMax": -700,
+                      "AltitudeMin": -10000
+                  }
+              }
+          },
+          "cs_insertion": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/cs_insertion.webp",
+              "pos_x": -4888,
+              "pos_y": 4884,
+              "scale": 10
+          },
+          "cs_militia": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/cs_militia.webp",
+              "pos_x": -1474,
+              "pos_y": 2296,
+              "scale": 4.5,
+              "verticalsections": {
+                  "default": {
+                      "AltitudeMax": 20000,
+                      "AltitudeMin": -25
+                  },
+                  "lower": {
+                      "AltitudeMax": -25,
+                      "AltitudeMin": -10000
+                  }
+              }
+          },
+          "cs_rush": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/cs_rush.webp",
+              "pos_x": -2950,
+              "pos_y": 3350,
+              "scale": 5.2
+          },
+          "cs_siege": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/cs_siege.webp",
+              "pos_x": -1193,
+              "pos_y": 3515,
+              "scale": 6.5
+          },
+          "cs_workout": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/cs_workout.webp",
+              "pos_x": -2176,
+              "pos_y": 3165,
+              "scale": 6.06
+          },
+          "de_abbey": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_abbey.webp",
+              "pos_x": -6204,
+              "pos_y": 5111,
+              "scale": 6.5
+          },
+          "de_ali": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_ali.webp",
+              "pos_x": -2064,
+              "pos_y": 2920,
+              "scale": 5
+          },
+          "de_austria": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_austria.webp",
+              "pos_x": -2877,
+              "pos_y": 2930,
+              "scale": 5.8
+          },
+          "de_aztec": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_aztec.webp",
+              "pos_x": -3200,
+              "pos_y": 2841,
+              "scale": 6
+          },
+          "de_bank": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_bank.webp",
+              "pos_x": -2000,
+              "pos_y": 1493,
+              "scale": 4
+          },
+          "de_bazaar": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_bazaar.webp",
+              "pos_x": -2434,
+              "pos_y": 2179,
+              "scale": 5
+          },
+          "de_biome": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_biome.webp",
+              "pos_x": -2129,
+              "pos_y": 2368,
+              "scale": 5
+          },
+          "de_blackgold": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_blackgold.webp",
+              "pos_x": -1100,
+              "pos_y": 1425,
+              "scale": 5.3
+          },
+          "de_blagai": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_blagai.webp",
+              "pos_x": -1742,
+              "pos_y": 710,
+              "scale": 3.15
+          },
+          "de_boyard": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_boyard.webp",
+              "pos_x": -2352,
+              "pos_y": -640,
+              "scale": 2.98
+          },
+          "de_breach": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_breach.webp",
+              "pos_x": -2950,
+              "pos_y": 2886,
+              "scale": 5.5
+          },
+          "de_calavera": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_calavera.webp",
+              "pos_x": -490.015015,
+              "pos_y": 326,
+              "scale": 2.82
+          },
+          "de_canals": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_canals.webp",
+              "pos_x": -2496,
+              "pos_y": 1792,
+              "scale": 4
+          },
+          "de_castle": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_castle.webp",
+              "pos_x": -3378,
+              "pos_y": 2756,
+              "scale": 5.5
+          },
+          "de_cbble": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_cbble.webp",
+              "pos_x": -3840,
+              "pos_y": 3072,
+              "scale": 6
+          },
+          "de_chinatown": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_chinatown.webp",
+              "pos_x": -1735,
+              "pos_y": 3232,
+              "scale": 4
+          },
+          "de_chlorine": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_chlorine.webp",
+              "pos_x": 2076,
+              "pos_y": 1272,
+              "scale": 5.25
+          },
+          "de_coast": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_coast.webp",
+              "pos_x": -3028,
+              "pos_y": 4122,
+              "scale": 5.5
+          },
+          "de_crete": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_crete.webp",
+              "pos_x": -2240,
+              "pos_y": 1408,
+              "scale": 3.31
+          },
+          "de_dust": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_dust.webp",
+              "pos_x": -2850,
+              "pos_y": 4073,
+              "scale": 6
+          },
+          "de_elysion": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_elysion.webp",
+              "pos_x": -1192,
+              "pos_y": 1096,
+              "scale": 2.59
+          },
+          "de_empire": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_empire.webp",
+              "pos_x": -2165,
+              "pos_y": 2000,
+              "scale": 4.5
+          },
+          "de_engage": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_engage.webp",
+              "pos_x": -3530,
+              "pos_y": 2976,
+              "scale": 5.77
+          },
+          "de_extraction": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_extraction.webp",
+              "pos_x": -1808,
+              "pos_y": 1888,
+              "scale": 3.56
+          },
+          "de_facade": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_facade.webp",
+              "pos_x": -90,
+              "pos_y": 5659,
+              "scale": 6
+          },
+          "de_grind": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_grind.webp",
+              "pos_x": -3723,
+              "pos_y": 3026,
+              "scale": 5
+          },
+          "de_guard": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_guard.webp",
+              "pos_x": -1768,
+              "pos_y": 1648,
+              "scale": 4.02
+          },
+          "de_gwalior": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_gwalior.webp",
+              "pos_x": -1145,
+              "pos_y": 2688,
+              "scale": 5
+          },
+          "de_hive": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_hive.webp",
+              "pos_x": -538,
+              "pos_y": 2608,
+              "scale": 4.01
+          },
+          "de_iris": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_iris.webp",
+              "pos_x": -2288,
+              "pos_y": 2341,
+              "scale": 4.5
+          },
+          "de_lake": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_lake.webp",
+              "pos_x": 1200,
+              "pos_y": -700,
+              "scale": 5.2
+          },
+          "de_lite": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_lite.webp",
+              "pos_x": -2012,
+              "pos_y": 2928,
+              "scale": 5
+          },
+          "de_log": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_log.webp",
+              "pos_x": -411,
+              "pos_y": 759,
+              "scale": 6.5
+          },
+          "de_marquis": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_marquis.webp",
+              "pos_x": -1877,
+              "pos_y": 3199,
+              "scale": 5
+          },
+          "de_mikla": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_mikla.webp",
+              "pos_x": 711,
+              "pos_y": 2383,
+              "scale": 4.1
+          },
+          "de_mist": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_mist.webp",
+              "pos_x": -5150,
+              "pos_y": 2080,
+              "scale": 4.8
+          },
+          "de_mocha": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_mocha.webp",
+              "pos_x": -265,
+              "pos_y": 3210,
+              "scale": 4.93
+          },
+          "de_mutiny": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_mutiny.webp",
+              "pos_x": -8299,
+              "pos_y": -1312,
+              "scale": 4.93
+          },
+          "de_overgrown": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_overgrown.webp",
+              "pos_x": -3376,
+              "pos_y": 5563,
+              "scale": 7
+          },
+          "de_pitstop": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_pitstop.webp",
+              "pos_x": -1472,
+              "pos_y": 2432,
+              "scale": 3.88,
+              "verticalsections": {
+                  "default": {
+                      "AltitudeMax": 164,
+                      "AltitudeMin": -10000
+                  },
+                  "layer1": {
+                      "AltitudeMax": 10000,
+                      "AltitudeMin": 164
+                  }
+              }
+          },
+          "de_prime": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_prime.webp",
+              "pos_x": -4580,
+              "pos_y": 1553,
+              "scale": 4
+          },
+          "de_rails": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_rails.webp",
+              "pos_x": -2199,
+              "pos_y": 2874,
+              "scale": 4.5
+          },
+          "de_ravine": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_ravine.webp",
+              "pos_x": 677.5,
+              "pos_y": 624,
+              "scale": 2.95
+          },
+          "de_resort": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_resort.webp",
+              "pos_x": -506,
+              "pos_y": 2713,
+              "scale": 5.5
+          },
+          "de_royal": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_royal.webp",
+              "pos_x": -2343,
+              "pos_y": 2644,
+              "scale": 4
+          },
+          "de_ruby": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_ruby.webp",
+              "pos_x": -1079,
+              "pos_y": 3093,
+              "scale": 4.5
+          },
+          "de_ruins": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_ruins.webp",
+              "pos_x": -2443,
+              "pos_y": 2485,
+              "scale": 6.25
+          },
+          "de_safehouse": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_safehouse.webp",
+              "pos_x": -240,
+              "pos_y": 2650,
+              "scale": 4.52
+          },
+          "de_santorini": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_santorini.webp",
+              "pos_x": -2135,
+              "pos_y": 1400,
+              "scale": 4
+          },
+          "de_seaside": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_seaside.webp",
+              "pos_x": -4161,
+              "pos_y": 3680,
+              "scale": 7
+          },
+          "de_season": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_season.webp",
+              "pos_x": -1003,
+              "pos_y": 2521,
+              "scale": 5
+          },
+          "de_shipped": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_shipped.webp",
+              "pos_x": -2432,
+              "pos_y": 2663,
+              "scale": 5.8
+          },
+          "de_shortdust": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_shortdust.webp",
+              "pos_x": -2318,
+              "pos_y": 2337,
+              "scale": 3.6
+          },
+          "de_shortnuke": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_shortnuke.webp",
+              "pos_x": -3453,
+              "pos_y": 2887,
+              "scale": 7
+          },
+          "de_shorttrain": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_shorttrain.webp",
+              "pos_x": -2477,
+              "pos_y": 2392,
+              "scale": 4.7
+          },
+          "de_stmarc": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_stmarc.webp",
+              "pos_x": -9383,
+              "pos_y": 9099,
+              "scale": 4
+          },
+          "de_studio": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_studio.webp",
+              "pos_x": -3248,
+              "pos_y": 2968,
+              "scale": 6.17
+          },
+          "de_subzero": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_subzero.webp",
+              "pos_x": -2438,
+              "pos_y": 3690,
+              "scale": 5
+          },
+          "de_sugarcane": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_sugarcane.webp",
+              "pos_x": -4015,
+              "pos_y": 2000,
+              "scale": 4.25
+          },
+          "de_swamp": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_swamp.webp",
+              "pos_x": -2600,
+              "pos_y": 3906,
+              "scale": 6
+          },
+          "de_thrill": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_thrill.webp",
+              "pos_x": -3276,
+              "pos_y": 2973,
+              "scale": 5.5
+          },
+          "de_tulip": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_tulip.webp",
+              "pos_x": 3402,
+              "pos_y": 5583,
+              "scale": 5.5
+          },
+          "de_tuscan": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_tuscan.webp",
+              "pos_x": -5141,
+              "pos_y": 1088,
+              "scale": 4.85,
+              "verticalsections": {
+                  "default": {
+                      "AltitudeMax": 10000,
+                      "AltitudeMin": -248
+                  },
+                  "layer1": {
+                      "AltitudeMax": -248,
+                      "AltitudeMin": -10000
+                  }
+              }
+          },
+          "de_zoo": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/de_zoo.webp",
+              "pos_x": -2435,
+              "pos_y": 6116,
+              "scale": 7
+          },
+          "dz_blacksite": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/dz_blacksite.webp",
+              "pos_x": -8604,
+              "pos_y": 8804,
+              "scale": 17
+          },
+          "dz_county": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/dz_county.webp",
+              "pos_x": -10240,
+              "pos_y": 10240,
+              "scale": 20
+          },
+          "dz_frostbite": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/dz_frostbite.webp",
+              "pos_x": -8574,
+              "pos_y": 8787,
+              "scale": 17
+          },
+          "dz_junglety": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/dz_junglety.webp",
+              "pos_x": -8504,
+              "pos_y": 8741,
+              "scale": 17
+          },
+          "dz_sirocco": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/dz_sirocco.webp",
+              "pos_x": -8604,
+              "pos_y": 8804,
+              "scale": 17
+          },
+          "dz_vineyard": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/dz_vineyard.webp",
+              "pos_x": -8192,
+              "pos_y": 8192,
+              "scale": 16
+          },
+          "gd_bank": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/gd_bank.webp",
+              "pos_x": -2000,
+              "pos_y": 1493,
+              "scale": 4
+          },
+          "gd_cbble": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/gd_cbble.webp",
+              "pos_x": -3840,
+              "pos_y": 3072,
+              "scale": 6
+          },
+          "gd_crashsite": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/gd_crashsite.webp",
+              "pos_x": -2212,
+              "pos_y": 1437,
+              "scale": 3.5
+          },
+          "gd_lake": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/gd_lake.webp",
+              "pos_x": 1200,
+              "pos_y": -700,
+              "scale": 5.2
+          },
+          "gd_lunacy": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/gd_lunacy.webp",
+              "pos_x": -1536,
+              "pos_y": 1536,
+              "scale": 3
+          },
+          "gd_rialto": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/gd_rialto.webp",
+              "pos_x": -1260,
+              "pos_y": 1836,
+              "scale": 3
+          },
+          "training1": {
+              "radarImageUrl": "/hud/img/radars/ingame-legacy/training1.webp",
+              "pos_x": -2510,
+              "pos_y": 2000,
+              "scale": 5
+          }
+      },
+      "unixTimestamp": 1743763023558
+  }
+}

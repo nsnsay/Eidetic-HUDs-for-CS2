@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'ziti2'; /* 主字体 */
+    src: url("./alibabasans.ttf") format("truetype");
+	font-weight: bold;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	color: #ffffff;
+	font-family: 'ziti2', sans-serif; /* 默认字体堆叠 */
+	background: repeat url("./Sprinkle.png");
+	line-height: 1.6;
+
+	overflow: hidden;
+}
+
+body {
+	min-height: 100vh;
+	padding: 20px;
+}
