@@ -1,3 +1,6 @@
 <Inferno v-if="grenade.type === 'inferno'" :grenade="grenade" />
-<Smoke v-else-if="grenade.type === 'smoke' && grenade.isDetonated" :grenade="grenade" />
+<Smoke
+  v-else-if="grenade.type === 'smoke' && grenade.isDetonated"
+  :grenade="grenade"
+/>
 <GrenadeProjectile v-else :grenade="grenade" />

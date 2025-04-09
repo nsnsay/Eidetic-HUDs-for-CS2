@@ -38,10 +38,12 @@ const run = async () => {
 
   app.use(KoaCompress());
 
-  app.use(bodyParser({
-    strict: true,
-    enableTypes: ['json'],
-  }));
+  app.use(
+    bodyParser({
+      strict: true,
+      enableTypes: ['json'],
+    })
+  );
 
   const websocket = new Websocket(server);
 
@@ -62,13 +64,37 @@ const run = async () => {
 
   server.listen(port, host, () => {
     console.info(pc.bold(pc.white(`----------------------------------------`)));
-    console.info(pc.bold(pc.yellow(`|  HUD Control Panel -> . http://127.0.0.1:${port}`)));
-    console.info(pc.bold(pc.green(`|  OBS Capture URL -> . http://127.0.0.1:${port}/hud/index.html?transparent?corner`)));
+    console.info(
+      pc.bold(pc.yellow(`|  HUD Control Panel -> . http://127.0.0.1:${port}`))
+    );
+    console.info(
+      pc.bold(
+        pc.green(
+          `|  OBS Capture URL -> . http://127.0.0.1:${port}/hud/index.html?transparent?corner`
+        )
+      )
+    );
     console.info(pc.bold(pc.white(`----------------------------------------`)));
-    console.info(pc.bold(pc.blue(`Now you can put team avatars / player avatars to -> ${projectFolderPath}`)));
-    console.info(pc.bold(pc.blue(`The images type must be .png, Name rule :"{Team Name}.png" `)));
+    console.info(
+      pc.bold(
+        pc.blue(
+          `Now you can put team avatars / player avatars to -> ${projectFolderPath}`
+        )
+      )
+    );
+    console.info(
+      pc.bold(
+        pc.blue(`The images type must be .png, Name rule :"{Team Name}.png" `)
+      )
+    );
     console.info(pc.bold(pc.white(`----------------------------------------`)));
-    console.info(pc.bold(pc.white(`Currently using the custom radars, Any bug seeks please report at Github!`)));
+    console.info(
+      pc.bold(
+        pc.white(
+          `Currently using the custom radars, Any bug seeks please report at Github!`
+        )
+      )
+    );
     console.info(pc.bold(pc.cyan(`Hold CTRL + C to quit.`)));
     console.info(pc.bold(pc.white(`---------------Log Output---------------`)));
   });
@@ -85,20 +111,6 @@ const writeFile = (filename, data) => {
   return fs.promises.writeFile(filePath, data, 'utf8');
 };
 
-// 在主进程中提供文件读写功能
-const ipcMain = {
-  handle: (event, handler) => {
-    // 这里可以添加 IPC 处理逻辑
-  },
-  invoke: async (event, ...args) => {
-    // 这里可以添加 IPC 调用逻辑
-    if (event === 'read-file') {
-      return await readFile(args[0]);
-    } else if (event === 'write-file') {
-      await writeFile(args[0], args[1]);
-    }
-  }
-};
 
 process.on('uncaughtException', (error) => {
   // 忽略所有未处理的异常
@@ -109,7 +121,6 @@ process.on('unhandledRejection', (reason, promise) => {
   // 忽略所有未处理的 promise rejection
   console.log('Unhandled Rejection at:', promise, 'reason:', reason);
 });
-
 
 const createProjectFolder = () => {
   // 获取用户的应用数据目录（%AppData%）

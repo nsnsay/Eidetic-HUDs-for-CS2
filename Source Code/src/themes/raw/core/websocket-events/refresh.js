@@ -1,3 +1,3 @@
 export const handleRefresh = () => {
-	window.location.reload()
-}
+  window.location.reload();
+};

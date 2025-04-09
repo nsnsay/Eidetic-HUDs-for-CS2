@@ -8,31 +8,31 @@
 
 // needs to be a `function` so `this` is the Vue component
 export function averagePreviousPositions() {
-	let sumX = 0
-	let sumY = 0
-	let sumZ = 0
+  let sumX = 0;
+  let sumY = 0;
+  let sumZ = 0;
 
-	for (const [x, y, z, a] of this.previousPositions) {
-		sumX += x
-		sumY += y
-		sumZ += z
-	}
+  for (const [x, y, z, a] of this.previousPositions) {
+    sumX += x;
+    sumY += y;
+    sumZ += z;
+  }
 
-	return [
-		sumX / this.previousPositions.length,
-		sumY / this.previousPositions.length,
-		sumZ / this.previousPositions.length,
-	]
+  return [
+    sumX / this.previousPositions.length,
+    sumY / this.previousPositions.length,
+    sumZ / this.previousPositions.length,
+  ];
 }
 
 // needs to be a `function` so `this` is the Vue component
 export function rememberPosition(gameObject) {
-	const [x, y, z] = gameObject.position
+  const [x, y, z] = gameObject.position;
 
-	this.previousPositions.push([x, y, z])
+  this.previousPositions.push([x, y, z]);
 
-	// this used to be 8 back in v1, but 16 appears to make everything a bit smoother
-	if (this.previousPositions.length > 20) {
-		this.previousPositions.shift()
-	}
+  // this used to be 8 back in v1, but 16 appears to make everything a bit smoother
+  if (this.previousPositions.length > 16) {
+    this.previousPositions.shift();
+  }
 }

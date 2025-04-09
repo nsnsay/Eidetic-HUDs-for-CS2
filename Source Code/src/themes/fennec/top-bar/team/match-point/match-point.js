@@ -1,21 +1,21 @@
-import { positionClass } from '/hud/helpers/position-class.js'
-import { teamColorClass } from '/hud/helpers/team-color-class.js'
+import { positionClass } from '/hud/helpers/position-class.js';
+import { teamColorClass } from '/hud/helpers/team-color-class.js';
 
 export default {
-	props: [
-		'position',
-		'team',
-	],
+  props: ['position', 'team'],
 
-	computed: {
-		positionClass,
+  computed: {
+    positionClass,
 
-		colorClass() {
-			return teamColorClass(this.team)
-		},
+    colorClass() {
+      return teamColorClass(this.team);
+    },
 
-		isMatchPointPanelActive() {
-			return this.$round.isFreezetime && this.team.score === this.$round.matchPointAtScore
-		},
-	},
-}
+    isMatchPointPanelActive() {
+      return (
+        this.$round.isFreezetime &&
+        this.team.score === this.$round.matchPointAtScore
+      );
+    },
+  },
+};

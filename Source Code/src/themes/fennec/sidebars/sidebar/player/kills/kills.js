@@ -1,19 +1,16 @@
-import { teamColorClass } from '/hud/helpers/team-color-class.js'
-import Digits from '/hud/digits/digits.vue'
+import { teamColorClass } from '/hud/helpers/team-color-class.js';
+import Digits from '/hud/digits/digits.vue';
 
 export default {
-	props: [
-		'position',
-		'player',
-	],
+  props: ['position', 'player'],
 
-	components: {
-		Digits,
-	},
+  components: {
+    Digits,
+  },
 
-	computed: {
-		colorClass() {
-			return teamColorClass(this.player.team)
-		},
-	},
-}
+  computed: {
+    colorClass() {
+      return teamColorClass(this.player.team);
+    },
+  },
+};

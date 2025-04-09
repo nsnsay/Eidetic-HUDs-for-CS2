@@ -1,30 +1,51 @@
-<div class="series-graph-wrapper">
-	<div :class="['series-graph']">
-		<!-- 新添加的显示地图名字的容器 -->
-		<div class="map-names-container">
-			<div class="map-names-background" :data-map-count="seriesMapNumbers.length">
-				<div v-for="mapNumber in seriesMapNumbers" :key="mapNumber" class="map-item">
-					<div class="map-info">
-						<!-- 使用 v-if 条件渲染 -->
-						<img
-						v-if="!isDecider(mapNumber)"
-						:class="['logo', positionClass, colorClass, { '--active': logoImageLoaded }]"
-						:src="`/custom/team-logos/${$opts[`series.maps.${mapNumber}.pickTeam`]}.png`"
-						alt=""
-						@load="handleImageLoad"
-						@error="handleImageError"
-						>
-						<div v-if="isDecider(mapNumber)" class="decider-logo-placeholder">*</div>
-						<span :class="{ 'current-map': isCurrentMap(mapNumber) }">{{ formatMapName($opts[`series.maps.${mapNumber}.name`]) }}</span>
-						<!-- 新添加的条件渲染比分显示 -->
-						<div v-if="hasValidScores(mapNumber)" class="score-container">
-							<span :class="['score-pick-team', getScoreClasses(mapNumber).pickTeamClass]">{{ $opts[`series.maps.${mapNumber}.pickTeamScore`] }}</span>
-							<span class="score-separator">:</span>
-							<span :class="['score-enemy-team', getScoreClasses(mapNumber).enemyTeamClass]">{{ $opts[`series.maps.${mapNumber}.enemyTeamScore`] }}</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<!-- series-graph.html -->
+<div v-if="$opts[`series.hidemapName`]" class="series-graph-wrapper">
+  <div :class="['series-graph']">
+    <!-- 新添加的显示地图名字的容器 -->
+    <div class="map-names-container">
+      <!-- 新添加的标题 -->
+      <div class="map-names-header">Best of {{ seriesMapNumbers.length }}</div>
+
+      <div
+        class="map-names-background"
+        :data-map-count="seriesMapNumbers.length"
+      >
+        <div
+          v-for="mapNumber in seriesMapNumbers"
+          :key="mapNumber"
+          class="map-item"
+        >
+          <div class="map-info">
+            <!-- 使用 v-if 条件渲染 -->
+            <img
+              v-if="!isDecider(mapNumber)"
+              :class="['logo', positionClass, colorClass, { '--active': logoImageLoaded }]"
+              :src="`/custom/team-logos/${$opts[`series.maps.${mapNumber}.pickTeam`]}.png`"
+              alt=""
+              @load="handleImageLoad"
+              @error="handleImageError"
+            />
+            <div v-if="isDecider(mapNumber)" class="decider-logo-placeholder">
+              *
+            </div>
+            <span :class="{ 'current-map': isCurrentMap(mapNumber) }"
+              >{{ formatMapName($opts[`series.maps.${mapNumber}.name`]) }}</span
+            >
+            <!-- 新添加的条件渲染比分显示 -->
+            <div v-if="hasValidScores(mapNumber)" class="score-container">
+              <span
+                :class="['score-pick-team', getScoreClasses(mapNumber).pickTeamClass]"
+                >{{ $opts[`series.maps.${mapNumber}.pickTeamScore`] }}</span
+              >
+              <span class="score-separator">:</span>
+              <span
+                :class="['score-enemy-team', getScoreClasses(mapNumber).enemyTeamClass]"
+                >{{ $opts[`series.maps.${mapNumber}.enemyTeamScore`] }}</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,6 +1,7 @@
 /* 定义根变量 */
 :root {
-	--primary-font-family: 'Quantico';
-	--fallback-font-family: 'Noto Sans';
-	--font-family: var(--primary-font-family), var(--fallback-font-family), sans-serif;
+  --primary-font-family: 'Quantico';
+  --fallback-font-family: 'Noto Sans';
+  --font-family:
+    var(--primary-font-family), var(--fallback-font-family), sans-serif;
 }

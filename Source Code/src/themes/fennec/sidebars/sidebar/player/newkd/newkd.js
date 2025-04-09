@@ -1,12 +1,9 @@
-import Digits from '/hud/digits/digits.vue'
+import Digits from '/hud/digits/digits.vue';
 
 export default {
-	props: [
-		'position',
-		'player',
-	],
+  props: ['position', 'player'],
 
-	components: {
-		Digits,
-	},
-}
+  components: {
+    Digits,
+  },
+};

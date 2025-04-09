@@ -1,195 +1,249 @@
 <div class="buttons">
-	<a href="/hud" target="_blank" class="button-link">Using browser HUD</a>
-	<a href="/radar" target="_blank" class="button-link">Open Radars</a>
-	<button class="save" @click.prevent="save">Save Settings</button>
-	<button class="force-hud-refresh" @click.prevent="forceHudRefresh">Force Refresh HUD</button>
-	<button class="edit-maps" @click="showMapEditor">Match Series</button>
+  <a href="/hud" target="_blank" class="button-link">Using browser HUD</a>
+  <a href="/radar" target="_blank" class="button-link">Open Radars</a>
+  <button class="force-hud-refresh" @click.prevent="forceHudRefresh">
+    Force Refresh HUD
+  </button>
 </div>
 
-<!-- 地图编辑弹窗 -->
 <!-- 地图编辑弹窗 -->
 <div v-if="showMapEditorFlag" class="dialog">
-	<div class="dialog-content">
-	  <h3>Match Series</h3>
-	  <table>
-		<thead>
-		  <tr>
-			<th>Map Name</th>
-			<th>Pick Team</th>
-			<th>Pick Team Score</th>
-			<th>Enemy Team Score</th>
-			<th>Actions</th>
-		  </tr>
-		</thead>
-		<tbody>
-		  <tr v-for="(map, index) in maps" :key="index">
-			<td>
-			  <!-- 使用选择框代替输入框 -->
-			  <select v-model="map.name" class="map-name-select">
-				<option value="">Default</option>
-				<option value="Dust II">Dust II</option>
-				<option value="Mirage">Mirage</option>
-				<option value="Vertigo">Vertigo</option>
-				<option value="Ancient">Ancient</option>
-				<option value="Overpass">Overpass</option>
-				<option value="Nuke">Nuke</option>
-				<option value="Inferno">Inferno</option>
-				<option value="Anubis">Anubis</option>
-				<option value="Cobblestone">Cobblestone</option>
-				<option value="Train">Train</option>
-				<option value="Cache">Cache</option>
-			  </select>
-			</td>
-			<td>
-			  <input type="text" v-model="map.pickTeam" placeholder="Pick Team" class="pick-team-input">
-			</td>
-			<td>
-			  <input type="number" v-model="map.pickTeamScore" placeholder="P.T Score" class="score-input">
-			</td>
-			<td>
-			  <input type="number" v-model="map.enemyTeamScore" placeholder="E.T Score" class="score-input">
-			</td>
-			<td>
-			  <button @click="toggleIsDecider(index)" class="decider-btn">
-				{{ map.isDecider ? 'Remove Decider' : 'Set as Decider' }}
-			  </button>
-			</td>
-		  </tr>
-		</tbody>
-	  </table>
-	  <button @click="addMap" class="add-map-btn">Add Map</button>
-	  <div class="dialog-buttons">
-		<button @click="cancelMapEdit" class="cancel-btn">Cancel</button>
-		<button @click="saveMapData" class="save-btn">Save</button>
-	  </div>
-	</div>
-</div>
-<!-- 分页导航 -->
-<div class="section-navigation" v-if="filteredSections.length > 0">
-	<div class="navigation-tabs">
-		<button v-for="(section, index) in filteredSections" :key="index"
-			:class="['tab-item', { active: currentSection === section }, `section-${section.displayedName}`]"
-			@click="currentSection = section">
-			{{ section.displayedName }}
-		</button>
-	</div>
+  <div class="dialog-content">
+    <h3>Match Series</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Map Name</th>
+          <th>Pick Team</th>
+          <th>Pick Team Score</th>
+          <th>Enemy Team Score</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(map, index) in maps" :key="index">
+          <td>
+            <!-- 使用选择框代替输入框 -->
+            <select v-model="map.name" class="map-name-select">
+              <option value="">Default</option>
+              <option value="Dust II">Dust II</option>
+              <option value="Mirage">Mirage</option>
+              <option value="Vertigo">Vertigo</option>
+              <option value="Ancient">Ancient</option>
+              <option value="Overpass">Overpass</option>
+              <option value="Nuke">Nuke</option>
+              <option value="Inferno">Inferno</option>
+              <option value="Anubis">Anubis</option>
+              <option value="Cobblestone">Cobblestone</option>
+              <option value="Train">Train</option>
+              <option value="Cache">Cache</option>
+            </select>
+          </td>
+          <td>
+            <input
+              type="text"
+              v-model="map.pickTeam"
+              placeholder="Pick Team"
+              class="pick-team-input"
+            />
+          </td>
+          <td>
+            <input
+              type="number"
+              v-model="map.pickTeamScore"
+              placeholder="P.T Score"
+              class="score-input"
+            />
+          </td>
+          <td>
+            <input
+              type="number"
+              v-model="map.enemyTeamScore"
+              placeholder="E.T Score"
+              class="score-input"
+            />
+          </td>
+          <td>
+            <button @click="toggleIsDecider(index)" class="decider-btn">
+              {{ map.isDecider ? 'Remove Decider' : 'Set as Decider' }}
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button @click="addMap" class="add-map-btn">Add Map</button>
+    <div class="dialog-buttons">
+      <button @click="cancelMapEdit" class="cancel-btn">Cancel</button>
+      <button @click="saveMapData" class="save-btn">Save</button>
+    </div>
+  </div>
 </div>
 
-<!-- 动态显示当前选中的 section -->
-<section v-if="currentSection" :class="['sectionpage-' + currentSection.name, 'sectionpage']">
-	<header>
-		<h2>{{ currentSection.name }}</h2>
-		<p v-if="currentSection.description">{{ currentSection.description }}</p>
-	</header>
-	<div v-for="option of currentSection.options" :key="option.key" class="input-group">
-		<label :for="option.key">
-			{{ option.label || option.key }} <!-- 如果 option.label 存在，显示 option.label；否则显示 option.key -->
-		</label>
-		<div class="input">
-			<textarea v-if="option.inputType === 'textarea'" :id="option.key" :placeholder="option.fallback"
-				v-model="optionValues[option.key]"></textarea>
-			<input v-else :type="option.inputType" :id="option.key" :placeholder="option.fallback"
-				v-model="optionValues[option.key]" />
-			<button v-if="option.type === 'color'" class="reset" @click.prevent="resetValue(option.key)">
-				Reset to default
-			</button>
-		</div>
-		<div class="default-and-label">
-			<p v-if="option.fallback" class="default">
-				<code v-if="option.type === 'boolean'">{{ option.fallback ? 'yes' : 'no' }}</code>
-			</p>
-		</div>
-	</div>
+<div class="section-navigation" v-if="filteredSections.length > 0">
+  <div class="navigation-tabs">
+    <button
+      v-for="(section, index) in filteredSections"
+      :key="index"
+      :class="['tab-item', { active: currentSection === section }, `section-${section.displayedName}`]"
+      @click="currentSection = section"
+    >
+      {{ section.displayedName }}
+    </button>
+    <button class="edit-maps" @click="showMapEditor">Match Series</button>
+    <button class="save" @click.prevent="save">Save Settings</button>
+  </div>
+</div>
+
+<section
+  v-if="currentSection"
+  :class="['sectionpage-' + currentSection.name, 'sectionpage']"
+>
+  <header>
+    <h2>{{ currentSection.name }}</h2>
+    <p v-if="currentSection.description">{{ currentSection.description }}</p>
+  </header>
+  <div
+    v-for="option of currentSection.options"
+    :key="option.key"
+    class="input-group"
+  >
+    <label :for="option.key">
+      {{ option.label || option.key }}
+      <!-- 如果 option.label 存在，显示 option.label；否则显示 option.key -->
+    </label>
+    <div class="input">
+      <textarea
+        v-if="option.inputType === 'textarea'"
+        :id="option.key"
+        :placeholder="option.fallback"
+        v-model="optionValues[option.key]"
+      ></textarea>
+      <input
+        v-else
+        :type="option.inputType"
+        :id="option.key"
+        :placeholder="option.fallback"
+        v-model="optionValues[option.key]"
+      />
+      <button
+        v-if="option.type === 'color'"
+        class="reset"
+        @click.prevent="resetValue(option.key)"
+      >
+        Reset to default
+      </button>
+    </div>
+    <div class="default-and-label">
+      <p v-if="option.fallback" class="default">
+        <code v-if="option.type === 'boolean'"
+          >{{ option.fallback ? 'yes' : 'no' }}</code
+        >
+      </p>
+    </div>
+  </div>
 </section>
 
 <div :class="['playerInfoWrapper']">
-	<h3>Players HUD Panel / Join the server will active the panel</h3>
-<div v-if="currentSection && players.length > 0">
+  <h4>Players HUD Panel / Join the server will active the panel</h3>
+  <div v-if="currentSection && players.length > 0">
+    <table>
+      <thead>
+        <tr>
+          <th>SteamID</th>
+          <th @click="toggleSortDirection">Spectator Slots</th>
+          <th>Name</th>
+          <th>Team</th>
+          <th>Control</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="player in players" :key="player.steamID">
+          <td>{{ player.steamID }}</td>
+          <td>{{ player.gameID }}</td>
+          <td>{{ player.name }}</td>
+          <td>{{ player.team }}</td>
+          <td>
+            <button
+              class="player-name-rename-btn"
+              @click="showRenameDialog(player.steamID, player.name)"
+            >
+              Change Name
+            </button>
+            <button
+              class="hide-player-btn"
+              @click="showHideDialog(player.steamID, player.name)"
+            >
+              Hide player
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-	<table>
-		<thead>
-			<tr>
-				<th>SteamID</th>
-				<th @click="toggleSortDirection">Spectator Slots</th>
-				<th>Name</th>
-				<th>Team</th>
-				<th>Control</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr v-for="player in players" :key="player.steamID">
-				<td>{{ player.steamID }}</td>
-				<td>{{ player.gameID }}</td>
-				<td>{{ player.name }}</td>
-				<td>{{ player.team }}</td>
-				<td>
-					<button class="player-name-rename-btn"
-						@click="showRenameDialog(player.steamID, player.name)">Change Name</button>
-					<button class="hide-player-btn"
-						@click="showHideDialog(player.steamID, player.name)">Hide player</button>
-				</td>
-			</tr>
-		</tbody>
-	</table>
+    <!-- 隐藏的玩家列表 -->
+    <div v-if="hiddenPlayers.length > 0">
+      <h3>Hidden Player</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>SteamID</th>
+            <th>Name</th>
+            <th>Control</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="player in hiddenPlayers" :key="player.steamID">
+            <td>{{ player.steamID }}</td>
+            <td>{{ player.name }}</td>
+            <td>
+              <button
+                class="unhide-player-btn"
+                @click="showUnhideDialog(player.steamID, player.name)"
+              >
+                取消隐藏
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-	<!-- 隐藏的玩家列表 -->
-	<div v-if="hiddenPlayers.length > 0">
-		<h3>Hidden Player</h3>
-		<table>
-			<thead>
-				<tr>
-					<th>SteamID</th>
-					<th>Name</th>
-					<th>Control</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr v-for="player in hiddenPlayers" :key="player.steamID">
-					<td>{{ player.steamID }}</td>
-					<td>{{ player.name }}</td>
-					<td>
-						<button class="unhide-player-btn"
-							@click="showUnhideDialog(player.steamID, player.name)">取消隐藏</button>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+    <!-- 修改玩家名称的弹窗 -->
+    <div v-if="showRenameDialogFlag" class="dialog">
+      <div class="dialog-content">
+        <h3>
+          Player Info Changer
+        </h3>
+        <input v-model="newPlayerName" placeholder="New name" />
+        <div class="dialog-buttons">
+          <button @click="cancelRename">Cancel</button>
+          <button @click="renamePlayer">Confirm</button>
+        </div>
+      </div>
+    </div>
 
-	<!-- 修改玩家名称的弹窗 -->
-	<div v-if="showRenameDialogFlag" class="dialog">
-		<div class="dialog-content">
-			<h3>Change player name(Limit 11 letters max, Non-english one letter = two letter)</h3>
-			<input v-model="newPlayerName" placeholder="New name" />
-			<div class="dialog-buttons">
-				<button @click="cancelRename">Cancel</button>
-				<button @click="renamePlayer">Confirm</button>
-			</div>
-		</div>
-	</div>
+    <!-- 隐藏玩家的弹窗 -->
+    <div v-if="showHideDialogFlag" class="dialog">
+      <div class="dialog-content">
+        <h3>Confirm hide players</h3>
+        <p>Are you sure to hide "{{ currentEditingPlayerName }}"?</p>
+        <div class="dialog-buttons">
+          <button @click="cancelHide">取消</button>
+          <button @click="hidePlayer">确认</button>
+        </div>
+      </div>
+    </div>
 
-	<!-- 隐藏玩家的弹窗 -->
-	<div v-if="showHideDialogFlag" class="dialog">
-		<div class="dialog-content">
-			<h3>Confirm hide players</h3>
-			<p>Are you sure to hide "{{ currentEditingPlayerName }}"?</p>
-			<div class="dialog-buttons">
-				<button @click="cancelHide">取消</button>
-				<button @click="hidePlayer">确认</button>
-			</div>
-		</div>
-	</div>
-
-	<!-- 取消隐藏玩家的弹窗 -->
-	<div v-if="showUnhideDialogFlag" class="dialog">
-		<div class="dialog-content">
-			<h3>Confirm unhide players</h3>
-			<p>Are you sure to un-hide "{{ currentEditingPlayerName }}"?</p>
-			<div class="dialog-buttons">
-				<button @click="cancelUnhide">Cancel</button>
-				<button @click="unhidePlayer">Confirm</button>
-			</div>
-		</div>
-	</div>
-</div>
+    <!-- 取消隐藏玩家的弹窗 -->
+    <div v-if="showUnhideDialogFlag" class="dialog">
+      <div class="dialog-content">
+        <h3>Confirm unhide players</h3>
+        <p>Are you sure to un-hide "{{ currentEditingPlayerName }}"?</p>
+        <div class="dialog-buttons">
+          <button @click="cancelUnhide">Cancel</button>
+          <button @click="unhidePlayer">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

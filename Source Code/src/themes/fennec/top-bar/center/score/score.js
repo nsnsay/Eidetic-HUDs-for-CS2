@@ -1,22 +1,19 @@
-import { positionClass } from '/hud/helpers/position-class.js'
-import { teamColorClass } from '/hud/helpers/team-color-class.js'
-import MapWins from '/hud/top-bar/center/map-wins/map-wins.vue'
+import { positionClass } from '/hud/helpers/position-class.js';
+import { teamColorClass } from '/hud/helpers/team-color-class.js';
+import MapWins from '/hud/top-bar/center/map-wins/map-wins.vue';
 
 export default {
-	props: [
-		'position',
-		'team',
-	],
+  props: ['position', 'team'],
 
-	components: {
-       MapWins,
-	},
+  components: {
+    MapWins,
+  },
 
-	computed: {
-		positionClass,
+  computed: {
+    positionClass,
 
-		colorClass() {
-			return teamColorClass(this.team)
-		},
-	},
-}
+    colorClass() {
+      return teamColorClass(this.team);
+    },
+  },
+};

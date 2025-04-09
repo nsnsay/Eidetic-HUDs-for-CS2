@@ -1,5 +1,4 @@
 .name-and-stats {
-	display: grid;
-	grid-template-areas:
-		'name-row';
+  display: grid;
+  grid-template-areas: 'name-row';
 }
