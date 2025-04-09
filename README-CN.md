@@ -1,35 +1,45 @@
 
-# 欢迎使用 `EideticHM`：专为解说与赛事组织者打造的 CS2 观察者HUD
+# 欢迎使用 `EideticHM`：CS2 观战 HUD
 
-[EideticHM](https://github.com/nsnsay/Eidetic-HUDs-for-CS2) 是一款基于 [CS2 HUD 项目](https://github.com/drweissbrot/cs-hud) 开发的开源观察者HUD，专为解说员和赛事组织者设计。
+[英文](https://kimi.moonshot.cn/chat/README.md)
 
----
-
-## 如何使用
-
-1. 从 [Releases](https://github.com/nsnsay/Eidetic-HUDs-for-CS2/releases/) 下载最新版本的程序。
-2. 解压下载的压缩包。
-3. 将 `gamestate_integration_eidetic_hud.cfg` 文件放置到 CS2 的配置文件夹中（路径为：`game/csgo/cfg/`）。
-4. 请务必按照以下顺序操作：
-   * 先启动 `cs-hud.exe`
-   * 再运行 `cs-hud-window.exe`
+`EideticHM` 是一个专为直播主播和赛事组织者设计的开源观战 HUD，基于 [CS2 HUD 项目](https://github.com/drweissbrot/cs-hud) 开发。
 
 ---
 
-## 功能性问题说明
+## 使用方法
 
-### 关于队伍图标
+1. 从 [发布页面](https://github.com/nsnsay/Eidetic-HUDs-for-CS2/releases/) 下载最新版本的程序。
+2. 将 `gamestate_integration_eidetic_hud.cfg` 文件复制到 CS2 配置文件夹中（路径为 `/game/csgo/cfg/`）。
+3. **重要提示** ：请严格按照以下顺序操作：
 
-* 当您首次打开 `cs-hud.exe` 时，程序会在您的电脑上自动生成一个文件夹：`%appdata%/EideticHM`。
-* 在该文件夹中的 `team-logos` 子文件夹内，您可以放置队伍的图标图片。
-* **文件命名规则** ：文件名必须与HUD中显示的队伍名称完全一致，格式为：`[队伍名称].png`。
-* 队伍图标将自动显示在HUD中。
+* 先安装 `EideticHM`。
+* ***最后以管理员身份运行EideticHM！！！*重要***
 
-### 关于性能问题
+---
 
-如果您在使用过程中遇到性能问题，建议尝试以下优化方法：
+## 功能说明
 
-* 在OBS中进行屏幕捕捉时，请选择窗口捕捉 `cs-hud-window.exe`，而不是使用浏览器源。
+### 团队标志
+
+* 首次打开程序时，程序会在 `%appdata%/EideticHM` 自动生成一个文件夹。
+* 将团队标志图片放置在该目录下的 `team-logos` 子文件夹中。
+* **命名规则** ：文件名必须与 HUD 中显示的团队名称完全一致，格式为 `[团队名称].png`。
+* 团队标志将自动显示在 HUD 中。
+
+### 性能问题
+
+如果您遇到性能问题，请尝试以下优化：
+
+* 在 OBS 中进行捕获时，请使用 **窗口捕获** 来捕获 `ehm-window.exe`，而不是使用浏览器源。
+
+### OBS 和 vMix 捕获
+
+* 创建一个新的浏览器源，并粘贴以下 URL：`http://127.0.0.1:31982/hud/index.html?transparent`。
+
+### HUD 无法正常工作
+
+* 请重新检查 **使用方法：步骤 2** 中的操作。
 
 ---
 
@@ -37,6 +47,5 @@
 
 * **Discord 社区** ：[加入我们](https://discord.gg/u38Cmu5Zf7)
 * **邮箱** ：[troupqgog512956@gmail.com](mailto:troupqgog512956@gmail.com)
-* **QQ** : 3382876218
 
-希望 `EideticHM` 能为您的解说和赛事工作带来更好的体验！
+我们希望 `EideticHM` 能提升您的直播和赛事组织体验！
