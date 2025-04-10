@@ -1,7 +1,7 @@
 
 # Welcome to `EideticHM`: Observer HUD for CS2
 
-[中文](https://kimi.moonshot.cn/chat/README-CN.md)
+[中文](./README-CN.md)
 
 `EideticHM` is an open-source observer HUD designed specifically for broadcasters and tournament organizers, built on the foundation of the [CS2 HUD project](https://github.com/drweissbrot/cs-hud).
 
