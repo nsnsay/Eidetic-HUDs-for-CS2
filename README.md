@@ -1,7 +1,9 @@
+# 【OUTDATED】The new repository [here](https://github.com/nsnsay/EHM6) !
 
-# Welcome to `EideticHM`: Observer HUD for CS2
+# 【项目过期】最新的仓库版本 [点此](https://github.com/nsnsay/EHM6) ！
 
 [中文](./README-CN.md)
+
 
 `EideticHM` is an open-source observer HUD designed specifically for broadcasters and tournament organizers, built on the foundation of the [CS2 HUD project](https://github.com/drweissbrot/cs-hud).
 
